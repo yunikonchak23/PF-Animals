@@ -6,4 +6,12 @@ Rails.application.routes.draw do
   devise_for :admins, only: [:sessions], :controllers => {
     :sessions => 'admins/sessions'
   }
+
+  scope module: 'users' do
+    resource :users, only: [:show, :edit, :update] do
+      get 'confirm'
+      patch 'out'
+    end
+  end
+
 end

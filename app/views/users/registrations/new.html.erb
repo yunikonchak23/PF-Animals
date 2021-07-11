@@ -1,0 +1,38 @@
+<h2>新規会員登録</h2>
+
+<%= form_with model: @user, url: user_registration_path, local: true do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <label>ニックネーム</label><br>
+    <%= f.text_field :name, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <label>メールアドレス</label><br>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <label>パスワード
+    <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %>文字以上)</em>
+    <% end %></label><br>
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <label>パスワード(確認用)</label><br>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "新規登録" %>
+  </div>
+<% end %>
+
+<h4>すでに登録済みの方</h4>
+  <div>
+    <%= link_to "こちら", new_user_session_path %>
+    からログインして下さい。
+  </div>

@@ -15,7 +15,21 @@
 //= require popper
 //= require bootstrap-sprockets
 
+//= require jquery
+//= require jquery_ujs
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+/*global $*/
+$(function() {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) {
+            $('.hm-Menu').addClass('active');
+        } else {
+            $('.hm-Menu').removeClass('active');
+        }
+    });
+});

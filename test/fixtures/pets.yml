@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pet_name: MyString
+  type_name: MyString
+  gender: 1
+
+two:
+  pet_name: MyString
+  type_name: MyString
+  gender: 1

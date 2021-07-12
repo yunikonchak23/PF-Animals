@@ -3688,3 +3688,1772 @@ Processing by Users::UsersController#show as HTML
 Completed 200 OK in 2894ms (Views: 2890.6ms | ActiveRecord: 0.1ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreatePets (20210712104802)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20210712104802_create_pets.rb:3
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pet_name" varchar, "type_name" varchar, "gender" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210712104802_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210712104802"]]
+  ↳ bin/rails:9
+  [1m[35m (7.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:05:54 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/ec2-user/environment/PF-animals/app/controllers/users/pets_controller.rb:16: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users/pets_controller.rb:16: syntax error, unexpected end-of-input, expecting end
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:06:07 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+Completed 406 Not Acceptable in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (Users::PetsController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.6) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.6) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.6) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.6) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.6) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.6) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.6) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.6) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.6) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.6) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.6) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.6) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.6) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.6) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.6) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.6) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.6) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.6) lib/action_dispatch/routing/route_set.rb:840:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (5.2.6) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.6) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:06:51 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered users/pets/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 3624ms (Views: 3621.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:07:13 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered users/pets/index.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:09:22 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::PetsController#index as HTML
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (22.3ms)
+  Rendered users/pets/index.html.erb within layouts/application (26.2ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="mt-3">
+    2:   お名前
+    3:   :
+    4:   <%= @user.name %>
+    5: </div>
+    6: <div class="mt-2"><%= link_to "・マイページ",users_path, class: "text-dark" %></div>
+    7: <div class="mt-2"><%= link_to "・カレンダー",users_path, class: "text-dark" %></div>
+  
+app/views/diaries/_menu.html.erb:4:in `_app_views_diaries__menu_html_erb___1692839381260154323_50075000'
+app/views/users/pets/index.html.erb:6:in `_app_views_users_pets_index_html_erb___2613915103310960974_49792940'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:09:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.5ms)
+  Rendered users/pets/index.html.erb within layouts/application (2.5ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="mt-3">
+    2:   お名前
+    3:   :
+    4:   <%= @user.name %>
+    5: </div>
+    6: <div class="mt-2"><%= link_to "・マイページ",users_path, class: "text-dark" %></div>
+    7: <div class="mt-2"><%= link_to "・カレンダー",users_path, class: "text-dark" %></div>
+  
+app/views/diaries/_menu.html.erb:4:in `_app_views_diaries__menu_html_erb___1692839381260154323_70329317850760'
+app/views/users/pets/index.html.erb:6:in `_app_views_users_pets_index_html_erb___2613915103310960974_70329317817000'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:10:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 485ms (Views: 469.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:11:28 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.5ms)
+  Rendered users/pets/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 125ms (Views: 112.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:12:31 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:18:26 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 53ms (Views: 48.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:18:36 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:19:06 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 69ms (Views: 66.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:19:39 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 46.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:20:04 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 50ms (Views: 47.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:21:45 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:21:58 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:22:17 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 49ms (Views: 46.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:29:29 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (156.9ms)
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `from_with' for #<#<Class:0x00007fed987af868>:0x00007fed96224e90>
+Did you mean?  form_with):
+    15:       <div class="mt-5">
+    16:         <h2 style="text-align:center;">ペットを登録</h2>
+    17:         <div>
+    18:           <%= from_with model:@pets, url: pets_path, local:true do |f| %>
+    19:             <label>ペットのお名前</label>
+    20:             <%= f.text_field :pet_name %>
+    21:           <% end %>
+  
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb___2613915103310960974_70329201404800'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:29:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.9ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (110.9ms)
+Completed 200 OK in 196ms (Views: 193.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:32:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.7ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 84ms (Views: 80.9ms | ActiveRecord: 0.1ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20210707202432)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "user_image" text, "introduction" text, "is_deleted" boolean DEFAULT 0 NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:43
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:44
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202432"]]
+  ↳ bin/rails:9
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20210707202439)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202439"]]
+  ↳ bin/rails:9
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePets (20210712104802)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pet_image" integer, "pet_name" varchar, "type_name" varchar, "gender" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210712104802_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210712104802"]]
+  ↳ bin/rails:9
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-12 11:36:33.889887"], ["updated_at", "2021-07-12 11:36:33.889887"]]
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:36:44 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (3.5ms)
+  Rendered users/pets/index.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="mt-3">
+    2:   お名前
+    3:   :
+    4:   <%= @user.name %>
+    5: </div>
+    6: <div class="mt-2"><%= link_to "・マイページ",users_path, class: "text-dark" %></div>
+    7: <div class="mt-2"><%= link_to "・カレンダー",users_path, class: "text-dark" %></div>
+  
+app/views/diaries/_menu.html.erb:4:in `_app_views_diaries__menu_html_erb__1843600199712256480_42663940'
+app/views/users/pets/index.html.erb:6:in `_app_views_users_pets_index_html_erb___871796218244508302_42270760'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:36:56 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.5ms)
+  Rendered users/pets/index.html.erb within layouts/application (2.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="mt-3">
+    2:   お名前
+    3:   :
+    4:   <%= @user.name %>
+    5: </div>
+    6: <div class="mt-2"><%= link_to "・マイページ",users_path, class: "text-dark" %></div>
+    7: <div class="mt-2"><%= link_to "・カレンダー",users_path, class: "text-dark" %></div>
+  
+app/views/diaries/_menu.html.erb:4:in `_app_views_diaries__menu_html_erb__1843600199712256480_70262443908280'
+app/views/users/pets/index.html.erb:6:in `_app_views_users_pets_index_html_erb___871796218244508302_70262443844460'
+Started GET "/" for 182.165.88.188 at 2021-07-12 11:37:02 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 574ms (Views: 572.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 182.165.88.188 at 2021-07-12 11:37:06 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (0.4ms)
+  Rendered users/registrations/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 64ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 182.165.88.188 at 2021-07-12 11:37:20 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZZgSrtzFEC9kVWmPN8IJ9z53hQzV5yhojrRBTiXcYs6vt/LJt4+xoWMtfqick9eysK46b5QChV99xMZUYa2IKw==", "user"=>{"name"=>"うぇだ", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "aaa@aaa"], ["encrypted_password", "$2a$12$qgl3//8khpBRXCfb7hRcMudRhkzQuTKkAXHoADNE9CBc9YqAwLVWy"], ["name", "うぇだ"], ["created_at", "2021-07-12 11:37:20.366272"], ["updated_at", "2021-07-12 11:37:20.366272"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 336ms (ActiveRecord: 7.8ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 11:37:20 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 51ms (Views: 50.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-12 11:37:23 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 54ms (Views: 50.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:38:46 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_attachment_definition' for nil:NilClass):
+    18:           <%= form_with model:@pets, url: pets_path, local:true do |f| %>
+    19:             <div>
+    20:               <label>商品画像</label>
+    21:               <%= f.attachment_field :pet_image, class:"col-md-5" %>
+    22:             </div>
+    23:             <div>
+    24:               <label>ペットのお名前</label><br>
+  
+app/views/users/pets/index.html.erb:21:in `block in _app_views_users_pets_index_html_erb___871796218244508302_70262417189320'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb___871796218244508302_70262417189320'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:39:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_attachment_definition' for nil:NilClass):
+    18:           <%= form_with model:@pets, url: pets_path, local:true do |f| %>
+    19:             <div>
+    20:               <label>商品画像</label>
+    21:               <%= f.attachment_field :pet_image, class:"col-md-5" %>
+    22:             </div>
+    23:             <div>
+    24:               <label>ペットのお名前</label><br>
+  
+app/views/users/pets/index.html.erb:21:in `block in _app_views_users_pets_index_html_erb___871796218244508302_70262413244700'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb___871796218244508302_70262413244700'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:40:03 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 58ms (Views: 55.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:43:30 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 96ms (Views: 73.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:44:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 56ms (Views: 53.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:48:43 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20210707202432)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "user_image" text, "introduction" text, "is_deleted" boolean DEFAULT 0 NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:44
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202432"]]
+  ↳ bin/rails:9
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20210707202439)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202439"]]
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePets (20210712104802)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pet_image" integer, "pet_name" varchar, "type_name" varchar, "gender" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210712104802_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210712104802"]]
+  ↳ bin/rails:9
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-12 11:51:48.500889"], ["updated_at", "2021-07-12 11:51:48.500889"]]
+  ↳ bin/rails:9
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 182.165.88.188 at 2021-07-12 11:52:04 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 426ms (Views: 414.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up" for 182.165.88.188 at 2021-07-12 11:52:06 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (0.5ms)
+  Rendered users/registrations/new.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 63ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 182.165.88.188 at 2021-07-12 11:52:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4yjD81FQ3qmAlLUhfV03qdxXFh2TOcC+3EMgQU1IU4MpByOUOhp/J4fsogbWDOnsUo6pftLcbYkvM6dbCTm5Zg==", "user"=>{"name"=>"うぇだ", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "aaa@aaa"], ["encrypted_password", "$2a$12$pVkkW3s7mglGkEO2yxQpyuACDjTpbLdEzU70C6fc8UOtkO4FV0dAq"], ["name", "うぇだ"], ["created_at", "2021-07-12 11:52:17.019582"], ["updated_at", "2021-07-12 11:52:17.019582"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 324ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 11:52:17 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 51ms (Views: 50.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 11:52:23 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 86ms (Views: 59.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:02:52 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.0ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 113ms (Views: 82.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:03:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 108ms (Views: 104.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:07:29 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (294.7ms)
+  Rendered users/pets/index.html.erb within layouts/application (300.9ms)
+Completed 500 Internal Server Error in 312ms (ActiveRecord: 2.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f4a24bf0318>:0x00007f4a250608a8>):
+    1: <div>
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div>
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___820521609443809743_69978212915160'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb__2337955883727827845_69978212732660'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978212732660'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:08:30 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.7ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (342.7ms)
+  Rendered users/pets/index.html.erb within layouts/application (346.4ms)
+Completed 500 Internal Server Error in 351ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x00007f4a24bf0318>:0x00007f4a2c1699a0>):
+    1: <div>
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div>
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___820521609443809743_69978272215700'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb__2337955883727827845_69978271994140'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978271994140'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:09:30 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered users/pets/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-animals/app/views/users/pets/index.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+... render 'users/pets/pet_form' f: f );@output_buffer.safe_app...
+...                              ^):
+  
+app/views/users/pets/index.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:09:53 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 114ms (Views: 111.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:12:06 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:12:18 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:12:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.9ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:12:52 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 53ms (Views: 50.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:13:02 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 53ms (Views: 50.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:13:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 70ms (Views: 67.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:13:27 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.9ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:13:55 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.3ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:14:22 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 68ms (Views: 65.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:14:54 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:15:02 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:15:34 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 74ms (Views: 71.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:15:42 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:15:55 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 53ms (Views: 50.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:16:23 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:16:35 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 69ms (Views: 66.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:16:57 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 53ms (Views: 50.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:17:50 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 3121ms (Views: 3118.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:18:04 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.9ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 2317ms (Views: 2314.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:18:35 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 76ms (Views: 73.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:18:51 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (1.1ms)
+  Rendered users/pets/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 2351ms (Views: 2347.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:19:10 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 2320ms (Views: 2317.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:19:30 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 2288ms (Views: 2285.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:19:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.9ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 2364ms (Views: 2361.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:19:55 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.9ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 2317ms (Views: 2314.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:20:17 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/pets/_pet_table.html.erb (0.2ms)
+  Rendered users/pets/_pet_form.html.erb (0.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 80ms (Views: 75.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:39:37 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.1ms)
+  Rendered users/pets/_pet_table.html.erb (315.3ms)
+  Rendered users/pets/index.html.erb within layouts/application (318.4ms)
+Completed 500 Internal Server Error in 353ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pets' for #<#<Class:0x00007f4a30176ca0>:0x00007f4a30175288>
+Did you mean?  @pets
+               puts
+               @pet):
+    1: <% pets.each do |pet| %>
+    2:  <div>
+    3:    <div>
+    4:      <%= attachment_image_tag(pet, :pet_image, :fill, 50, 50, fallback: "no-image-square.jpeg") %>
+  
+app/views/users/pets/_pet_table.html.erb:1:in `_app_views_users_pets__pet_table_html_erb___2712462945834539122_69978305689540'
+app/views/users/pets/index.html.erb:12:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978305575440'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:39:55 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (4.6ms)
+  Rendered users/pets/index.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Class:0x00007f4a2c669ab8>):
+    1: <% @pets.each do |pet| %>
+    2:  <div>
+    3:    <div>
+    4:      <%= attachment_image_tag(pet, :pet_image, :fill, 50, 50, fallback: "no-image-square.jpeg") %>
+  
+app/views/users/pets/_pet_table.html.erb:1:in `_app_views_users_pets__pet_table_html_erb___2712462945834539122_69978272667980'
+app/views/users/pets/index.html.erb:12:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978272581700'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:43:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.5ms)
+  Rendered users/pets/_pet_form.html.erb (7.6ms)
+  Rendered users/pets/index.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___820521609443809743_69978217712780'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb__2337955883727827845_69978217630960'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978217630960'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:49:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.3ms)
+  Rendered users/pets/_pet_form.html.erb (7.3ms)
+  Rendered users/pets/index.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___820521609443809743_69978306885620'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb__2337955883727827845_69978306808760'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978306808760'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:51:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_table.html.erb (4.4ms)
+  Rendered users/pets/index.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for #<Class:0x00007f4a30017260>):
+    1: <% @pets.each do |pet| %>
+    2:  <div>
+    3:    <div>
+    4:      <%= attachment_image_tag pet, :pet_image, :fill, 50, 50, fallback: "no-image-square.jpeg" %>
+  
+app/views/users/pets/_pet_table.html.erb:1:in `_app_views_users_pets__pet_table_html_erb___2712462945834539122_69978305621320'
+app/views/users/pets/index.html.erb:12:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978305556480'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:53:02 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/pets/_pet_form.html.erb (13.5ms)
+  Rendered users/pets/index.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<Class:0x00007f4a30017260>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___820521609443809743_69978272056980'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb__2337955883727827845_69978271979580'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978271979580'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:53:45 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.5ms)
+  Rendered users/pets/_pet_form.html.erb (7.3ms)
+  Rendered users/pets/index.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___820521609443809743_69978223615820'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb__2337955883727827845_69978223495700'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978223495700'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:54:44 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.3ms)
+  Rendered users/pets/_pet_form.html.erb (7.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___820521609443809743_69978208005520'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb__2337955883727827845_37750380'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb__2337955883727827845_37750380'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:56:20 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.4ms)
+  Rendered users/pets/_pet_form.html.erb (0.7ms)
+  Rendered users/pets/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 80ms (Views: 75.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/pets" for 182.165.88.188 at 2021-07-12 12:56:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CXUqWOIim1J6O0OxclhICprTR4TOcfo8BmZCotWmIJ5xprfaIfduK5Jnzb9oEDBIwl9DSC7/XpmBf4IAFaPbrQ==", "pet"=>{"pet_name"=>"ぴー", "gender"=>"性別不明", "type_name"=>"ハシブトガラス"}, "commit"=>"登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/pets_controller.rb:10
+  [1m[36mPet Create (1.2ms)[0m  [1m[32mINSERT INTO "pets" ("pet_name", "type_name", "gender", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["pet_name", "ぴー"], ["type_name", "ハシブトガラス"], ["gender", 3], ["created_at", "2021-07-12 12:56:41.674544"], ["updated_at", "2021-07-12 12:56:41.674544"]]
+  ↳ app/controllers/users/pets_controller.rb:10
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users/pets_controller.rb:10
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/pets
+Completed 302 Found in 13ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:56:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (10.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_id' for #<Pet:0x00007f4a2515bc58>
+Did you mean?  pet_image
+               pet_image?
+               pet_image=
+               pet_image_was
+               pet_image_url):
+    1: <% @pets.each do |pet| %>
+    2:  <div>
+    3:    <div>
+    4:      <%= attachment_image_tag pet, :pet_image, :fill, 50, 50, fallback: "no-image-square.jpeg" %>
+    5:    </div>
+    6:    <div>
+    7:      <div><%= pet.pet_name %></div>
+  
+app/views/users/pets/_pet_table.html.erb:4:in `block in _app_views_users_pets__pet_table_html_erb___2712462945834539122_69978213178640'
+app/views/users/pets/_pet_table.html.erb:1:in `_app_views_users_pets__pet_table_html_erb___2712462945834539122_69978213178640'
+app/views/users/pets/index.html.erb:12:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978212979580'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:56:58 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.3ms)
+  Rendered users/pets/_pet_form.html.erb (0.7ms)
+  Rendered users/pets/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 72ms (Views: 69.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:58:01 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (9.5ms)
+  Rendered users/pets/index.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_id' for #<Pet:0x00007f4a259f96f8>
+Did you mean?  pet_image
+               pet_image?
+               pet_image=
+               pet_image_was
+               pet_image_url):
+    1: <% @pets.each do |pet| %>
+    2:  <div>
+    3:    <div>
+    4:      <%= attachment_image_tag pet, :pet_image, :fill, 50, 50, fallback: "no-image-square.jpeg" %>
+    5:    </div>
+    6:    <div>
+    7:      <div><%= pet.pet_name %></div>
+  
+app/views/users/pets/_pet_table.html.erb:4:in `block in _app_views_users_pets__pet_table_html_erb___2712462945834539122_69978217758200'
+app/views/users/pets/_pet_table.html.erb:1:in `_app_views_users_pets__pet_table_html_erb___2712462945834539122_69978217758200'
+app/views/users/pets/index.html.erb:12:in `_app_views_users_pets_index_html_erb__2337955883727827845_69978217683820'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20210707202432)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "user_image" text, "introduction" text, "is_deleted" boolean DEFAULT 0 NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:5
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:44
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202432"]]
+  ↳ bin/rails:9
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20210707202439)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:39
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202439"]]
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePets (20210712104802)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pet_image" integer, "pet_name" varchar, "type_name" varchar, "gender" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210712104802_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210712104802"]]
+  ↳ bin/rails:9
+  [1m[35m (4.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-12 12:58:38.497456"], ["updated_at", "2021-07-12 12:58:38.497456"]]
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 182.165.88.188 at 2021-07-12 12:58:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 541ms (Views: 529.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up" for 182.165.88.188 at 2021-07-12 12:58:50 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (0.4ms)
+  Rendered users/registrations/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 70ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 182.165.88.188 at 2021-07-12 12:59:05 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CfH//yhgrmemU3JlPn8PRd0vRans+YWNWoOw5c+z9fbD3h+YQyoP6aErZUKVLtEAU/b6yq0cKLqp8zf/i8IfEw==", "user"=>{"name"=>"うぇだ", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "aaa@aaa"], ["encrypted_password", "$2a$12$jcjupiMk7m8P5vjkYSm96uw/nSpEyO1F59p7Fex0aEVT4OGf1mxM2"], ["name", "うぇだ"], ["created_at", "2021-07-12 12:59:05.495471"], ["updated_at", "2021-07-12 12:59:05.495471"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 338ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 12:59:05 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:13
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 12:59:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.4ms)
+  Rendered users/pets/_pet_form.html.erb (7.1ms)
+  Rendered users/pets/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb__643062149587677286_69964515968380'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb___4474461459078187943_69964515772220'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb___4474461459078187943_69964515772220'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 13:00:02 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.7ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.7ms)
+  Rendered users/pets/_pet_form.html.erb (111.0ms)
+  Rendered users/pets/index.html.erb within layouts/application (116.9ms)
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb__643062149587677286_69964459698340'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb___4474461459078187943_69964459615500'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb___4474461459078187943_69964459615500'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 13:00:42 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.4ms)
+  Rendered users/pets/_pet_form.html.erb (7.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb__643062149587677286_69964459943160'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb___4474461459078187943_69964459854660'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb___4474461459078187943_69964459854660'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 13:05:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.5ms)
+  Rendered users/pets/_pet_form.html.erb (8.9ms)
+  Rendered users/pets/index.html.erb within layouts/application (16.5ms)
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___4081773473357086703_35790480'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb___933619766418045941_34683560'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb___933619766418045941_34683560'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 13:06:35 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.2ms)
+  Rendered users/pets/_pet_form.html.erb (7.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___4081773473357086703_70287576207660'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb___933619766418045941_70287576118600'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb___933619766418045941_70287576118600'
+Started GET "/pets" for 182.165.88.188 at 2021-07-12 13:14:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (1.5ms)
+  Rendered users/pets/_pet_form.html.erb (7.5ms)
+  Rendered users/pets/index.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___3963791262116162676_38672200'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb___1087951832448074795_37535760'
+app/views/users/pets/index.html.erb:18:in `_app_views_users_pets_index_html_erb___1087951832448074795_37535760'

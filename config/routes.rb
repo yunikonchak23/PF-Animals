@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get 'confirm'
       patch 'out'
     end
+    resources :pets, only: [:index, :create, :edit, :update, :destroy]
   end
 
 end

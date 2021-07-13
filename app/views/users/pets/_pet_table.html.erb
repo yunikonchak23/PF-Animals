@@ -1,0 +1,25 @@
+<% @pets.each do |pet| %>
+ <div class="contain my-3">
+  <div class="row">
+   <div>
+     <%= attachment_image_tag pet, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "130x130" %>
+   </div>
+    <div class="ml-2">
+     <div class="mt-4">
+      <label>お名前</label>:
+      <%= pet.pet_name %>
+     </div>
+     <div>
+      <label>種類</label>:
+      <%= pet.type_name %>
+      <label class="ml-2">性別</label>:
+      <%= pet.gender %>
+      <% if user_signed_in? && current_user.id == pet.user_id %>
+       <%= link_to "編集", edit_pet_path(pet), class:"btn btn-outline-secondary", data: {"turbolinks" => false} %>
+       <%= link_to "削除", pet, method: :delete, class:"btn btn-outline-secondary", data: { confirm: "#{pet}を削除して大丈夫ですか？", "turbolinks" => false } %>
+      <% end %>
+     </div>
+    </div>
+  </div>
+ </div>
+<% end %>

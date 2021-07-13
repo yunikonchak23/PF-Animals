@@ -1,15 +1,14 @@
-<div class="container">
+<div class="container container-size">
   <div class="row">
 
     <div class="col-2" style="text-align:center;">
-      <h2>Menu</h2>
       <%= render 'diaries/menu' %>
     </div>
 
     <div class="offset-1 col-7">
       <h2 style="text-align:center;">会員詳細</h2>
       <%= render 'users/users/user_info' %>
-      <h2 style="text-align:center;">日記一覧</h2>
+      <h2 style="text-align:center;"><%= @user.name %>さんのペット</h2>
     </div>
   </div>
 </div>

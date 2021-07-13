@@ -3,6 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // トップの画像
+.top-bg {
+  background-color: #fff;
+  height: 800px;
+}
 .top-box {
   margin: auto;
   margin-right: 6%;
@@ -15,7 +19,6 @@
   width: 34%;
   height: 650px;
   margin-left: 1%;
-  background-color: orange;
   transform:skewX(-5deg);
 }
 .top-img1 {
@@ -35,11 +38,4 @@
   background-size: cover;
   background-position: -350px 0;
   position: relative;
-}
-
-// トップの詳細
-.top-body {
-  width : 100%;
-  height: 500px;
-  background-color: #D3D3D3;
 }

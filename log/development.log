@@ -8441,3 +8441,39 @@ Processing by Devise::RegistrationsController#edit as
 Completed 200 OK in 192ms (Views: 175.0ms | ActiveRecord: 2.1ms)
 
 
+Started GET "/" for 182.165.88.188 at 2021-07-13 10:55:32 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_user.html.erb (1.8ms)
+Completed 200 OK in 1118ms (Views: 1101.2ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 10:55:46 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+Completed 404 Not Found in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users/users_controller.rb:3:in `show'
+Started GET "/users" for 182.165.88.188 at 2021-07-13 10:56:13 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (5.6ms)
+  Rendered users/users/_user_info.html.erb (1.0ms)
+  Rendered users/users/show.html.erb within layouts/application (12.4ms)
+  Rendered layouts/_header_user.html.erb (1.5ms)
+Completed 200 OK in 185ms (Views: 161.5ms | ActiveRecord: 0.8ms)
+
+

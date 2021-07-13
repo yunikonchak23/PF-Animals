@@ -25,7 +25,7 @@
  // ヘッダー
  .header-logo {
   margin: 0 auto;
-  color : #000;
+  color : #555;
   font-size: 30px;
  }
  .header-logo:hover {
@@ -43,7 +43,7 @@
   height: 60px;
   cursor: pointer;
   text-align: center;
-  background: #BBBBBB;
+  background: #D3D3D3;
   border-radius: 5px;
 }
 .hamburger span {
@@ -105,20 +105,20 @@ ul {
   z-index : 2;
   top  : 0;
   left : 0;
-  color: #000;
-  background: #FFDEAD;
+  color: #555;
+  background: #fff;
   text-align: center;
   transform: translateX(-100%);
   transition: all 0.6s;
   argin: 0 auto;
   padding: 0;
-  width: 30%;
+  width: 100%;
 }
 ul.hm-Menu li {
   list-style-type: none;
   padding: 0;
   width: 100%;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #D3D3D3;
 }
 ul.hm-Menu li:last-child {
   padding-bottom: 0;
@@ -143,4 +143,9 @@ ul.hm-Menu li:hover {
 // このクラスを、jQueryで付与・削除する
 ul.hm-Menu.active {
   transform: translateX(0%);
+}
+
+main {
+  background-color: #EEEEEE;
+  height: 1000px;
 }

@@ -5595,3 +5595,1841 @@ Processing by HomesController#top as HTML
 Completed 200 OK in 2344ms (Views: 2343.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 182.165.88.188 at 2021-07-12 21:41:34 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 1570ms (Views: 1560.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 21:49:29 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3503ms (Views: 3502.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 21:50:25 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (4.9ms)
+Completed 200 OK in 2770ms (Views: 2768.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 21:50:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (4.9ms)
+Completed 200 OK in 2865ms (Views: 2863.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 21:54:22 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.8ms)
+Completed 200 OK in 2909ms (Views: 2908.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 21:55:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 2746ms (Views: 2745.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 21:58:01 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3025ms (Views: 3023.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 21:59:01 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_header_logout.html.erb (3.4ms)
+Completed 200 OK in 2969ms (Views: 2967.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:00:06 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (5.9ms)
+Completed 200 OK in 3115ms (Views: 3114.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:04:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (4.9ms)
+Completed 200 OK in 2815ms (Views: 2814.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:06:43 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3327ms (Views: 3317.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:08:38 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 127ms (Views: 126.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:10:56 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3009ms (Views: 3007.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:12:03 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2958ms (Views: 2957.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:12:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2751ms (Views: 2749.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:14:13 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (4.9ms)
+Completed 200 OK in 3072ms (Views: 3071.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:15:38 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3134ms (Views: 3133.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:16:22 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (4.9ms)
+Completed 200 OK in 2808ms (Views: 2807.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:18:15 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2780ms (Views: 2779.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:20:00 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3057ms (Views: 3041.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:20:55 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2829ms (Views: 2828.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:21:14 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3182ms (Views: 3181.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:22:24 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 77ms (Views: 76.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:24:37 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 78ms (Views: 76.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:31:10 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2863ms (Views: 2862.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:32:08 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (1.5ms)
+Completed 200 OK in 3094ms (Views: 3093.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:33:17 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3011ms (Views: 3010.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:34:43 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2775ms (Views: 2773.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:34:59 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (8.4ms)
+Completed 200 OK in 2955ms (Views: 2954.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:35:30 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2900ms (Views: 2899.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:35:46 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (3.4ms)
+Completed 200 OK in 2947ms (Views: 2946.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:36:43 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (4.9ms)
+Completed 200 OK in 2991ms (Views: 2990.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:37:14 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3015ms (Views: 3013.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:38:39 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2850ms (Views: 2849.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:39:35 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2828ms (Views: 2827.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:40:31 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2807ms (Views: 2805.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:40:53 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2623ms (Views: 2622.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:43:50 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (4.9ms)
+Completed 200 OK in 3106ms (Views: 3103.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:46:45 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (5.0ms)
+Completed 200 OK in 3217ms (Views: 3215.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:49:01 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3505ms (Views: 3503.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:49:28 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3019ms (Views: 3018.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:49:43 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (3.5ms)
+Completed 200 OK in 2657ms (Views: 2656.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:52:40 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2944ms (Views: 2942.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:53:11 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 3353ms (Views: 3352.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:54:13 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2914ms (Views: 2913.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:54:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3062ms (Views: 3060.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 22:56:22 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 1954ms (Views: 1952.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:01:04 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 2256ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Error: style declaration must contain a value
+        on line 24:22 of app/assets/stylesheets/homes.scss
+>>   background-position: ;
+
+   ---------------------^
+):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/homes.scss:24
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2402747044302125087_70165291174380'
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:01:25 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2822ms (Views: 2821.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:02:11 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2720ms (Views: 2719.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:02:44 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 82ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:04:15 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header_logout.html.erb (9.5ms)
+Completed 200 OK in 3159ms (Views: 3158.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:04:32 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (8.0ms)
+Completed 200 OK in 3012ms (Views: 3011.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:04:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2794ms (Views: 2793.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:05:04 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3083ms (Views: 3082.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:05:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2656ms (Views: 2655.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:06:00 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (15.4ms)
+Completed 200 OK in 3018ms (Views: 3017.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:06:37 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2700ms (Views: 2699.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:06:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2671ms (Views: 2669.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:07:01 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2645ms (Views: 2643.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:07:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.2ms)
+Completed 200 OK in 2844ms (Views: 2843.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:11:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 3382ms (Views: 3376.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:12:53 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header_logout.html.erb (9.0ms)
+Completed 200 OK in 3017ms (Views: 3015.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:15:39 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_header_logout.html.erb (6.7ms)
+Completed 200 OK in 3339ms (Views: 3338.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:16:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2893ms (Views: 2891.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:17:50 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2804ms (Views: 2803.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:18:12 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2823ms (Views: 2822.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:19:18 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (3.6ms)
+Completed 200 OK in 2981ms (Views: 2980.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:19:47 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3197ms (Views: 3196.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:20:40 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (3.1ms)
+Completed 200 OK in 3082ms (Views: 3081.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:20:54 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:20:55 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (4.9ms)
+Completed 200 OK in 83ms (Views: 81.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:21:30 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3196ms (Views: 3194.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:21:53 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (5.7ms)
+Completed 200 OK in 3219ms (Views: 3217.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:22:36 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2821ms (Views: 2820.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:22:55 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2871ms (Views: 2869.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:23:15 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2479ms (Views: 2478.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:23:28 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (9.6ms)
+Completed 200 OK in 2748ms (Views: 2747.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:24:10 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.7ms)
+Completed 200 OK in 3063ms (Views: 3062.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:24:29 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (7.8ms)
+Completed 200 OK in 3117ms (Views: 3114.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:25:08 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3362ms (Views: 3361.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:26:02 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2826ms (Views: 2825.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:28:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2890ms (Views: 2885.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:28:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2915ms (Views: 2914.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:29:07 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (3.5ms)
+Completed 200 OK in 3168ms (Views: 3165.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:29:30 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2969ms (Views: 2968.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:29:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (5.0ms)
+Completed 200 OK in 2677ms (Views: 2676.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:30:05 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (5.6ms)
+Completed 200 OK in 2938ms (Views: 2937.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:30:27 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (9.1ms)
+Completed 200 OK in 2829ms (Views: 2828.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:30:36 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3031ms (Views: 3030.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:31:06 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2802ms (Views: 2801.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:31:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2734ms (Views: 2733.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:33:21 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3176ms (Views: 3175.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:36:46 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.8ms)
+Completed 200 OK in 109ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:41:55 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3189ms (Views: 3188.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:42:32 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (3.7ms)
+Completed 200 OK in 3476ms (Views: 3475.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:43:11 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3074ms (Views: 3073.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:43:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (10.1ms)
+Completed 200 OK in 2953ms (Views: 2952.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:44:06 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2870ms (Views: 2869.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:44:44 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3166ms (Views: 3164.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:45:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (7.6ms)
+Completed 200 OK in 3125ms (Views: 3124.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:45:58 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3293ms (Views: 3292.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:48:43 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3092ms (Views: 3091.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:49:15 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (7.9ms)
+Completed 200 OK in 5847ms (Views: 5846.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:53:10 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3627ms (Views: 3625.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:53:32 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2982ms (Views: 2980.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:54:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2855ms (Views: 2854.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:55:09 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (9.3ms)
+Completed 200 OK in 3013ms (Views: 3011.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:55:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3119ms (Views: 3118.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:56:11 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (16.7ms)
+Completed 200 OK in 185ms (Views: 184.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:57:37 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (2.8ms)
+Completed 200 OK in 3545ms (Views: 3544.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-12 23:57:50 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2875ms (Views: 2874.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:03:00 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 3243ms (Views: 3241.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:03:54 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2734ms (Views: 2733.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:04:22 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (8.1ms)
+Completed 200 OK in 3239ms (Views: 3238.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:04:35 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 2897ms (Views: 2895.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:04:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 2807ms (Views: 2806.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:05:00 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 5454ms (Views: 5453.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:16:25 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header_logout.html.erb (1.6ms)
+Completed 200 OK in 3763ms (Views: 3754.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:16:50 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (6.3ms)
+  Rendered layouts/_header_logout.html.erb (5.8ms)
+Completed 200 OK in 3282ms (Views: 3280.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:17:27 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2994ms (Views: 2991.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:18:02 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_header_logout.html.erb (2.7ms)
+Completed 200 OK in 2830ms (Views: 2828.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:18:30 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (6.6ms)
+Completed 200 OK in 3199ms (Views: 3197.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:20:29 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (3.5ms)
+Completed 200 OK in 3514ms (Views: 3513.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:21:01 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (2.4ms)
+Completed 200 OK in 3622ms (Views: 3621.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:21:18 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2855ms (Views: 2854.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:22:52 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 3420ms (Views: 3419.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:23:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (5.1ms)
+Completed 200 OK in 2550ms (Views: 2548.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:24:03 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2879ms (Views: 2878.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:24:18 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3590ms (Views: 3589.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:25:05 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 3356ms (Views: 3355.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:25:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3505ms (Views: 3504.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:26:18 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (6.4ms)
+Completed 200 OK in 3257ms (Views: 3256.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:26:40 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (6.8ms)
+Completed 200 OK in 2953ms (Views: 2952.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:27:11 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (2.0ms)
+Completed 200 OK in 3040ms (Views: 3039.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:27:39 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3004ms (Views: 3003.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:28:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3633ms (Views: 3632.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:29:39 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2524ms (Views: 2523.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:32:06 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2912ms (Views: 2910.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:33:03 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3557ms (Views: 3556.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:34:25 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2877ms (Views: 2875.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:34:53 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3174ms (Views: 3173.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:36:12 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (3.4ms)
+Completed 200 OK in 2937ms (Views: 2936.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:36:58 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 118ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:37:11 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2957ms (Views: 2956.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:37:28 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2950ms (Views: 2948.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:38:25 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2818ms (Views: 2817.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:38:42 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2860ms (Views: 2859.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:39:00 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (3.1ms)
+Completed 200 OK in 3346ms (Views: 3345.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:39:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3102ms (Views: 3101.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:39:28 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2684ms (Views: 2683.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:39:38 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2909ms (Views: 2908.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:39:47 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (1.6ms)
+Completed 200 OK in 2609ms (Views: 2607.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:40:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2796ms (Views: 2795.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:40:51 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2668ms (Views: 2667.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:41:01 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2723ms (Views: 2722.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:41:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3342ms (Views: 3341.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:41:34 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (21.0ms)
+Completed 200 OK in 3354ms (Views: 3352.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:42:27 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2631ms (Views: 2627.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:45:26 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 95ms (Views: 94.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:45:43 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (5.4ms)
+Completed 200 OK in 159ms (Views: 158.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:49:14 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3303ms (Views: 3302.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 00:50:12 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/pets"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 00:50:14 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/pets"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:50:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 102ms (Views: 100.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 00:50:43 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (2.7ms)
+Completed 200 OK in 122ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:00:47 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 3040ms (Views: 3036.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:01:59 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.8ms)
+Completed 200 OK in 82ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:02:13 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (5.1ms)
+Completed 200 OK in 83ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:03:27 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (5.0ms)
+Completed 200 OK in 3119ms (Views: 3118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:04:18 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (7.5ms)
+Completed 200 OK in 2172ms (Views: 2170.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:04:35 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.8ms)
+Completed 200 OK in 2106ms (Views: 2105.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:06:08 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2294ms (Views: 2293.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:06:53 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 1980ms (Views: 1978.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:09:39 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (62.8ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 4859ms (Views: 4842.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:12:49 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_header_logout.html.erb (5.0ms)
+Completed 200 OK in 2203ms (Views: 2202.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:13:00 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (3.2ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:14:54 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 2186ms (Views: 2184.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 182.165.88.188 at 2021-07-13 01:18:11 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (24.7ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 166ms (Views: 128.5ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/users/sign_in" for 182.165.88.188 at 2021-07-13 01:18:17 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XGUvFqoiuC6ObWCArZfQRGfAe3EW4YjrePTqbEvxJl8ktrKUafdNV2Yx7o6336gGP0x/vfZvLE7/7SrOi/TdbA==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (17.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 381ms (ActiveRecord: 17.5ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:18:18 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_user.html.erb (2.1ms)
+Completed 200 OK in 91ms (Views: 90.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:18:51 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 101ms (Views: 91.8ms | ActiveRecord: 4.8ms)
+
+
+Started DELETE "/users/sign_out" for 182.165.88.188 at 2021-07-13 01:18:57 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"BJTweYi/23WnRwv1OfNSP1bunHZBlCKCAOFjkwQznYrUEebgJNnfSVhhuoDY6yGTHxQhZysVV03meeMEXA23Ng=="}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 26ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:18:57 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_header_logout.html.erb (7.3ms)
+Completed 200 OK in 196ms (Views: 194.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 182.165.88.188 at 2021-07-13 01:19:01 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 92ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 182.165.88.188 at 2021-07-13 01:19:02 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yGLzN1duwtnRwW8Z63Rc/WFNP/PDg8eUxbgPA6Oj4TZb3o7SGsgkFwHiGo5ZEDHmmskIAdYbiaVEfWi8U87F6w==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 337ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 01:19:03 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_user.html.erb (1.9ms)
+Completed 200 OK in 172ms (Views: 170.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 01:19:29 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.7ms)
+  Rendered users/users/_user_info.html.erb (1.3ms)
+  Rendered users/users/show.html.erb within layouts/application (6.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 97ms (Views: 92.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 01:22:05 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_header_user.html.erb (7.0ms)
+Completed 200 OK in 2377ms (Views: 2372.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 01:22:38 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 2657ms (Views: 2653.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 01:24:56 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (1.5ms)
+  Rendered users/users/show.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_header_user.html.erb (4.8ms)
+Completed 200 OK in 2530ms (Views: 2526.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 01:25:11 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.4ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_header_user.html.erb (4.4ms)
+Completed 200 OK in 1988ms (Views: 1984.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 01:26:18 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.4ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 2047ms (Views: 2042.6ms | ActiveRecord: 0.1ms)
+
+

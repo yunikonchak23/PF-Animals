@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2021_07_12_104802) do
   end
 
   create_table "pets", force: :cascade do |t|
-    t.integer "pet_image"
+    t.string "image_id"
     t.string "pet_name"
     t.string "type_name"
     t.integer "gender", default: 0

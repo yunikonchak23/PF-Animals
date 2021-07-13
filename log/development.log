@@ -10291,3 +10291,848 @@ Completed 200 OK in 192ms (Views: 175.0ms | ActiveRecord: 2.1ms)
 >>>>>>> 131a880b7b7e36f0d63df8ef537db968000a8f1a
 
 
+Started GET "/users" for 182.165.88.188 at 2021-07-13 11:04:30 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (3.2ms)
+  Rendered users/users/show.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="side-menu">
+    2:   <div class="mt-4">
+    3:     <%= @user.name %>
+    4:   </div>
+    5:   <div class="mt-3"><%= link_to "・マイページ",users_path,class:"btn btn-outline-secondary" %></div>
+    6:   <div class="mt-3"><%= link_to "・カレンダー",users_path,class:"btn btn-outline-secondary" %></div>
+  
+app/views/diaries/_menu.html.erb:3:in `_app_views_diaries__menu_html_erb__1903025089822788534_39705860'
+app/views/users/users/show.html.erb:5:in `_app_views_users_users_show_html_erb__631013611896686823_38271780'
+Started GET "/" for 182.165.88.188 at 2021-07-13 11:04:42 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_logout.html.erb (3.8ms)
+Completed 200 OK in 3602ms (Views: 3600.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 182.165.88.188 at 2021-07-13 11:05:00 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_header_logout.html.erb (1.5ms)
+Completed 200 OK in 96ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 182.165.88.188 at 2021-07-13 11:05:03 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AIRQCzu6JiJWFPTblou0ATdT/Rn2BBoUXEsRLAmd+NzZwWkNYDz10fZWMQ2eP0RRCD6/tMmspiy8aWTswS9IbA==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 343ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 11:05:03 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_user.html.erb (1.6ms)
+Completed 200 OK in 154ms (Views: 152.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:05:15 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (3.2ms)
+  Rendered users/pets/_pet_form.html.erb (7.8ms)
+  Rendered users/pets/index.html.erb within layouts/application (18.6ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___1316060378327993457_70290697221000'
+app/views/users/pets/index.html.erb:18:in `block in _app_views_users_pets_index_html_erb___1649439101437300132_70290697106060'
+app/views/users/pets/index.html.erb:17:in `_app_views_users_pets_index_html_erb___1649439101437300132_70290697106060'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20210707202432)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "user_image" text, "introduction" text, "is_deleted" boolean DEFAULT 0 NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:44
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202432"]]
+  ↳ bin/rails:9
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20210707202439)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202439"]]
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePets (20210712104802)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "pet_image_id" varchar, "pet_name" varchar, "type_name" varchar, "gender" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210712104802_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210712104802"]]
+  ↳ bin/rails:9
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-13 11:07:59.436508"], ["updated_at", "2021-07-13 11:07:59.436508"]]
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:08:23 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.9ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="side-menu">
+    2:   <div class="mt-4">
+    3:     <%= @user.name %>
+    4:   </div>
+    5:   <div class="mt-3"><%= link_to "・マイページ",users_path,class:"btn btn-outline-secondary" %></div>
+    6:   <div class="mt-3"><%= link_to "・カレンダー",users_path,class:"btn btn-outline-secondary" %></div>
+  
+app/views/diaries/_menu.html.erb:3:in `_app_views_diaries__menu_html_erb__3902879126587962228_26719880'
+app/views/users/pets/index.html.erb:5:in `_app_views_users_pets_index_html_erb___3871593627055289480_24543960'
+Started GET "/" for 182.165.88.188 at 2021-07-13 11:08:42 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_logout.html.erb (1.4ms)
+Completed 200 OK in 597ms (Views: 595.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 182.165.88.188 at 2021-07-13 11:08:45 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 166ms (Views: 146.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 182.165.88.188 at 2021-07-13 11:09:24 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 127ms (Views: 124.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 182.165.88.188 at 2021-07-13 11:09:28 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hZeRuIOYqJpFBUgmR451Qz+0d6Egk1qdsxx+ObFZ72c25/nTiWafSbrIHrjvUa/9Y9o52RLHUuKcA/gNOy1UrQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hZeRuIOYqJpFBUgmR451Qz+0d6Egk1qdsxx+ObFZ72c25/nTiWafSbrIHrjvUa/9Y9o52RLHUuKcA/gNOy1UrQ==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_header_logout.html.erb (1.7ms)
+Completed 200 OK in 456ms (Views: 149.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 182.165.88.188 at 2021-07-13 11:09:32 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (0.5ms)
+  Rendered users/registrations/new.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_header_logout.html.erb (1.0ms)
+Completed 200 OK in 112ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 182.165.88.188 at 2021-07-13 11:09:46 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QPfz+ys+pzyQ1zZoHsBMDKKwh+JrOZ/4D5SQuXzagLjzh5uQIcCQ728aYPa2H5ay/t7Jmlltl4cgixaN9q47cg==", "user"=>{"name"=>"うぇだ", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "aaa@aaa"], ["encrypted_password", "$2a$12$xSDkAXri/jilYJD7l8l36.xaEaMzfgZBJw4u8i7TjEGrq8fZ8FCOS"], ["name", "うぇだ"], ["created_at", "2021-07-13 11:09:47.253367"], ["updated_at", "2021-07-13 11:09:47.253367"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 324ms (ActiveRecord: 5.6ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 11:09:47 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 80ms (Views: 78.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 11:09:54 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.6ms)
+  Rendered users/users/show.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 115ms (Views: 110.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:10:01 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (4.3ms)
+  Rendered users/pets/_pet_form.html.erb (10.9ms)
+  Rendered users/pets/index.html.erb within layouts/application (26.8ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___2059618963560196504_38848440'
+app/views/users/pets/index.html.erb:18:in `block in _app_views_users_pets_index_html_erb___3871593627055289480_37583260'
+app/views/users/pets/index.html.erb:17:in `_app_views_users_pets_index_html_erb___3871593627055289480_37583260'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20210707202432)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "user_image" text, "introduction" text, "is_deleted" boolean DEFAULT 0 NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:44
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202432"]]
+  ↳ bin/rails:9
+  [1m[35m (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20210707202439)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202439"]]
+  ↳ bin/rails:9
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePets (20210712104802)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_id" varchar, "pet_name" varchar, "type_name" varchar, "gender" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210712104802_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210712104802"]]
+  ↳ bin/rails:9
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (3.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-13 11:12:10.317330"], ["updated_at", "2021-07-13 11:12:10.317330"]]
+  ↳ bin/rails:9
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:12:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (2.0ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.3ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="side-menu">
+    2:   <div class="mt-4">
+    3:     <%= @user.name %>
+    4:   </div>
+    5:   <div class="mt-3"><%= link_to "・マイページ",users_path,class:"btn btn-outline-secondary" %></div>
+    6:   <div class="mt-3"><%= link_to "・カレンダー",users_path,class:"btn btn-outline-secondary" %></div>
+  
+app/views/diaries/_menu.html.erb:3:in `_app_views_diaries__menu_html_erb__127138546406030854_39134220'
+app/views/users/pets/index.html.erb:5:in `_app_views_users_pets_index_html_erb___2813205229002940873_37113260'
+Started GET "/" for 182.165.88.188 at 2021-07-13 11:12:45 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_logout.html.erb (9.8ms)
+Completed 200 OK in 603ms (Views: 602.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 182.165.88.188 at 2021-07-13 11:12:49 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (1.5ms)
+  Rendered users/registrations/new.html.erb within layouts/application (8.2ms)
+  Rendered layouts/_header_logout.html.erb (0.8ms)
+Completed 200 OK in 184ms (Views: 165.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 182.165.88.188 at 2021-07-13 11:13:05 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e5Z9eMAfXCKMh3K+kBKRY8+0Ggoc1J/RDAnOwdJIQybI5hUTyuFr8XNKJCA4zUvdk9pUci6Al64jFkj1WDz47A==", "user"=>{"name"=>"うぇだ", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "aaa@aaa"], ["encrypted_password", "$2a$12$4nJbVZU9D7CWWTtC1e.SQOfy5dle0yFfP/zv1kD2stAl0pFTQKvp2"], ["name", "うぇだ"], ["created_at", "2021-07-13 11:13:05.726188"], ["updated_at", "2021-07-13 11:13:05.726188"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 336ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 11:13:05 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_user.html.erb (1.1ms)
+Completed 200 OK in 110ms (Views: 108.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:13:17 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (2.4ms)
+  Rendered users/pets/_pet_form.html.erb (11.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_data' for #<ActiveRecord::Relation []>):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___2070550035127527261_70173702748520'
+app/views/users/pets/index.html.erb:18:in `block in _app_views_users_pets_index_html_erb___2813205229002940873_70173702548620'
+app/views/users/pets/index.html.erb:17:in `_app_views_users_pets_index_html_erb___2813205229002940873_70173702548620'
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:16:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (3.9ms)
+  Rendered users/pets/_pet_form.html.erb (12.5ms)
+  Rendered users/pets/index.html.erb within layouts/application (22.8ms)
+  Rendered layouts/_header_user.html.erb (10.9ms)
+Completed 200 OK in 120ms (Views: 116.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:17:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (3.7ms)
+  Rendered users/pets/_pet_form.html.erb (6.5ms)
+  Rendered users/pets/index.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_attachment_definition' for nil:NilClass):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___2070550035127527261_70173761839580'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb___2813205229002940873_70173761768000'
+app/views/users/pets/index.html.erb:17:in `_app_views_users_pets_index_html_erb___2813205229002940873_70173761768000'
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:18:04 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (2.3ms)
+  Rendered users/pets/_pet_form.html.erb (1.6ms)
+  Rendered users/pets/index.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 92ms (Views: 88.2ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20210707202432)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "user_image" text, "introduction" text, "is_deleted" boolean DEFAULT 0 NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:44
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202432"]]
+  ↳ bin/rails:9
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20210707202439)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202439"]]
+  ↳ bin/rails:9
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePets (20210712104802)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "petimage_id" varchar, "pet_name" varchar, "type_name" varchar, "gender" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210712104802_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210712104802"]]
+  ↳ bin/rails:9
+  [1m[35m (5.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-13 11:20:28.275131"], ["updated_at", "2021-07-13 11:20:28.275131"]]
+  ↳ bin/rails:9
+  [1m[35m (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:21:26 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.9ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="side-menu">
+    2:   <div class="mt-4">
+    3:     <%= @user.name %>
+    4:   </div>
+    5:   <div class="mt-3"><%= link_to "・マイページ",users_path,class:"btn btn-outline-secondary" %></div>
+    6:   <div class="mt-3"><%= link_to "・カレンダー",users_path,class:"btn btn-outline-secondary" %></div>
+  
+app/views/diaries/_menu.html.erb:3:in `_app_views_diaries__menu_html_erb__3761115248426157269_37826060'
+app/views/users/pets/index.html.erb:5:in `_app_views_users_pets_index_html_erb__2056442300024948710_36304080'
+Started GET "/" for 182.165.88.188 at 2021-07-13 11:21:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_logout.html.erb (4.3ms)
+Completed 200 OK in 495ms (Views: 493.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 182.165.88.188 at 2021-07-13 11:21:37 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (1.5ms)
+  Rendered users/registrations/new.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 170ms (Views: 150.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 182.165.88.188 at 2021-07-13 11:21:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wqUkwzmtVQaHp/BSWp33SwhsrTqKwc2VaK2+/cPlYSZx1UyoM1Ni1XhqpszyQi31VALjQriVxepHsjjJSZHa7A==", "user"=>{"name"=>"うぇだ", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "aaa@aaa"], ["encrypted_password", "$2a$12$1ZVD2CgmDJqWXjRzCZpuB.KlDBRGx1C3ngiznRn3lxzqB1iKDHi86"], ["name", "うぇだ"], ["created_at", "2021-07-13 11:21:48.614292"], ["updated_at", "2021-07-13 11:21:48.614292"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 335ms (ActiveRecord: 9.3ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 11:21:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 100ms (Views: 99.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:21:55 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (2.9ms)
+  Rendered users/pets/_pet_form.html.erb (18.1ms)
+  Rendered users/pets/index.html.erb within layouts/application (26.8ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `pet_image_attachment_definition' for #<Pet:0x00007fb9640d4740>
+Did you mean?  petimage_attachment_definition):
+    1: <div class="mt-4 pet-form">
+    2:   <label>ペットのプロフィール画像</label><br>
+    3:   <%= f.attachment_field :pet_image %>
+    4: </div>
+    5: <div class="my-3 pet-form">
+    6:   <label>ペットのお名前</label><br>
+  
+app/views/users/pets/_pet_form.html.erb:3:in `_app_views_users_pets__pet_form_html_erb___1761268482463553809_70217112174840'
+app/views/users/pets/index.html.erb:19:in `block in _app_views_users_pets_index_html_erb__2056442300024948710_70217111938700'
+app/views/users/pets/index.html.erb:17:in `_app_views_users_pets_index_html_erb__2056442300024948710_70217111938700'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20210707202432)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "name" varchar, "user_image" text, "introduction" text, "is_deleted" boolean DEFAULT 0 NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:43
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202432_devise_create_users.rb:44
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202432"]]
+  ↳ bin/rails:9
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateAdmins (20210707202439)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:5
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:39
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
+  ↳ db/migrate/20210707202439_devise_create_admins.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210707202439"]]
+  ↳ bin/rails:9
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+Migrating to CreatePets (20210712104802)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "pets" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "image_id" varchar, "pet_name" varchar, "type_name" varchar, "gender" integer DEFAULT 0, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210712104802_create_pets.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210712104802"]]
+  ↳ bin/rails:9
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-07-13 11:22:54.844954"], ["updated_at", "2021-07-13 11:22:54.844954"]]
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:23:05 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.9ms)
+  Rendered users/pets/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 2.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <div class="side-menu">
+    2:   <div class="mt-4">
+    3:     <%= @user.name %>
+    4:   </div>
+    5:   <div class="mt-3"><%= link_to "・マイページ",users_path,class:"btn btn-outline-secondary" %></div>
+    6:   <div class="mt-3"><%= link_to "・カレンダー",users_path,class:"btn btn-outline-secondary" %></div>
+  
+app/views/diaries/_menu.html.erb:3:in `_app_views_diaries__menu_html_erb___301548204557682772_24511420'
+app/views/users/pets/index.html.erb:5:in `_app_views_users_pets_index_html_erb___2183373138049298152_22327580'
+Started GET "/" for 182.165.88.188 at 2021-07-13 11:23:10 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_logout.html.erb (1.5ms)
+Completed 200 OK in 629ms (Views: 627.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_up" for 182.165.88.188 at 2021-07-13 11:23:13 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (0.4ms)
+  Rendered users/registrations/new.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 252ms (Views: 234.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 182.165.88.188 at 2021-07-13 11:23:24 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AnDBxiIKPVa4niCcE6c82FDE6Lhkleh3xbZiIp5eSTexAKmtKPQKhUdTdgK7eOZmDKqmwFbB4AjqqeQWFCry/Q==", "user"=>{"name"=>"うぇだ", "email"=>"aaa@aaa", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (2.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "aaa@aaa"], ["encrypted_password", "$2a$12$p7vxBjzLIhILKAAZqVAzROTMw6oVyQ0og9v0cZE9mMz/hXX9by33y"], ["name", "うぇだ"], ["created_at", "2021-07-13 11:23:24.842899"], ["updated_at", "2021-07-13 11:23:24.842899"]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  [1m[35m (6.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 332ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-13 11:23:24 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 131ms (Views: 130.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/pets" for 182.165.88.188 at 2021-07-13 11:23:31 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:4
+  Rendering users/pets/index.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.5ms)
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (3.3ms)
+  Rendered users/pets/_pet_form.html.erb (3.2ms)
+  Rendered users/pets/index.html.erb within layouts/application (13.5ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 169ms (Views: 163.2ms | ActiveRecord: 0.3ms)
+
+

@@ -1,7 +1,7 @@
 <% @pets.each do |pet| %>
  <div>
    <div>
-     <%= attachment_image_tag pet, :pet_image, :fill, 50, 50, fallback: "no-image-square.jpeg" %>
+     <%= attachment_image_tag pet, :image, :fill, 50, 50, fallback: "no-image-square.jpeg" %>
    </div>
    <div>
      <div><%= pet.pet_name %></div>

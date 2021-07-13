@@ -14,7 +14,8 @@
       <div class="mt-5">
         <h2 style="text-align:center;">ペットを登録</h2>
         <div>
-          <%= form_with model: @pets, url: pets_path, local:true do |f| %>
+          <%= form_with model: Pet.new, local:true do |f| %>
+
             <%= render 'users/pets/pet_form', f: f %>
             <div class="mt-4 text-right">
               <%= f.submit '登録', class:"col-md-2 btn btn-success" %>

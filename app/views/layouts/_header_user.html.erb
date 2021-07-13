@@ -1,0 +1,16 @@
+<nav class="navbar p-4 ">
+  <%= link_to "どうぶつの村", root_path, class:"header-logo", data: {"turbolinks" => false} %>
+  <div>
+    <ul class="hm-Menu">
+      <li><%= link_to "どうぶつの村について", home_about_path, class:"link", data: {"turbolinks" => false} %></li>
+      <li><%= link_to "日記をのぞく", root_path, class:"link",data: {"turbolinks" => false} %></li>
+      <li><%= link_to "Ｑ＆Ａ", root_path, class:"link",data: {"turbolinks" => false} %></li>
+      <li><%= link_to "ログアウト",destroy_user_session_path,method: :delete, class:"link",data: {"turbolinks" => false}%></li>
+    </ul>
+  </div>
+</nav>
+<div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>

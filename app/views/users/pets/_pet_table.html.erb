@@ -1,12 +1,21 @@
 <% @pets.each do |pet| %>
- <div>
+ <div class="contain my-3">
+  <div class="row">
    <div>
-     <%= attachment_image_tag pet, :image, :fill, 50, 50, fallback: "no-image-square.jpeg" %>
+     <%= attachment_image_tag pet, :image, :fill, 100, 200, fallback: "no_image_square.jpg", size: "130x130" %>
    </div>
-   <div>
-     <div><%= pet.pet_name %></div>
-     <div><%= pet.type_name %></div>
-     <div><%= pet.gender %></div>
-   </div>
+    <div class="ml-2">
+     <div class="mt-4">
+      <label>お名前</label>:
+      <%= pet.pet_name %>
+     </div>
+     <div>
+      <label>種類</label>:
+      <%= pet.type_name %>
+      <label class="ml-2">性別</label>:
+      <%= pet.gender %>
+     </div>
+    </div>
+  </div>
  </div>
 <% end %>

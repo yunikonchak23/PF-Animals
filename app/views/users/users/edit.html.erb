@@ -1,1 +1,26 @@
-<h1>テスト</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-12 mt-4" style="text-align:center;">
+      <h2>プロフィール編集</h2>
+    </div>
+    <div class="col-12 mt-4">
+      <%= form_with model: @user, url: users_path, local:true do |f| %>
+        <div class="my-3">
+          <label>プロフィール画像</label>
+          <%= f.attachment_field :image %>
+        </div>
+        <div class="my-3">
+          <label>ニックネーム</label><br>
+          <%= f.text_field :name, autofocus: true %>
+        </div>
+        <div class="my-3">
+          <label>自己紹介</label><br>
+          <%= f.text_area :introduction %>
+        </div>
+        <div class="text-right">
+         <%= f.submit '編集', class:"btn btn-outline-secondary ", data: {"turbolinks" => false} %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,13 @@
 class Users::UsersController < ApplicationController
   def show
     @user = current_user
+    @pets = Pet.all
+  end
+
+  def create
+    @user = User.new(user_params)
+    @user.save
+    redirect_to users_path
   end
 
   def edit
@@ -10,7 +17,7 @@ class Users::UsersController < ApplicationController
   def update
     @user = current_user
     @user.update(user_params)
-    redirect_back(fallback_location: root_path)
+    redirect_to users_path
   end
 
   def confirm
@@ -21,6 +28,6 @@ class Users::UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:name, :profile_image)
+    params.permit(:name, :email, :encrypted_password, :image, :introduction)
   end
 end

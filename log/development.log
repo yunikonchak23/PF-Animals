@@ -8011,3 +8011,433 @@ Processing by Users::UsersController#show as HTML
 Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:11:21 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.7ms)
+  Rendered users/users/_user_info.html.erb (1.7ms)
+  Rendered users/users/show.html.erb within layouts/application (7.4ms)
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 445ms (Views: 403.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:14:54 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:15:32 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 64ms (Views: 61.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:17:23 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:34:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header_user.html.erb (1.3ms)
+Completed 200 OK in 74ms (Views: 70.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:37:18 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (1.0ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 2361ms (Views: 2358.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:37:38 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1940ms (Views: 1936.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:39:12 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.7ms)
+Completed 200 OK in 45ms (Views: 42.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:39:56 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (1.0ms)
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:40:46 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1908ms (Views: 1905.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:41:13 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1804ms (Views: 1801.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:42:23 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header_user.html.erb (0.7ms)
+Completed 200 OK in 45ms (Views: 42.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:43:15 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:45:11 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1847ms (Views: 1844.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:45:36 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1837ms (Views: 1835.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:45:54 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1857ms (Views: 1854.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:46:13 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1865ms (Views: 1862.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:46:31 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1909ms (Views: 1906.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:46:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1818ms (Views: 1815.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:47:07 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1862ms (Views: 1859.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:47:32 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1847ms (Views: 1844.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:47:47 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1819ms (Views: 1816.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:48:00 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1909ms (Views: 1906.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:48:10 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1834ms (Views: 1831.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:48:25 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1826ms (Views: 1823.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:48:43 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1774ms (Views: 1771.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:49:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:55:57 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 59ms (Views: 56.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:56:04 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 03:57:28 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1821ms (Views: 1818.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 04:01:32 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.5ms)
+  Rendered users/users/_user_info.html.erb (0.4ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 182.165.88.188 at 2021-07-13 04:02:56 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered diaries/_menu.html.erb (0.6ms)
+  Rendered users/users/_user_info.html.erb (0.5ms)
+  Rendered users/users/show.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 1832ms (Views: 1829.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/edit.1" for 182.165.88.188 at 2021-07-13 04:05:57 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#edit as 
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  Rendering users/registrations/edit.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (0.5ms)
+  Rendered users/registrations/edit.html.erb within layouts/application (61.1ms)
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 192ms (Views: 175.0ms | ActiveRecord: 2.1ms)
+
+

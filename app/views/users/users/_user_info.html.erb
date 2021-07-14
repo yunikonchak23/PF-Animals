@@ -12,7 +12,7 @@
         <%= @user.introduction %>
       </div>
       <div class="text-right">
-        <%= link_to '編集する', edit_users_path, class:"btn btn-outline-secondary " %>
+        <%= link_to '編集する', edit_users_path, class:"btn btn-outline-secondary", data: {"turbolinks" => false} %>
       </div>
     </div>
   </div>

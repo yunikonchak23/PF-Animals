@@ -1,0 +1,23 @@
+<div class="container container-size">
+  <div class="row">
+
+    <div class="col-2" style="text-align:center;">
+      <%= render 'users/diaries/menu' %>
+    </div>
+
+    <div class="offset-1 col-6 mt-4">
+      <h2 style="text-align:center;">日記一覧</h2>
+      <div>
+        <% @diaries.each do |diary| %>
+          <div>
+            日記の写真
+          </div>
+          <div>
+            <%= attachment_image_tag @user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "130x130" %>
+            <%= @user.name %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

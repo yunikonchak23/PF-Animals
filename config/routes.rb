@@ -15,6 +15,7 @@ Rails.application.routes.draw do
       patch 'out'
     end
     resources :pets, only: [:index, :create, :edit, :update, :destroy]
+    resources :diaries
   end
 
 end

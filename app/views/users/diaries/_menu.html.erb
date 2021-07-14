@@ -1,0 +1,10 @@
+<div class="side-menu">
+  <div class="mt-4">
+    <%= @user.name %>
+  </div>
+  <div class="mt-3"><%= link_to "マイページ",users_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+  <div class="mt-3"><%= link_to "カレンダー",users_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+  <div class="mt-3"><%= link_to "日記を書く",users_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+  <div class="mt-3"><%= link_to "ペット登録",pets_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+  <div class="mt-3"><%= link_to "お気に入り",users_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+</div>

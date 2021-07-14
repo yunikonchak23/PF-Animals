@@ -1,0 +1,25 @@
+<% @diaries.each do |diary| %>
+  <div class="container">
+    <div class="row">
+      <div>
+        日記の写真
+      </div>
+      <div>
+        <%= attachment_image_tag @user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "130x130" %>
+        <%= @user.name %>
+      </div>
+      <div>
+        <%= pet.pet_name %>
+        <%= pet.type_name %>
+        <%= pet.gender %>
+      </div>
+      <div>
+        <label>タイトル</label>
+        <% diary.diary_title %>
+      </div>
+      <div>
+        <label>内容</label>
+        <% diary.diary_body %>
+      </div>
+    </div>
+  </div>

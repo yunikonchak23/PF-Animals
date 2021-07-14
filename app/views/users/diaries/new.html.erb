@@ -1,0 +1,21 @@
+<div class="container container-size">
+  <div class="row">
+
+    <div class="col-2" style="text-align:center;">
+      <%= render 'users/diaries/menu' %>
+    </div>
+
+    <div class="offset-1 col-6 mt-4">
+      <h2 style="text-align:center;">日記を書く</h2>
+      <div>
+        <%= form_with model: Diary.new, local:true do |f| %>
+          <%= render 'users/diaries/diary_form', f: f %>
+          <div class="col-9 mt-4 text-right">
+            <%= f.submit '投稿', class:"btn btn-outline-secondary" %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+

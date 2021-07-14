@@ -26,9 +26,10 @@ ActiveRecord::Schema.define(version: 2021_07_14_035155) do
 
   create_table "diaries", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "pets_id"
-    t.string "image_id"
-    t.text "body"
+    t.integer "pet_id"
+    t.string "diary_image_id"
+    t.string "diary_title"
+    t.text "diary_body"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

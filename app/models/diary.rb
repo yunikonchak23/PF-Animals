@@ -2,5 +2,5 @@ class Diary < ApplicationRecord
   belongs_to :user
   belongs_to :pets
 
-  attachment :image
+  attachment :diary_image
 end

@@ -4,12 +4,6 @@ class Users::UsersController < ApplicationController
     @pets = Pet.all
   end
 
-  def create
-    @user = User.new(user_params)
-    @user.save
-    redirect_to users_path
-  end
-
   def edit
     @user = current_user
   end
@@ -21,13 +15,18 @@ class Users::UsersController < ApplicationController
   end
 
   def confirm
+    @user = current_user
   end
 
   def out
+    @user = current_user
+    @user.update(is_deleted: true)
+    reset_session
+    redirect_to root_path
   end
 
   private
   def user_params
-    params.permit(:name, :email, :encrypted_password, :image, :introduction)
+    params.permit(:name, :email, :password, :password_confirmation, :image, :introduction)
   end
 end

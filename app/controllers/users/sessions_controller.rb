@@ -1,6 +1,17 @@
 # frozen_string_literal: true
 
 class Users::SessionsController < Devise::SessionsController
+  before_action :reject_user, only: [:create]
+
+  protected
+    def reject_user
+      @user = User.find_by(name: params[:user][:name])
+      if @user
+        if @user.valid_password?(params[:user][:password]) && !@user.is_valid
+          redirect_to new_user_session_path
+        end
+      end
+    end
   # before_action :configure_sign_in_params, only: [:create]
 
   # GET /resource/sign_in

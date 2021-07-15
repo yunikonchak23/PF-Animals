@@ -4,9 +4,12 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :pets, dependent: :destroy
+<<<<<<< HEAD
   has_many :diaries, dependent: :destroy
   has_many :questions, dependent: :destroy
   has_many :answers, dependent: :destroy
+=======
+>>>>>>> 3878a718607dbf3aa442d5d1b6bb39099881d3a0
   attachment :image
 
   # is_deletedがfalseならtrueを返すようにしている

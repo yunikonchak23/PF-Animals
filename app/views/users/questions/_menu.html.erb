@@ -1,7 +1,7 @@
 <div class="side-menu">
   <div class="ml-3">
     <div class="mt-4 menu-user">
-      <%= attachment_image_tag @user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50" %>
+      <%= attachment_image_tag @user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
       <%= @user.name %>
     </div>
     <div class="mt-3"><%= link_to "マイページ",users_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>

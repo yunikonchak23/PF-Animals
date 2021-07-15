@@ -31316,3 +31316,41 @@ Processing by Users::QuestionsController#index as HTML
 Completed 200 OK in 106ms (Views: 101.8ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 08:32:06 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (590.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:19
+  Rendered users/questions/show.html.erb within layouts/application (630.5ms)
+  Rendered layouts/_header_user.html.erb (5.3ms)
+Completed 200 OK in 960ms (Views: 901.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 08:33:08 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (308.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:19
+  Rendered users/questions/show.html.erb within layouts/application (323.5ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 638ms (Views: 607.0ms | ActiveRecord: 1.9ms)
+
+

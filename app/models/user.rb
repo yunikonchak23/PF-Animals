@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_many :pets, dependent: :destroy
   has_many :diaries, dependent: :destroy
+  has_many :questions, dependent: :destroy
   attachment :image
 
   # is_deletedがfalseならtrueを返すようにしている

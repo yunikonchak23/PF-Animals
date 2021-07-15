@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     end
     resources :pets, only: [:index, :create, :edit, :update, :destroy]
     resources :diaries
+    resources :questions
   end
 
 end

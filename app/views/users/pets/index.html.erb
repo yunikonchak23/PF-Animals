@@ -5,9 +5,12 @@
       <%= render 'users/diaries/menu' %>
     </div>
 
-    <div class="offset-1 col-7 mt-3">
+    <div class="offset-1 col-6 mt-3">
       <div>
-        <h2 style="text-align:center;"><%= @user.name %>さんのペット</h2>
+        <h2 style="text-align:center;">
+          <%= @user.name %>さんのペット
+          <i class="fas fa-feather"></i>
+        </h2>
         <%= render 'users/pets/pet_table' %>
       </div>
 

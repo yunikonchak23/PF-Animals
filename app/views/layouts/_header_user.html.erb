@@ -4,7 +4,7 @@
     <ul class="hm-Menu">
       <li><%= link_to "どうぶつの村について", home_about_path, class:"link", data: {"turbolinks" => false} %></li>
       <li><%= link_to "日記をのぞく", root_path, class:"link",data: {"turbolinks" => false} %></li>
-      <li><%= link_to "Ｑ＆Ａ", root_path, class:"link",data: {"turbolinks" => false} %></li>
+      <li><%= link_to "Ｑ＆Ａ", questions_path, class:"link",data: {"turbolinks" => false} %></li>
       <li><%= link_to "ログアウト",destroy_user_session_path,method: :delete, class:"link",data: {"turbolinks" => false}%></li>
     </ul>
   </div>

@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <p>回答件数：<%= @question.answers.count %></p>
+    <% @question.answers.each do |answers| %>
+      <%= answers.user.name %>
+      <%= answers.created_at.strftime('%Y/%m/%d') %>
+      <%= answers.answers_body %>
+    <% end %>
+  </div>
+</div>

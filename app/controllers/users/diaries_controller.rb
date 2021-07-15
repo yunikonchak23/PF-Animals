@@ -3,7 +3,6 @@ class Users::DiariesController < ApplicationController
     @diaries = Diary.all
     @user = current_user
     @pet = current_user.pets.build
-    @diary = current_user.diaries.build
   end
 
   def show
@@ -15,7 +14,12 @@ class Users::DiariesController < ApplicationController
   end
 
   def create
+<<<<<<< HEAD
     @diary = current_user.pets.build
+=======
+    @pet = Pet.find(params[:diary][:pet_id])
+    @diary = @pet.diaries.build(diary_params)
+>>>>>>> 3878a718607dbf3aa442d5d1b6bb39099881d3a0
     @diary.save
     redirect_to diaries_path
   end

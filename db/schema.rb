@@ -33,7 +33,6 @@ ActiveRecord::Schema.define(version: 2021_07_15_063031) do
   end
 
   create_table "diaries", force: :cascade do |t|
-    t.integer "user_id"
     t.integer "pet_id"
     t.string "diary_image_id"
     t.string "diary_title"

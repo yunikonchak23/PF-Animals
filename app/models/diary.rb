@@ -1,6 +1,4 @@
 class Diary < ApplicationRecord
-  belongs_to :user
-  belongs_to :pets
-
+  belongs_to :pet
   attachment :diary_image
 end

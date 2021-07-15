@@ -5,7 +5,7 @@
   <%= form_with model: @pet, url: pet_path, local: true do |f| %>
     <%= render 'users/pets/pet_form', f: f %>
     <div>
-      <%= f.submit '編集', class:"btn btn-outline-secondary", data: {"turbolinks" => false} %>
+      <%= f.submit '更新', class:"btn btn-outline-secondary" %>
     </div>
   <% end %>
 </div>

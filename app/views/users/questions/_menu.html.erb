@@ -1,0 +1,13 @@
+<div class="side-menu">
+  <div class="ml-3">
+    <div class="mt-4 menu-user">
+      <%= attachment_image_tag @user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50" %>
+      <%= @user.name %>
+    </div>
+    <div class="mt-3"><%= link_to "マイページ",users_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+    <div class="mt-3"><%= link_to "Ｑ＆Ａ一覧",questions_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+    <div class="mt-3"><%= link_to "質問をする",new_question_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+    <div class="mt-3"><%= link_to "過去に質問した一覧",users_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+    <div class="mt-3"><%= link_to "過去に回答した一覧",users_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+  </div>
+</div>

@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :questions
   root to: 'homes#top'
   get '/home/about' => 'homes#about'
 
@@ -17,6 +16,7 @@ Rails.application.routes.draw do
     end
     resources :pets, only: [:index, :create, :edit, :update, :destroy]
     resources :diaries
+    resources :questions
   end
 
 end

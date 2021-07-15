@@ -16,6 +16,19 @@
             <%= attachment_image_tag @user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "130x130" %>
             <%= @user.name %>
           </div>
+          <div>
+            <%= diary.pet.pet_name %>
+            <%= diary.pet.type_name %>
+            <%= diary.pet.gender %>
+          </div>
+          <div>
+            <label>タイトル</label>
+            <%= diary.diary_title %>
+          </div>
+          <div>
+            <label>内容</label>
+            <%= diary.diary_body %>
+          </div>
         <% end %>
       </div>
     </div>

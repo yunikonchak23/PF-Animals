@@ -131,7 +131,7 @@ ul.hm-Menu li:hover {
   display: block;
   color: #fff;
   padding: 1.4em 0;
-  text-decoration :none;
+  text-decoration: none;
 }
 .link:hover {
   color: #706158;
@@ -152,8 +152,13 @@ ul.hm-Menu.active {
 .container-size {
   max-width: 1775px;
 }
+
+// サイドメニュー
 .side-menu {
   margin-left: 0;
   height: 500px;
   background-color: #F5F3F4;
+}
+.menu-user {
+  padding-top: 20px;
 }

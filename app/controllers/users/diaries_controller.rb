@@ -15,7 +15,7 @@ class Users::DiariesController < ApplicationController
   end
 
   def create
-    @diary = current_user.pets.build(pet_params)
+    @diary = current_user.pets.build
     @diary.save
     redirect_to diaries_path
   end

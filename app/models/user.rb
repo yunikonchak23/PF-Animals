@@ -4,7 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :pets, dependent: :destroy
-  has_many :diaries, dependent: :destroy
   attachment :image
 
   # is_deletedがfalseならtrueを返すようにしている

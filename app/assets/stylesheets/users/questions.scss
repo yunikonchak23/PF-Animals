@@ -1,3 +1,19 @@
 // Place all the styles related to the users/Questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.question_box {
+  padding: 10px;
+  box-shadow: 0 0 8px gray;
+  border-radius: 20px;
+  background-color: #F5F3F4;
+}
+
+.question-title {
+  font-size: 20px;
+}
+
+.show-question-title {
+  border-top: dashed 2px gray ;
+  border-bottom: dashed 2px gray ;
+  padding: 5px 0;
+}

@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_many :pets, dependent: :destroy
   has_many :diaries, dependent: :destroy
   has_many :questions, dependent: :destroy
+  has_many :answers, dependent: :destroy
   attachment :image
 
   # is_deletedがfalseならtrueを返すようにしている

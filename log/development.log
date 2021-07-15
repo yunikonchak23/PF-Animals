@@ -31316,3 +31316,852 @@ Processing by Users::QuestionsController#index as HTML
 Completed 200 OK in 106ms (Views: 101.8ms | ActiveRecord: 0.3ms)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateAnswers (20210715063031)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20210715063031_create_answers.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "answers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "question_id" integer, "answer_body" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20210715063031_create_answers.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210715063031"]]
+  ↳ bin/rails:9
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/questions" for 182.165.88.188 at 2021-07-15 07:01:52 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::QuestionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:4
+  Rendering users/questions/index.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (5077.9ms)
+  [1m[36mQuestion Load (1.9ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/views/users/questions/_question_table.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/_question_table.html.erb:12
+  Rendered users/questions/_question_table.html.erb (64.2ms)
+  Rendered users/questions/index.html.erb within layouts/application (5153.4ms)
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 5868ms (Views: 5824.4ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:03:03 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (3.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:19
+  Rendered users/questions/show.html.erb within layouts/application (13.6ms)
+  Rendered layouts/_header_user.html.erb (1.4ms)
+Completed 200 OK in 158ms (Views: 151.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:09:17 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (5.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/questions/show.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_header_user.html.erb (1.4ms)
+Completed 200 OK in 295ms (Views: 284.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:09:36 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/questions/show.html.erb within layouts/application (10.3ms)
+  Rendered layouts/_header_user.html.erb (6.8ms)
+Completed 200 OK in 136ms (Views: 130.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:09:47 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (3.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/questions/show.html.erb within layouts/application (10.4ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 140ms (Views: 135.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:10:21 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (7.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/questions/show.html.erb within layouts/application (16.0ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 144ms (Views: 138.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:10:44 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (3.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/questions/show.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 139ms (Views: 133.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:35:10 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (182.8ms)
+  Rendered users/questions/show.html.erb within layouts/application (195.9ms)
+Completed 500 Internal Server Error in 231ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `answers_path' for #<#<Class:0x00007f697d6333f8>:0x00007f697d631968>
+Did you mean?  users_path):
+    1: <div class="container">
+    2:   <div class="row">
+    3:     <div>
+    4:       <%= form_with model: Answer.new, local:true do |f| %>
+    5:         <div class="my-3">
+    6:           <label>回答</label><br>
+    7:           <%= f.text_area :answer_body, size: "60x10", class:"col-9" %>
+  
+app/views/users/answers/_answer_form.html.erb:4:in `_app_views_users_answers__answer_form_html_erb__445573100075927718_70045526159000'
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_70045525974460'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:36:27 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.2ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE Question Load (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE Question Load (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  [1m[36mCACHE Question Load (0.0ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /home/ec2-user/.rvm/rubies/ruby-2.6.3/lib/ruby/gems/2.6.0/gems/did_you_mean-1.3.0/lib/did_you_mean/core_ext/name_error.rb:8
+  Rendered users/answers/_answer_form.html.erb (170.1ms)
+  Rendered users/questions/show.html.erb within layouts/application (190.4ms)
+Completed 500 Internal Server Error in 222ms (ActiveRecord: 5.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `answers_path' for #<#<Class:0x00007f697d6d2278>:0x00007f697d6d0478>
+Did you mean?  users_path):
+    1: <div class="container">
+    2:   <div class="row">
+    3:     <div>
+    4:       <%= form_with model: Answer.new, local:true do |f| %>
+    5:         <div class="my-3">
+    6:           <label>回答</label><br>
+    7:           <%= f.text_area :answer_body, size: "60x10", class:"col-9" %>
+  
+app/views/users/answers/_answer_form.html.erb:4:in `_app_views_users_answers__answer_form_html_erb__445573100075927718_70045526594660'
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_70045526300000'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:37:55 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.4ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (15.9ms)
+  Rendered users/questions/show.html.erb within layouts/application (27.1ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 136ms (Views: 130.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:46:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (0.5ms)
+  Rendered users/questions/show.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 3.4ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected tLABEL, expecting ')'
+...ffer.append=  form_with (model:[@question, @answer], local:t...
+...                         ^~~~~~
+/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected ']', expecting '='
+...ith (model:[@question, @answer], local:true) do |f| @output_...
+...                              ^
+/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:17: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected tLABEL, expecting ')'
+app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected ']', expecting '='
+app/views/users/answers/_answer_form.html.erb:17: syntax error, unexpected ensure, expecting end-of-input
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_33578860'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:47:07 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (5.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (0.6ms)
+  Rendered users/questions/show.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected tLABEL, expecting ')'
+...ffer.append=  form_with (model: [@question, @answer], local:...
+...                         ^~~~~~
+/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected ']', expecting '='
+...th (model: [@question, @answer], local:true) do |f| @output_...
+...                              ^
+/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:17: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected tLABEL, expecting ')'
+app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected ']', expecting '='
+app/views/users/answers/_answer_form.html.erb:17: syntax error, unexpected ensure, expecting end-of-input
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_37378560'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:48:07 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (11.9ms)
+  Rendered users/questions/show.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <div class="container">
+    2:   <div class="row">
+    3:     <div>
+    4:       <%= form_with(model:[@question, @answer], local: true) do |f| %>
+    5:         <div class="my-3">
+    6:           <label>回答</label><br>
+    7:           <%= f.text_area :answer_body, size: "60x10", class:"col-9" %>
+  
+app/views/users/answers/_answer_form.html.erb:4:in `_app_views_users_answers__answer_form_html_erb__445573100075927718_70045517951560'
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_70045516899320'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:49:56 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (11.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (0.6ms)
+  Rendered users/questions/show.html.erb within layouts/application (26.3ms)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected tLABEL, expecting ')'
+...ffer.append=  form_with (model:[@question, @answer], local: ...
+...                         ^~~~~~
+/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected ']', expecting '='
+...ith (model:[@question, @answer], local: true) do |f| @output...
+...                              ^
+/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:17: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected tLABEL, expecting ')'
+app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected ']', expecting '='
+app/views/users/answers/_answer_form.html.erb:17: syntax error, unexpected ensure, expecting end-of-input
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_36298420'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:50:04 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (6.1ms)
+  Rendered users/questions/show.html.erb within layouts/application (16.4ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <div class="container">
+    2:   <div class="row">
+    3:     <div>
+    4:       <%= form_with(model: [@question, @answer], local: true) do |f| %>
+    5:         <div class="my-3">
+    6:           <label>回答</label><br>
+    7:           <%= f.text_area :answer_body, size: "60x10", class:"col-9" %>
+  
+app/views/users/answers/_answer_form.html.erb:4:in `_app_views_users_answers__answer_form_html_erb__445573100075927718_70045518388460'
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_70045517200940'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:50:21 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (6.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (284.7ms)
+  Rendered users/questions/show.html.erb within layouts/application (300.1ms)
+Completed 500 Internal Server Error in 309ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `question' for #<#<Class:0x0000000004009138>:0x000000000331d2d0>
+Did you mean?  @question):
+    1: <div class="container">
+    2:   <div class="row">
+    3:     <div>
+    4:       <%= form_with(model: [question, answer], local: true) do |f| %>
+    5:         <div class="my-3">
+    6:           <label>回答</label><br>
+    7:           <%= f.text_area :answer_body, size: "60x10", class:"col-9" %>
+  
+app/views/users/answers/_answer_form.html.erb:4:in `_app_views_users_answers__answer_form_html_erb__445573100075927718_37417160'
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_26792460'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:50:28 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (286.9ms)
+  Rendered users/questions/show.html.erb within layouts/application (301.5ms)
+Completed 500 Internal Server Error in 310ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `answer' for #<#<Class:0x0000000004009138>:0x00007f697d507588>
+Did you mean?  @answers):
+    1: <div class="container">
+    2:   <div class="row">
+    3:     <div>
+    4:       <%= form_with(model: [@question, answer], local: true) do |f| %>
+    5:         <div class="my-3">
+    6:           <label>回答</label><br>
+    7:           <%= f.text_area :answer_body, size: "60x10", class:"col-9" %>
+  
+app/views/users/answers/_answer_form.html.erb:4:in `_app_views_users_answers__answer_form_html_erb__445573100075927718_70045525653680'
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_70045525339100'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:50:42 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (162.5ms)
+  Rendered users/questions/show.html.erb within layouts/application (174.7ms)
+Completed 500 Internal Server Error in 185ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `question_questions_path' for #<#<Class:0x0000000004009138>:0x00007f697c569428>
+Did you mean?  question_path):
+    1: <div class="container">
+    2:   <div class="row">
+    3:     <div>
+    4:       <%= form_with(model: [@question, @answers], local: true) do |f| %>
+    5:         <div class="my-3">
+    6:           <label>回答</label><br>
+    7:           <%= f.text_area :answer_body, size: "60x10", class:"col-9" %>
+  
+app/views/users/answers/_answer_form.html.erb:4:in `_app_views_users_answers__answer_form_html_erb__445573100075927718_70045517591500'
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_70045519154540'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:52:34 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (0.6ms)
+  Rendered users/questions/show.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 1.2ms)
+
+
+  
+SyntaxError (/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected do, expecting ')'
+...(model:[@question, @answers] do |f| @output_buffer.safe_appe...
+...                             ^~
+/home/ec2-user/environment/PF-animals/app/views/users/answers/_answer_form.html.erb:17: syntax error, unexpected ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/users/answers/_answer_form.html.erb:4: syntax error, unexpected do, expecting ')'
+app/views/users/answers/_answer_form.html.erb:17: syntax error, unexpected ensure, expecting end-of-input
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_17301120'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:52:49 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (10.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (263.4ms)
+  Rendered users/questions/show.html.erb within layouts/application (324.9ms)
+Completed 500 Internal Server Error in 330ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `question_questions_path' for #<#<Class:0x0000000004009138>:0x00007f6978481f78>
+Did you mean?  question_path):
+    1: <div class="container">
+    2:   <div class="row">
+    3:     <div>
+    4:       <%= form_with(model:[@question, @answers], local: true) do |f| %>
+    5:         <div class="my-3">
+    6:           <label>回答</label><br>
+    7:           <%= f.text_area :answer_body, size: "60x10", class:"col-9" %>
+  
+app/views/users/answers/_answer_form.html.erb:4:in `_app_views_users_answers__answer_form_html_erb__445573100075927718_29124120'
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_70045483144360'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:53:04 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (5.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (9.4ms)
+  Rendered users/questions/show.html.erb within layouts/application (22.5ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for nil:NilClass):
+    1: <div class="container">
+    2:   <div class="row">
+    3:     <div>
+    4:       <%= form_with(model:[@question, @answer], local: true) do |f| %>
+    5:         <div class="my-3">
+    6:           <label>回答</label><br>
+    7:           <%= f.text_area :answer_body, size: "60x10", class:"col-9" %>
+  
+app/views/users/answers/_answer_form.html.erb:4:in `_app_views_users_answers__answer_form_html_erb__445573100075927718_70045518615940'
+app/views/users/questions/show.html.erb:41:in `_app_views_users_questions_show_html_erb___4127849147450815849_70045517238540'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:53:51 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (19.5ms)
+  Rendered users/questions/show.html.erb within layouts/application (30.6ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 156ms (Views: 149.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 07:57:36 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (1.4ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (3.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  Rendered users/answers/_answer_form.html.erb (1.2ms)
+  Rendered users/questions/show.html.erb within layouts/application (14.4ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 147ms (Views: 140.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/questions/2/answers" for 182.165.88.188 at 2021-07-15 07:57:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9asRXY1BwI276ethPx7/9c7BFup4PTTxKNgznwsi02IVw5hG6g2Q4v+AJfp8mxEVxdjxrVm9jdWDACTtvta5qw==", "answer"=>{"answer_body"=>"ccccccccccccccccc"}, "commit"=>"登録", "question_id"=>"2"}
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Question without an ID):
+  
+app/controllers/users/answers_controller.rb:7:in `create'
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 08:01:01 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/views/users/answers/_answer_table.html.erb:3
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/views/users/answers/_answer_table.html.erb:4
+  Rendered users/answers/_answer_table.html.erb (25.5ms)
+  Rendered users/answers/_answer_form.html.erb (1.2ms)
+  Rendered users/questions/show.html.erb within layouts/application (38.6ms)
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 177ms (Views: 167.9ms | ActiveRecord: 4.1ms)
+
+
+Started POST "/questions/2/answers" for 182.165.88.188 at 2021-07-15 08:01:08 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C6rEzVAU6fk9SbuX9LMORYKTWz6uQZJisOw++tTJ+4Xrwk3WN1i5lnkgdQy3NuCliYq8eY/BK0YbNCmIYT2RTA==", "answer"=>{"answer_body"=>"ddddd"}, "commit"=>"登録", "question_id"=>"2"}
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Question without an ID):
+  
+app/controllers/users/answers_controller.rb:7:in `create'
+Started POST "/questions/2/answers" for 182.165.88.188 at 2021-07-15 08:01:26 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C6rEzVAU6fk9SbuX9LMORYKTWz6uQZJisOw++tTJ+4Xrwk3WN1i5lnkgdQy3NuCliYq8eY/BK0YbNCmIYT2RTA==", "answer"=>{"answer_body"=>"ddddd"}, "commit"=>"登録", "question_id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/answers_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/answers_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users/answers_controller.rb:9
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/questions
+Completed 302 Found in 45ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/questions" for 182.165.88.188 at 2021-07-15 08:01:26 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:4
+  Rendering users/questions/index.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (4.3ms)
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/views/users/questions/_question_table.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/_question_table.html.erb:12
+  Rendered users/questions/_question_table.html.erb (14.3ms)
+  Rendered users/questions/index.html.erb within layouts/application (22.3ms)
+  Rendered layouts/_header_user.html.erb (1.1ms)
+Completed 200 OK in 133ms (Views: 127.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 08:01:33 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (3.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/views/users/answers/_answer_table.html.erb:3
+  [1m[36mAnswer Load (0.2ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/views/users/answers/_answer_table.html.erb:4
+  Rendered users/answers/_answer_table.html.erb (7.2ms)
+  Rendered users/answers/_answer_form.html.erb (1.4ms)
+  Rendered users/questions/show.html.erb within layouts/application (22.0ms)
+  Rendered layouts/_header_user.html.erb (1.8ms)
+Completed 200 OK in 149ms (Views: 143.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/questions/2/answers" for 182.165.88.188 at 2021-07-15 08:01:47 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gbDwzayWF4rVNMuC/LdZ6AICss6J6rfHnMG1uNPJcssxhXaTdBzcirLz2+sQmULBZh43++l6LqxyWEdyKdGWZA==", "answer"=>{"answer_body"=>"fffffff"}, "commit"=>"登録", "question_id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/answers_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/answers_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users/answers_controller.rb:9
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users/questions", :question_id=>"2"}, missing required keys: [:id]):
+  
+app/controllers/users/answers_controller.rb:10:in `create'
+Started POST "/questions/2/answers" for 182.165.88.188 at 2021-07-15 08:02:24 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gbDwzayWF4rVNMuC/LdZ6AICss6J6rfHnMG1uNPJcssxhXaTdBzcirLz2+sQmULBZh43++l6LqxyWEdyKdGWZA==", "answer"=>{"answer_body"=>"fffffff"}, "commit"=>"登録", "question_id"=>"2"}
+Completed 404 Not Found in 12ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Question without an ID):
+  
+app/controllers/users/answers_controller.rb:7:in `create'
+Started POST "/questions/2/answers" for 182.165.88.188 at 2021-07-15 08:10:21 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+  
+SyntaxError (/home/ec2-user/environment/PF-animals/app/controllers/users/answers_controller.rb:7: syntax error, unexpected '=', expecting '.' or ::
+    @question = Question.find(question_id: p...
+              ^
+/home/ec2-user/environment/PF-animals/app/controllers/users/answers_controller.rb:21: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/users/answers_controller.rb:7: syntax error, unexpected '=', expecting '.' or ::
+app/controllers/users/answers_controller.rb:21: syntax error, unexpected end, expecting end-of-input
+Started POST "/questions/2/answers" for 182.165.88.188 at 2021-07-15 08:11:21 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/ec2-user/environment/PF-animals/app/controllers/users/answers_controller.rb:7: syntax error, unexpected '=', expecting '.' or ::
+    @answer = Answer.find_by(question_id: ...
+            ^
+/home/ec2-user/environment/PF-animals/app/controllers/users/answers_controller.rb:21: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/users/answers_controller.rb:7: syntax error, unexpected '=', expecting '.' or ::
+app/controllers/users/answers_controller.rb:21: syntax error, unexpected end, expecting end-of-input
+Started POST "/questions/2/answers" for 182.165.88.188 at 2021-07-15 08:11:38 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gbDwzayWF4rVNMuC/LdZ6AICss6J6rfHnMG1uNPJcssxhXaTdBzcirLz2+sQmULBZh43++l6LqxyWEdyKdGWZA==", "answer"=>{"answer_body"=>"fffffff"}, "commit"=>"登録", "question_id"=>"2"}
+Completed 404 Not Found in 14ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Question without an ID):
+  
+app/controllers/users/answers_controller.rb:7:in `create'
+Started POST "/questions/2/answers" for 182.165.88.188 at 2021-07-15 08:11:46 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gbDwzayWF4rVNMuC/LdZ6AICss6J6rfHnMG1uNPJcssxhXaTdBzcirLz2+sQmULBZh43++l6LqxyWEdyKdGWZA==", "answer"=>{"answer_body"=>"fffffff"}, "commit"=>"登録", "question_id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/answers_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/answers_controller.rb:9
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users/answers_controller.rb:9
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"users/questions", :question_id=>"2"}, missing required keys: [:id]):
+  
+app/controllers/users/answers_controller.rb:10:in `create'
+Started POST "/questions/2/answers" for 182.165.88.188 at 2021-07-15 08:11:59 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::AnswersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gbDwzayWF4rVNMuC/LdZ6AICss6J6rfHnMG1uNPJcssxhXaTdBzcirLz2+sQmULBZh43++l6LqxyWEdyKdGWZA==", "answer"=>{"answer_body"=>"fffffff"}, "commit"=>"登録", "question_id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/answers_controller.rb:8
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users/answers_controller.rb:9
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users/answers_controller.rb:9
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/questions
+Completed 302 Found in 36ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/questions" for 182.165.88.188 at 2021-07-15 08:11:59 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:4
+  Rendering users/questions/index.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (408.4ms)
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT "questions".* FROM "questions"[0m
+  ↳ app/views/users/questions/_question_table.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/_question_table.html.erb:12
+  Rendered users/questions/_question_table.html.erb (41.6ms)
+  Rendered users/questions/index.html.erb within layouts/application (460.5ms)
+  Rendered layouts/_header_user.html.erb (1.1ms)
+Completed 200 OK in 834ms (Views: 827.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 08:12:05 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (3.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/views/users/answers/_answer_table.html.erb:3
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/views/users/answers/_answer_table.html.erb:4
+  Rendered users/answers/_answer_table.html.erb (9.8ms)
+  Rendered users/answers/_answer_form.html.erb (7.9ms)
+  Rendered users/questions/show.html.erb within layouts/application (31.3ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 148ms (Views: 141.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/questions/2" for 182.165.88.188 at 2021-07-15 08:15:35 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::QuestionsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mQuestion Load (0.1ms)[0m  [1m[34mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:8
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/questions_controller.rb:9
+  Rendering users/questions/show.html.erb within layouts/application
+  Rendered users/questions/_menu.html.erb (3.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/questions/show.html.erb:20
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/views/users/answers/_answer_table.html.erb:3
+  [1m[36mAnswer Load (0.1ms)[0m  [1m[34mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = ?[0m  [["question_id", 2]]
+  ↳ app/views/users/answers/_answer_table.html.erb:4
+  Rendered users/answers/_answer_table.html.erb (6.8ms)
+  Rendered users/answers/_answer_form.html.erb (1.2ms)
+  Rendered users/questions/show.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_header_user.html.erb (0.8ms)
+Completed 200 OK in 150ms (Views: 143.4ms | ActiveRecord: 0.6ms)
+
+

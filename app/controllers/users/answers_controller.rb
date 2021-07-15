@@ -3,10 +3,11 @@ class Users::AnswersController < ApplicationController
     @answers = Question.all
     @user = current_user
   end
-  def create 
-    @answer = current_user.answers.new(answer_params)
+  def create
+    @question = Question.find(params[:question_id])
+    @answer = Answer.new(user_id: current_user.id, question_id: @question.id, answer_body: params[:answer_body])
     @answer.save
-    redirect_to questions_path
+    redirect_to question_path(@question)
   end
   def update
   end

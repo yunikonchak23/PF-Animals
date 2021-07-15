@@ -4,7 +4,7 @@
     <% @question.answers.each do |answers| %>
       <%= answers.user.name %>
       <%= answers.created_at.strftime('%Y/%m/%d') %>
-      <%= answers.answers_body %>
+      <%= answers.answer_body %>
     <% end %>
   </div>
 </div>

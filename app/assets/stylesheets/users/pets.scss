@@ -1,3 +1,9 @@
 // Place all the styles related to the users/Pets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.pet-box {
+  padding: 10px;
+  box-shadow: 0 0 8px gray;
+  border-radius: 20px;
+  background-color: #F5F3F4;
+}

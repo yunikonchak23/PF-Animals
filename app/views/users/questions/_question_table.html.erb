@@ -1,22 +1,23 @@
 <% @questions.each do |question| %>
   <div class ="container">
     <div class="row">
-      <div class="offset-3 col-6">
-        <div class="my-1">
+      <div class="offset-1 col-11 question_box">
+        <div class="my-1 question-title">
           <%= link_to question_path(question.id), class:"text-dark" do %>
-            <%= question.question_title %>
+            <i class="far fa-comments mr-1"></i>
+            <strong><%= question.question_title %></strong>
           <% end %>
         </div>
         <div>
           <div>
-            <%= attachment_image_tag question.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "60x60" %>
+            <%= attachment_image_tag question.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
             <%= question.user.name %>
           </div>
-          <div>
+          <div class="time">
             <%= question.created_at.strftime('%Y/%m/%d %H:%M:%S') %>
           </div>
           <div class="my-1">
-            <%= question.question_body %>
+            <%= question.question_body.truncate(42) %>
           </div>
         </div>
       </div>

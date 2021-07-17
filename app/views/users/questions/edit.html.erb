@@ -5,7 +5,7 @@
     </div>
 
     <div class="offset-1 col-6 mt-4">
-      <h2 style="text-align:center;"><%= @question.question_title %>についての質問</h2>
+      <h2 style="text-align:center;"><%= @question.question_title %>について編集</h2>
       <%= form_with model: @question, local:true do |f| %>
         <div class="offset-2 mt-5">
           <%= render 'users/questions/question_form', f: f %>

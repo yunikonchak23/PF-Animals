@@ -10,7 +10,7 @@
       <div>
         <%= form_with model: Diary.new, local:true do |f| %>
           <%= render 'users/diaries/diary_form', f: f %>
-          <div class="col-9 mt-4 text-right">
+          <div class="col-10 mt-4 text-right">
             <%= f.submit '投稿', class:"btn btn-outline-secondary" %>
           </div>
         <% end %>

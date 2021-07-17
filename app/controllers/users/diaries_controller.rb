@@ -6,6 +6,8 @@ class Users::DiariesController < ApplicationController
   end
 
   def show
+    @diary = Diary.find(params[:id])
+    @user = current_user
   end
 
   def new
@@ -21,12 +23,20 @@ class Users::DiariesController < ApplicationController
   end
 
   def edit
+    @diary = Diary.find(params[:id])
+    @user = current_user
   end
 
-  def updated
+  def update
+    @diary = Diary.find(params[:id])
+    @diary.update(diary_params)
+    redirect_to diary_path
   end
 
   def destroy
+    @diary = Diary.find(params[:id])
+    @diary.destroy
+    redirect_to diary_path
   end
 
   private

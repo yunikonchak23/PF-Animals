@@ -1,0 +1,23 @@
+<div class="container container-size">
+  <div class="row">
+    <div class="col-2">
+      <%= render 'users/diaries/menu' %>
+    </div>
+
+    <div class="offset-1 col-6 mt-4">
+      <h2 style="text-align:center;"><%= @diary.diary_title %>について編集</h2>
+      <%= form_with model: @diary, local:true do |f| %>
+        <div class="mt-3">
+          <%= render 'users/diaries/diary_form', f: f %>
+        </div>
+        <div class="offset-5 col-6 mt-4 text-right">
+          <%= f.submit '更新', class:"btn btn-outline-secondary" %>
+          <% if user_signed_in? && current_user.id == @diary.pet.user_id %>
+            <%= link_to "削除", @diary, method: :delete, class:"btn btn-outline-secondary",
+            data: { confirm: "#{@diary.diary_title}を削除して大丈夫ですか？", "turbolinks" => false } %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

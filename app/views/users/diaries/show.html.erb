@@ -38,12 +38,16 @@
           <p class="text-body"><%= @diary.diary_body %></p>
         </div>
         <div class="col-12 mt-4 text-right">
-          <% if user_signed_in? && current_user.id == @diary.pet.user_id %>
+          <% if @diary.pet.user == current_user %>
             <%= link_to "編集する", edit_diary_path(@diary), class:"btn btn-outline-secondary pet-edit-btn", data: {"turbolinks" => false} %>
             <%= link_to "削除", @diary, method: :delete, class:"btn btn-outline-secondary",
             data: { confirm: "#{@diary.diary_title}を削除して大丈夫ですか？", "turbolinks" => false } %>
           <% end %>
         </div>
+        <!--いいね-->
+      　<div class="favo">
+          <%= render 'users/favorites/favorite' %>
+      　</div>
       </div>
 
       <!--コメント-->

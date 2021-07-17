@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     resources :pets, only: [:show, :create, :edit, :update, :destroy]
     resources :diaries do
       resources :comments, only: [:create, :destroy]
+      resource :favorites, only: [:create, :destroy]
     end
     resources :questions do
       resources :answers, only: [:index, :create, :update, :destroy]

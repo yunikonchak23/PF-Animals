@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   }
 
   scope module: 'users' do
-    resource :users, only: [:show, :edit, :update] do
+    resources :users, only: [:show, :edit, :update] do
       get 'confirm' => 'users#confirm', as: :confirm
       patch 'out' => 'users#out', as: :out
     end

@@ -4,10 +4,10 @@
       <%= attachment_image_tag @user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
       <%= @user.name %>
     </div>
-    <div class="mt-3"><%= link_to "マイページ",users_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+    <div class="mt-3"><%= link_to "マイページ",user_path(@user), class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
     <div class="mt-3"><%= link_to "カレンダー",diaries_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
     <div class="mt-3"><%= link_to "日記を書く",new_diary_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
     <div class="mt-3"><%= link_to "ペット登録",pets_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
-    <div class="mt-3"><%= link_to "お気に入り",users_path, class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
+    <div class="mt-3"><%= link_to "お気に入り",user_path(@user), class:"btn btn-outline-secondary",data: {"turbolinks" => false} %></div>
   </div>
 </div>

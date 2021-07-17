@@ -8,6 +8,7 @@ class Users::DiariesController < ApplicationController
   def show
     @diary = Diary.find(params[:id])
     @user = current_user
+    @comment = Comment.new
   end
 
   def new

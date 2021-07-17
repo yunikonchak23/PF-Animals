@@ -1,10 +1,15 @@
 <div class="container">
   <div class="row">
-    <p>回答件数：<%= @question.answers.count %></p>
-    <% @question.answers.each do |answers| %>
-      <%= answers.user.name %>
-      <%= answers.created_at.strftime('%Y/%m/%d') %>
-      <%= answers.answer_body %>
-    <% end %>
+    <div>
+      <p class="mb-4">回答件数：<%= @question.answers.count %></p>
+      <% @question.answers.each do |answers| %>
+        <div class="mt-3">
+          <%= attachment_image_tag answers.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
+          <%= answers.user.name%>
+          <div class="ml-1 time"><%= answers.created_at.strftime('%Y/%m/%d') %></div>
+          <div class="ml-1"><%= answers.answer_body %></div>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>

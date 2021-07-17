@@ -52140,3 +52140,24 @@ Processing by Users::DiariesController#show as HTML
 Completed 200 OK in 136ms (Views: 131.0ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/diaries/3" for 182.165.88.188 at 2021-07-17 18:45:24 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::DiariesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT  "diaries".* FROM "diaries" WHERE "diaries"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users/diaries_controller.rb:9
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/diaries_controller.rb:10
+  Rendering users/diaries/show.html.erb within layouts/application
+  Rendered users/diaries/_menu.html.erb (453.9ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/views/users/diaries/show.html.erb:10
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/diaries/show.html.erb:10
+  Rendered users/diaries/show.html.erb within layouts/application (504.5ms)
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 854ms (Views: 811.6ms | ActiveRecord: 2.8ms)
+
+

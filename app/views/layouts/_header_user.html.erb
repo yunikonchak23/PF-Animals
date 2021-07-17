@@ -1,16 +1,22 @@
-<nav class="navbar p-3 ">
-  <%= link_to "どうぶつの村", root_path, class:"header-logo", data: {"turbolinks" => false} %>
+<nav class="navbar-2">
+  <%= link_to "どうぶつの村", root_path, class:"logo mt-3", data: {"turbolinks" => false} %>
   <div>
-    <ul class="hm-Menu">
-      <li><%= link_to "どうぶつの村について", home_about_path, class:"link", data: {"turbolinks" => false} %></li>
-      <li><%= link_to "日記をのぞく", root_path, class:"link",data: {"turbolinks" => false} %></li>
-      <li><%= link_to "Ｑ＆Ａ", questions_path, class:"link",data: {"turbolinks" => false} %></li>
-      <li><%= link_to "ログアウト",destroy_user_session_path,method: :delete, class:"link",data: {"turbolinks" => false}%></li>
+    <ul class="nav-box2 mb-2">
+      <li class="nav-menu">
+        <p><%= link_to "ＨＯＭＥ", home_about_path, class:"link2", data: {"turbolinks" => false} %></p>
+      </li>
+      <li class="nav-menu">
+        <p><%= link_to "マイページ", user_path(current_user), class:"link2", data: {"turbolinks" => false} %></p>
+      </li>
+      <li class="nav-menu">
+        <p><%= link_to "日記一覧", diaries_path, class:"link2", data: {"turbolinks" => false} %></p>
+      </li>
+      <li class="nav-menu">
+        <p><%= link_to "Ｑ＆Ａ", questions_path,  class:"link2", data: {"turbolinks" => false} %></p>
+      </li>
+      <li class="nav-menu">
+        <p><%= link_to "ログアウト", destroy_user_session_path, method: :delete,  class:"link2", data: {"turbolinks" => false}%></p>
+      </li>
     </ul>
   </div>
 </nav>
-<div class="hamburger">
-  <span></span>
-  <span></span>
-  <span></span>
-</div>

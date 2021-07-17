@@ -30,12 +30,16 @@
 }
 
  // ヘッダー
- .header-logo {
-  margin: 0 auto;
+ // ログイン前
+ .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color : #706158;
   font-size: 30px;
+
  }
- .header-logo:hover {
+ .logo:hover {
   text-decoration: none;
  }
 
@@ -107,7 +111,7 @@
 }
 
 // ナビを開いてる時のメニュー
-ul {
+.nav-box1 {
   position: fixed;
   z-index : 2;
   top  : 0;
@@ -120,34 +124,69 @@ ul {
   padding: 0;
   width: 100%;
 }
-ul.hm-Menu li {
+.nav-box1 li {
   list-style-type: none;
   padding: 0;
   width: 100%;
   border-bottom: 1px solid #D3D3D3;
 }
-ul.hm-Menu li:last-child {
+.nav-box1 li:last-child {
   padding-bottom: 0;
   border-bottom : none;
 }
-ul.hm-Menu li:hover {
+.nav-box1 li:hover {
   background: #F5F3F4;
 }
 
-.link {
+.link1 {
   display: block;
   color: #fff;
   padding: 1.4em 0;
   text-decoration: none;
 }
-.link:hover {
+.link1:hover {
   color: #706158;
   text-decoration: none;
 }
 
 // このクラスを、jQueryで付与・削除する
-ul.hm-Menu.active {
+.nav-box1.active {
   transform: translateX(0%);
+}
+
+// ログイン後　ヘッダー
+.nav-box2 {
+  width: 100%;
+}
+.nav-menu {
+  display: block;
+  padding: 10px;
+  width: 20%;
+  float: left;
+  text-align: center;
+  // カーソルを離した際のアニメーションの速度
+  transition:.2s all;
+}
+.nav-menu p {
+  height: 10px;
+  font-weight: 300;
+}
+.nav-menu .link2 {
+  display: block;
+  font-size: 20px;
+  color: #333333;
+  text-decoration: none;
+}
+.navbar-2:hover .nav-menu {
+  // 1つのボタンにカーソルがある時、他残りのメニューが薄くなる
+  opacity  :.5;
+}
+.navbar-2:hover .nav-menu:hover {
+  // メニューボタンのホバーアクション
+  transition: .4s;
+  transform : scale(.9);
+  opacity   : 1;
+  box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.3) inset;
 }
 
 // 背景

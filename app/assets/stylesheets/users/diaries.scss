@@ -1,3 +1,19 @@
 // Place all the styles related to the users/Diaries controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.diary-table {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.diary-box {
+  margin: 18px auto;
+  padding: 15px;
+  box-shadow: 0 0 8px gray;
+  border-radius: 20px;
+  background-color: #F5F3F4;
+}
+
+.diary-img {
+  border-radius: 10px;
+}

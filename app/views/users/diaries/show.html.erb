@@ -1,17 +1,20 @@
 <div class="container container-size">
   <div class="row">
-
+    <!--左メニュー-->
     <div class="col-2" style="text-align:center;">
       <%= render 'users/diaries/menu' %>
     </div>
 
+    <!--日記詳細-->
     <div class="offset-1 col-6 mt-4">
+      <!--日記投稿者-->
       <div class="ml-3">
         <%= link_to user_path(@diary.pet.user) do %>
           <%= attachment_image_tag @diary.pet.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
           <%= @diary.pet.user.name %>
         <% end %>
       </div>
+      <!--日記の中身-->
       <div class="diary-box">
         <div class="mt-2" style="text-align:center;">
           <%= attachment_image_tag @diary, :diary_image, :fill, 1000, 1000, fallback: "no_image_square.jpg", size: "650x450", class:"diary-img" %>
@@ -35,12 +38,24 @@
           <p class="text-body"><%= @diary.diary_body %></p>
         </div>
         <div class="col-12 mt-4 text-right">
-          <% if user_signed_in? && current_user.id == @diary.pet.user_id %>
+          <% if @diary.pet.user == current_user %>
             <%= link_to "編集する", edit_diary_path(@diary), class:"btn btn-outline-secondary pet-edit-btn", data: {"turbolinks" => false} %>
             <%= link_to "削除", @diary, method: :delete, class:"btn btn-outline-secondary",
             data: { confirm: "#{@diary.diary_title}を削除して大丈夫ですか？", "turbolinks" => false } %>
           <% end %>
         </div>
+        <!--いいね-->
+      　<div class="favo">
+          <%= render 'users/favorites/favorite' %>
+      　</div>
+      </div>
+
+      <!--コメント-->
+      <div class="mt-5">
+        <!--コメント一覧-->
+        <%= render 'users/comments/comment_table' %>
+        <!--コメントフォーム-->
+        <%= render 'users/comments/comment_form' %>
       </div>
     </div>
 

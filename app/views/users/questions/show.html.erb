@@ -40,10 +40,7 @@
         </div>
         <div class="mt-5">
           <%= render 'users/answers/answer_table' %>
-          <% if user_signed_in? && current_user.id == @question.user_id %>
-          <% else %>
           <%= render 'users/answers/answer_form' %>
-          <% end %>
         </div>
       </div>
 

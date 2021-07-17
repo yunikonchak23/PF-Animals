@@ -27,9 +27,9 @@ $(function() {
         $(this).toggleClass('active');
 
         if ($(this).hasClass('active')) {
-            $('.hm-Menu').addClass('active');
+            $('.nav-box1').addClass('active');
         } else {
-            $('.hm-Menu').removeClass('active');
+            $('.nav-box1').removeClass('active');
         }
     });
 });

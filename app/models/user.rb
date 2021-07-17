@@ -3,10 +3,11 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  has_many :pets, dependent: :destroy
-  has_many :diaries, dependent: :destroy
+  has_many :pets,      dependent: :destroy
+  has_many :diaries,   dependent: :destroy
   has_many :questions, dependent: :destroy
-  has_many :answers, dependent: :destroy
+  has_many :answers,   dependent: :destroy
+  has_many :comments,  dependent: :destroy
   attachment :image
 
   # is_deletedがfalseならtrueを返すようにしている

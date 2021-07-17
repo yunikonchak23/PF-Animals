@@ -14,7 +14,7 @@ Rails.application.routes.draw do
       get 'confirm' => 'users#confirm', as: :confirm
       patch 'out' => 'users#out', as: :out
     end
-    resources :pets, only: [:index, :create, :edit, :update, :destroy]
+    resources :pets, only: [:show, :create, :edit, :update, :destroy]
     resources :diaries
     resources :questions do
       resources :answers, only: [:index, :create, :update, :destroy]

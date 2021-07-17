@@ -1,8 +1,8 @@
 class Users::PetsController < ApplicationController
-  def index
+  def show
     @pet = current_user.pets.build
     @user = current_user
-    @pets = Pet.all
+    @pets = @user.pets
   end
 
   def create
@@ -18,7 +18,7 @@ class Users::PetsController < ApplicationController
   def update
     @pet = Pet.find(params[:id])
     @pet.update(pet_params)
-    redirect_to pets_path
+    redirect_to pet_path
   end
 
   def destroy

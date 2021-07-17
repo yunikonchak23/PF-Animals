@@ -2,7 +2,7 @@ class Users::DiariesController < ApplicationController
   def index
     @diaries = Diary.all
     @user = current_user
-    @pet = current_user.pets.build
+    @pets = @user.pets
   end
 
   def show

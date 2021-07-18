@@ -1,4 +1,6 @@
 class Users::DiariesController < ApplicationController
+  before_action :authenticate_user!,except: [:index]
+
   def index
     @diaries = Diary.all.order(" created_at DESC ")
     @user = current_user
@@ -21,8 +23,11 @@ class Users::DiariesController < ApplicationController
   def create
     @pet = Pet.find(params[:diary][:pet_id])
     @diary = @pet.diaries.build(diary_params)
-    @diary.save
-    redirect_to diaries_path
+    if @diary.save
+      redirect_to diaries_path
+    else
+      render :new
+    end
   end
 
   def edit
@@ -33,8 +38,11 @@ class Users::DiariesController < ApplicationController
 
   def update
     @diary = Diary.find(params[:id])
-    @diary.update(diary_params)
-    redirect_to diary_path
+    if @diary.update(diary_params)
+      redirect_to diary_path
+    else
+      render :edit
+    end
   end
 
   def destroy

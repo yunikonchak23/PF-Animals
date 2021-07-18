@@ -11,7 +11,10 @@ class User < ApplicationRecord
   has_many :favorites, dependent: :destroy
   attachment :image
 
-  # is_deletedがfalseならtrueを返すようにしている
+  #バリデーション
+  validates :name, presence: true, length: { minimum: 2, maximum: 20}
+  validates :email, presence: true, uniqueness:true
+  # 退会処理　is_deletedがfalseならtrueを返すようにしている
   def active_for_authentication?
     super && (self.is_deleted == false)
   end

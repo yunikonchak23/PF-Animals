@@ -6,6 +6,7 @@
 .diary-table {
   display: flex;
   flex-wrap: wrap;
+  align-content: space-around;
 }
 // 日記一覧：紙の形
 .diary-box {

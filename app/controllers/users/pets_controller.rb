@@ -1,24 +1,36 @@
 class Users::PetsController < ApplicationController
+  before_action :authenticate_user!
+
   def show
     @pet = current_user.pets.build
     @user = current_user
     @pets = @user.pets
+    @diaries = Diary.all.order(" created_at DESC ")
+    @tag_list = Tag.all
   end
 
   def create
     @pet = current_user.pets.build(pet_params)
-    @pet.save
-    redirect_back(fallback_location: root_path)
+    if @pet.save
+      redirect_back(fallback_location: root_path)
+    else
+      render :new
+    end
   end
 
   def edit
     @pet = Pet.find(params[:id])
+    @diaries = Diary.all.order(" created_at DESC ")
+    @tag_list = Tag.all
   end
 
   def update
     @pet = Pet.find(params[:id])
-    @pet.update(pet_params)
-    redirect_to pet_path
+    if @pet.update(pet_params)
+      redirect_to pet_path
+    else
+      render :edit
+    end
   end
 
   def destroy

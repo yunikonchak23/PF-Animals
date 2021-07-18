@@ -6,7 +6,7 @@
     </div>
 
     <!--日記詳細-->
-    <div class="offset-1 col-6 mt-4">
+    <div class="col-7 mt-4">
       <!--日記投稿者-->
       <div class="ml-3">
         <%= link_to user_path(@diary.pet.user) do %>
@@ -37,6 +37,13 @@
           <label class="mt-4 mb-0">内容</label><br>
           <p class="text-body"><%= @diary.diary_body %></p>
         </div>
+        <div class="ml-3">
+          <label class="mt-4 mb-0">タグ</label><br>
+          <% @diary_tags.each do |tag| %>
+            <%= link_to tag.tag_name, tag_diaries_path(tag_id: tag.id) %>
+            <%= "(#{tag.diaries.count})" %>
+          <% end %>
+        </div>
         <div class="col-12 mt-4 text-right">
           <% if @diary.pet.user == current_user %>
             <%= link_to "編集する", edit_diary_path(@diary), class:"btn btn-outline-secondary pet-edit-btn", data: {"turbolinks" => false} %>
@@ -59,5 +66,9 @@
       </div>
     </div>
 
+    <!--右メニュー-->
+    <div class="col-3 mt-4">
+      <%= render 'layouts/right_menu' %>
+    </div>
   </div>
 </div>

@@ -9,6 +9,7 @@ class Users::DiariesController < ApplicationController
     @diary = Diary.find(params[:id])
     @user = current_user
     @comment = Comment.new
+    @diaries = Diary.all.order(" created_at DESC ")
   end
 
   def new
@@ -26,6 +27,7 @@ class Users::DiariesController < ApplicationController
   def edit
     @diary = Diary.find(params[:id])
     @user = current_user
+    @diaries = Diary.all.order(" created_at DESC ")
   end
 
   def update

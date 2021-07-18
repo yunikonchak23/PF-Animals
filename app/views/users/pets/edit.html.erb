@@ -1,11 +1,21 @@
-<div class="container">
-  <div>
-    <h3><%= @pet.pet_name %>についての編集</h3>
-  </div>
-  <%= form_with model: @pet, url: pet_path, local: true do |f| %>
-    <%= render 'users/pets/pet_form', f: f %>
-    <div>
-      <%= f.submit '更新', class:"btn btn-outline-secondary" %>
+<div class="container container-size">
+  <div class="row">
+
+    <div class="col-2" style="text-align:center;">
+      <%= render 'users/diaries/menu' %>
     </div>
-  <% end %>
+
+    <div class="col-8 mt-4">
+      <h3 style="text-align:center;"><%= @pet.pet_name %>についての編集</h3>
+      <%= form_with model: @pet, url: pet_path, local: true do |f| %>
+        <%= render 'users/pets/pet_form', f: f %>
+        <div>
+          <%= f.submit '更新', class:"btn btn-outline-secondary" %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="col-2 mt-4">
+      <%= render 'layouts/right_menu' %>
+    </div>
 </div>

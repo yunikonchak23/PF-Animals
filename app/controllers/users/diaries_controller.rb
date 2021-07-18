@@ -1,6 +1,6 @@
 class Users::DiariesController < ApplicationController
   def index
-    @diaries = Diary.all
+    @diaries = Diary.all.order(" created_at DESC ")
     @user = current_user
     @pets = @user.pets
   end

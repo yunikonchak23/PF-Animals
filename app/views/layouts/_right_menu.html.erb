@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="offset-1 col-9">
+      <div class="diary-table">
+        <h3 class="col-12" style="text-align:center;">新着日記</h3>
+        <% @diaries.first(9).each do |diary| %>
+          <div class="new-diary">
+            <%= link_to diary_path(diary.id) do %>
+              <%= attachment_image_tag diary, :diary_image, :fill, 1000, 1000, fallback: "no_image_square.jpg", size: "80x80" %>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,6 +3,7 @@ class Users::PetsController < ApplicationController
     @pet = current_user.pets.build
     @user = current_user
     @pets = @user.pets
+    @diaries = Diary.all.order(" created_at DESC ")
   end
 
   def create
@@ -13,6 +14,7 @@ class Users::PetsController < ApplicationController
 
   def edit
     @pet = Pet.find(params[:id])
+    @diaries = Diary.all.order(" created_at DESC ")
   end
 
   def update

@@ -1,6 +1,6 @@
 class Users::DiariesController < ApplicationController
   def index
-    @diaries = Diary.all
+    @diaries = Diary.all.order(" created_at DESC ")
     @user = current_user
     @pets = @user.pets
   end
@@ -9,11 +9,13 @@ class Users::DiariesController < ApplicationController
     @diary = Diary.find(params[:id])
     @user = current_user
     @comment = Comment.new
+    @diaries = Diary.all.order(" created_at DESC ")
   end
 
   def new
     @diary = Diary.new
     @user = current_user
+    @diaries = Diary.all.order(" created_at DESC ")
   end
 
   def create
@@ -26,6 +28,7 @@ class Users::DiariesController < ApplicationController
   def edit
     @diary = Diary.find(params[:id])
     @user = current_user
+    @diaries = Diary.all.order(" created_at DESC ")
   end
 
   def update

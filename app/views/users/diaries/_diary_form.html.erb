@@ -7,7 +7,7 @@
       </div>
       <div class="my-3">
         <label>ペットを選択</label><br>
-        <%= f.collection_select :pet_id, Pet.all, :id, :pet_name, include_blank: "選択して下さい" %>
+        <%= f.collection_select :pet_id, @user.pets, :id, :pet_name, include_blank: "選択して下さい" %>
       </div>
       <div class="my-3">
         <label>タイトル</label><br>

@@ -58909,3 +58909,312 @@ Processing by Users::DiariesController#index as HTML
 Completed 200 OK in 366ms (Views: 317.1ms | ActiveRecord: 13.8ms)
 
 
+Started GET "/pets/%23%3CPet::ActiveRecord_Associations_CollectionProxy:0x00007f862597e638%3E" for 182.165.88.188 at 2021-07-18 23:04:09 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::PetsController#show as HTML
+  Parameters: {"id"=>"#<Pet::ActiveRecord_Associations_CollectionProxy:0x00007f862597e638>"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 0.9ms)
+
+
+  
+NoMethodError (undefined method `pets' for nil:NilClass):
+  
+app/controllers/users/pets_controller.rb:3:in `show'
+Started GET "/users/2" for 182.165.88.188 at 2021-07-18 23:04:19 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered users/diaries/_menu.html.erb (2820.5ms)
+  Rendered users/users/_user_info.html.erb (1.0ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/pets/_pet_table.html.erb:18
+  Rendered users/pets/_pet_table.html.erb (13.2ms)
+  Rendered users/users/show.html.erb within layouts/application (2837.7ms)
+  Rendered layouts/_header_logout.html.erb (1.4ms)
+Completed 200 OK in 3052ms (Views: 3041.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/%23%3CPet::ActiveRecord_Associations_CollectionProxy:0x00007fc97c113328%3E" for 182.165.88.188 at 2021-07-18 23:04:42 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#show as HTML
+  Parameters: {"id"=>"#<Pet::ActiveRecord_Associations_CollectionProxy:0x00007fc97c113328>"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `pets' for nil:NilClass):
+  
+app/controllers/users/pets_controller.rb:3:in `show'
+Started GET "/users/2" for 182.165.88.188 at 2021-07-18 23:04:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered users/diaries/_menu.html.erb (2.3ms)
+  Rendered users/users/_user_info.html.erb (0.7ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (2.6ms)
+  Rendered users/users/show.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_header_logout.html.erb (1.1ms)
+Completed 200 OK in 100ms (Views: 97.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/2" for 182.165.88.188 at 2021-07-18 23:04:57 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered users/diaries/_menu.html.erb (2.6ms)
+  Rendered users/users/_user_info.html.erb (1.0ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 2]]
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (2.8ms)
+  Rendered users/users/show.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 155ms (Views: 152.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 182.165.88.188 at 2021-07-18 23:05:14 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::RegistrationsController#new as HTML
+  Rendering users/registrations/new.html.erb within layouts/application
+  Rendered users/shared/_error_messages.html.erb (0.4ms)
+  Rendered users/registrations/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 74ms (Views: 71.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 182.165.88.188 at 2021-07-18 23:05:16 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendering users/sessions/new.html.erb within layouts/application
+  Rendered users/sessions/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_header_logout.html.erb (0.9ms)
+Completed 200 OK in 71ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 182.165.88.188 at 2021-07-18 23:05:22 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PKNwoyqj7v+0tKzj6IxaVNCgr4bhIa+qQHZEG0GpxzZtn/FJz4t4dr3K73RqJ/vKp/I9C+PEDiBhsKCAr9tXBg==", "user"=>{"email"=>"aaa@aaa", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "aaa@aaa"], ["LIMIT", 1]]
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Redirected to https://dbb28b4911c44e2394da1477dd77d559.vfs.cloud9.ap-northeast-1.amazonaws.com/
+Completed 302 Found in 317ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 182.165.88.188 at 2021-07-18 23:05:23 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#top as HTML
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:14
+  Rendered layouts/_header_user.html.erb (1.0ms)
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1" for 182.165.88.188 at 2021-07-18 23:05:31 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered users/diaries/_menu.html.erb (1.3ms)
+  Rendered users/users/_user_info.html.erb (0.8ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/pets/_pet_table.html.erb:18
+  Rendered users/pets/_pet_table.html.erb (5.0ms)
+  Rendered users/users/show.html.erb within layouts/application (9.6ms)
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 73ms (Views: 69.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets/%23%3CPet::ActiveRecord_Associations_CollectionProxy:0x00007fc97d3d1230%3E" for 182.165.88.188 at 2021-07-18 23:05:37 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::PetsController#show as HTML
+  Parameters: {"id"=>"#<Pet::ActiveRecord_Associations_CollectionProxy:0x00007fc97d3d1230>"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/pets_controller.rb:3
+  Rendering users/pets/show.html.erb within layouts/application
+  Rendered users/diaries/_menu.html.erb (1.5ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  Rendered users/pets/_pet_table.html.erb (4.8ms)
+  Rendered users/pets/_pet_form.html.erb (1.5ms)
+  Rendered users/pets/show.html.erb within layouts/application (10.9ms)
+  Rendered layouts/_header_user.html.erb (1.0ms)
+Completed 200 OK in 74ms (Views: 70.3ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/pets" for 182.165.88.188 at 2021-07-18 23:05:41 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [DELETE] "/pets"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/diaries" for 182.165.88.188 at 2021-07-18 23:05:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::DiariesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/diaries_controller.rb:4
+  Rendering users/diaries/index.html.erb within layouts/application
+  Rendered users/diaries/_menu.html.erb (1.3ms)
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/views/users/diaries/_diary_table.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 1]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 3]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 4]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 5]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 6]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 7]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 8]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 9]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  Rendered users/diaries/_diary_table.html.erb (26.6ms)
+  Rendered users/diaries/index.html.erb within layouts/application (29.8ms)
+  Rendered layouts/_header_user.html.erb (1.0ms)
+Completed 200 OK in 98ms (Views: 89.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/attachments/bd7ce745e1d90ead36946ddd4decb36b34062403/store/fill/1000/1000/6bded76854fd5d2be45f057d2a985297295f61269167b7e0f9b7b762af6c/diary_image" for 182.165.88.188 at 2021-07-18 23:05:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/attachments/e4269896d6c411b510e96eab769c487e93e3a163/store/fill/1000/1000/724e6909f394e8135cf21880ce03e2fbcf377754c427db2a0fc7e95d1ec5/diary_image" for 182.165.88.188 at 2021-07-18 23:05:48 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Refile::App: [2021-07-18 23:05:49 +0000] GET "/e4269896d6c411b510e96eab769c487e93e3a163/store/fill/1000/1000/724e6909f394e8135cf21880ce03e2fbcf377754c427db2a0fc7e95d1ec5/diary_image" 200 501.4ms
+
+Refile::App: [2021-07-18 23:05:49 +0000] GET "/bd7ce745e1d90ead36946ddd4decb36b34062403/store/fill/1000/1000/6bded76854fd5d2be45f057d2a985297295f61269167b7e0f9b7b762af6c/diary_image" 200 559.7ms
+
+Started GET "/diaries" for 182.165.88.188 at 2021-07-18 23:06:21 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Users::DiariesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/diaries_controller.rb:4
+  Rendering users/diaries/index.html.erb within layouts/application
+  Rendered users/diaries/_menu.html.erb (1.5ms)
+  [1m[36mDiary Load (0.2ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/views/users/diaries/_diary_table.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 1]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 3]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 4]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 5]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 6]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 7]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 8]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 9]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  Rendered users/diaries/_diary_table.html.erb (282.7ms)
+  Rendered users/diaries/index.html.erb within layouts/application (286.3ms)
+  Rendered layouts/_header_user.html.erb (0.9ms)
+Completed 200 OK in 449ms (Views: 417.8ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/users/1" for 182.165.88.188 at 2021-07-18 23:06:25 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/users_controller.rb:3
+  Rendering users/users/show.html.erb within layouts/application
+  Rendered users/diaries/_menu.html.erb (1.3ms)
+  Rendered users/users/_user_info.html.erb (0.8ms)
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/users/pets/_pet_table.html.erb:1
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/pets/_pet_table.html.erb:18
+  Rendered users/pets/_pet_table.html.erb (29.1ms)
+  Rendered users/users/show.html.erb within layouts/application (33.6ms)
+  Rendered layouts/_header_user.html.erb (1.0ms)
+Completed 200 OK in 185ms (Views: 181.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/diaries" for 182.165.88.188 at 2021-07-18 23:06:26 +0000
+Cannot render console from 182.165.88.188! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Users::DiariesController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/diaries_controller.rb:4
+  Rendering users/diaries/index.html.erb within layouts/application
+  Rendered users/diaries/_menu.html.erb (1.2ms)
+  [1m[36mDiary Load (0.1ms)[0m  [1m[34mSELECT "diaries".* FROM "diaries"[0m
+  ↳ app/views/users/diaries/_diary_table.html.erb:3
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 1]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 3]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 4]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 5]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 6]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 7]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 8]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."diary_id" = ?[0m  [["diary_id", 9]]
+  ↳ app/views/users/diaries/_diary_table.html.erb:18
+  Rendered users/diaries/_diary_table.html.erb (19.6ms)
+  Rendered users/diaries/index.html.erb within layouts/application (22.7ms)
+  Rendered layouts/_header_user.html.erb (1.2ms)
+Completed 200 OK in 112ms (Views: 108.0ms | ActiveRecord: 1.2ms)
+
+

@@ -15,6 +15,7 @@ class Users::DiariesController < ApplicationController
   def new
     @diary = Diary.new
     @user = current_user
+    @diaries = Diary.all.order(" created_at DESC ")
   end
 
   def create

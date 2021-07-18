@@ -4,7 +4,7 @@
       <%= render 'users/questions/menu' %>
     </div>
 
-    <div class="col-8 mt-4">
+    <div class="col-7 mt-4">
       <h2 style="text-align:center;">質問投稿フォーム</h2>
       <%= form_with model: Question.new, local:true do |f| %>
         <div class="offset-2 mt-5">
@@ -16,7 +16,7 @@
       <% end %>
     </div>
 
-    <div class="col-2 mt-4">
+    <div class="col-3 mt-4">
       <%= render 'layouts/right_menu' %>
     </div>
   </div>

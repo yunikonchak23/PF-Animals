@@ -5,7 +5,7 @@
       <%= render 'users/diaries/menu' %>
     </div>
 
-    <div class="col-8 mt-4">
+    <div class="col-7 mt-4">
       <div>
         <h2 style="text-align:center;">
           <%= @user.name %>さんのペット
@@ -18,7 +18,7 @@
         <div>
           <%= form_with model: Pet.new, local:true do |f| %>
             <%= render 'users/pets/pet_form', f: f %>
-            <div class="col-8 mt-4 text-right">
+            <div class="col-7 mt-4 text-right">
               <%= f.submit '登録', class:"btn btn-outline-secondary" %>
             </div>
           <% end %>
@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="col-2 mt-4">
+    <div class="col-3 mt-4">
       <%= render 'layouts/right_menu' %>
     </div>
   </div>

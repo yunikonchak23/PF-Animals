@@ -37,6 +37,13 @@
           <label class="mt-4 mb-0">内容</label><br>
           <p class="text-body"><%= @diary.diary_body %></p>
         </div>
+        <div class="ml-3">
+          <label class="mt-4 mb-0">タグ</label><br>
+          <% @diary_tags.each do |tag| %>
+            <%= link_to tag.tag_name, tag_diaries_path(tag_id: tag.id) %>
+            <%= "(#{tag.diaries.count})" %>
+          <% end %>
+        </div>
         <div class="col-12 mt-4 text-right">
           <% if @diary.pet.user == current_user %>
             <%= link_to "編集する", edit_diary_path(@diary), class:"btn btn-outline-secondary pet-edit-btn", data: {"turbolinks" => false} %>

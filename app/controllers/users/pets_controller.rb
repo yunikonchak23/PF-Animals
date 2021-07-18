@@ -6,6 +6,7 @@ class Users::PetsController < ApplicationController
     @user = current_user
     @pets = @user.pets
     @diaries = Diary.all.order(" created_at DESC ")
+    @tag_list = Tag.all
   end
 
   def create
@@ -20,6 +21,7 @@ class Users::PetsController < ApplicationController
   def edit
     @pet = Pet.find(params[:id])
     @diaries = Diary.all.order(" created_at DESC ")
+    @tag_list = Tag.all
   end
 
   def update

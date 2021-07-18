@@ -3,21 +3,29 @@ class Users::QuestionsController < ApplicationController
   def index
     @questions = Question.all
     @user = current_user
+    @diaries = Diary.all.order(" created_at DESC ")
+    @tag_list = Tag.all
   end
 
   def show
     @question = Question.find(params[:id])
     @user = current_user
+    @diaries = Diary.all.order(" created_at DESC ")
+    @tag_list = Tag.all
   end
 
   def new
     @question = Question.new
     @user = current_user
+    @diaries = Diary.all.order(" created_at DESC ")
+    @tag_list = Tag.all
   end
 
   def edit
     @question = Question.find(params[:id])
     @user = current_user
+    @diaries = Diary.all.order(" created_at DESC ")
+    @tag_list = Tag.all
   end
 
   def create

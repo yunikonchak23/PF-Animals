@@ -14,9 +14,47 @@
   padding: 25px;
   position: relative;
   box-shadow: inset 0 0 20px rgba(172,157,148,0.3);
-  background-color: #fff;
+  background-color: #fff7ee;
+  transition: 0.3s;
 }
-.diary-box:before {
+.diary-box:hover {
+  box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-4px);
+}
+// 右下折り曲げ
+.diary-box::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-width: 0 30px 30px 0;
+  border-style: solid;
+  width: 0;
+  transition: 0.2s;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: #e3e3e3;
+  border-color: #fff #fff #cabbb2 #cabbb2;
+}
+.diary-box:hover::before {
+  border-color: #fff7ee;
+}
+
+// 日記詳細ページでのペットの並び方
+.diary-pet {
+  display: flex;
+}
+
+// 日記詳細の紙レイアウト
+.diary-show {
+  margin: 18px auto;
+  padding: 25px;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(172,157,148,0.3);
+  background-color: #fff7ee;
+}
+.diary-show:before {
   content: " ";
   display: block;
   position: absolute;
@@ -28,13 +66,5 @@
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   background: #e3e3e3;
-  border-color: #fff7ee #fff7ee #cabbb2 #cabbb2;
-}
-
-.diary-img {
-  border-radius: 10px;
-}
-
-.diary-pet {
-  display: flex;
+  border-color: #fff #fff #cabbb2 #cabbb2;
 }

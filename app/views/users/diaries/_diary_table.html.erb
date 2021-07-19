@@ -2,21 +2,21 @@
   <div class="row">
     <% @diaries.each do |diary| %>
       <div class="diary-box">
-        <div>
-          <%= link_to diary_path(diary.id) do %>
+        <%= link_to diary_path(diary.id), class:"text-link" do %>
+          <div>
             <%= attachment_image_tag diary, :diary_image, :fill, 1000, 1000, fallback: "no_image_square.jpg", size: "200x150" %>
-          <% end %>
-        </div>
-        <div class="mt-3">
-          <%= l(diary.created_at, format: :short) %>
-        </div>
-        <div>
-          <label>タイトル</label>:
-          <strong><%= diary.diary_title %></strong>
-        </div>
-        <div>
-          コメント数 <%= diary.comments.count %>
-        </div>
+          </div>
+          <div class="mt-1 time text-right">
+            <%= l(diary.created_at, format: :short) %>
+          </div>
+          <div class="mt-3">
+            <label>タイトル</label>:
+            <strong><%= diary.diary_title %></strong>
+          </div>
+          <div>
+            コメント数 <%= diary.comments.count %>
+          </div>
+        <% end %>
       </div>
     <% end %>
   </div>

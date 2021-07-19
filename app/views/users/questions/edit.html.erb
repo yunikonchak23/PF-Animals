@@ -1,11 +1,11 @@
 <div class="container container-size">
   <div class="row">
 
-    <div class="col-2" style="text-align:center;">
+    <div class="col-2">
       <%= render 'users/questions/menu' %>
     </div>
 
-    <div class="col-7 mt-4">
+    <div class="offset-1 col-6 mt-4">
       <h2 style="text-align:center;"><%= @question.question_title %>について編集</h2>
       <%= form_with model: @question, local:true do |f| %>
         <div class="offset-2 mt-5">

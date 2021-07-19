@@ -13,6 +13,12 @@
             <label>タイトル</label>:
             <strong><%= diary.diary_title %></strong>
           </div>
+          <!--いいね-->
+          <% if user_signed_in? %>
+          　<div id="favorite<%= diary.id %>" class="favorite-size">
+              <%= render "users/favorites/favorite", diary: diary %>
+          　</div>
+          <% end %>
           <div>
             コメント数 <%= diary.comments.count %>
           </div>

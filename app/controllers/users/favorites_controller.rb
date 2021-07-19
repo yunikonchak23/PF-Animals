@@ -1,15 +1,13 @@
 class Users::FavoritesController < ApplicationController
   def create
-    diary = Diary.find(params[:diary_id])
-    favorite = current_user.favorites.new(diary_id: diary.id)
+    @diary = Diary.find(params[:diary_id])
+    favorite = Favorite.new(diary_id: @diary.id, user_id: current_user.id)
     favorite.save
-    redirect_to diary_path(diary)
   end
 
   def destroy
-    diary = Diary.find(params[:diary_id])
-    favorite = current_user.favorites.find_by(diary_id: diary.id)
+    @diary = Diary.find(params[:diary_id])
+    favorite = Favorite.find_by(diary_id: @diary.id, user_id: current_user.id)
     favorite.destroy
-    redirect_to diary_path(diary)
   end
 end

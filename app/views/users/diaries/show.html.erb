@@ -52,8 +52,8 @@
           <% end %>
         </div>
         <!--いいね-->
-      　<div class="favo">
-          <%= render 'users/favorites/favorite' %>
+      　<div id="favorite<%= @diary.id %>">
+          <%= render "users/favorites/favorite", diary: @diary %>
       　</div>
       </div>
 

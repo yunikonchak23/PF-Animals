@@ -2,14 +2,16 @@
   <div class="row">
     <% if @diary.favorited_by?(current_user) %>
       <p class="mt-2">
-        <%= link_to diary_favorites_path(@diary), method: :delete do %>
-          ♥<%= @diary.favorites.count %> いいね
+        <%= link_to diary_favorites_path(@diary), method: :delete, class:"favo-link" do %>
+          <img src="/assets/favo-in.jpg" width="20" height="20">
+          <p class="ml-1 favo-size"><%= @diary.favorites.count %> いいね</p>
         <% end %>
       </p>
       <% else %>
-      <p>
-        <%= link_to diary_favorites_path(@diary), method: :post do %>
-          ♡<%= @diary.favorites.count %> いいね
+      <p class="mt-2">
+        <%= link_to diary_favorites_path(@diary), method: :post, class:"favo-out-link" do %>
+          <img src="/assets/favo-out.jpg" width="20" height="20">
+          <p class="ml-1 favo-size"><%= @diary.favorites.count %> いいね</p>
         <% end %>
       </p>
     <% end %>

@@ -28,6 +28,7 @@
   flex-flow: column;
   min-height: 100vh;
   background-color: #8e7f76;
+  font-family: "えるまー";
 }
 
  // ヘッダー
@@ -195,7 +196,7 @@
 main {
   flex: 1;
   margin: 0 1%;
-  background-color: #fff7ee;
+  background-color: #fff;
 }
 // メインの大きさ
 .container-size {
@@ -205,13 +206,37 @@ main {
 
 // サイドメニュー
 .side-menu {
-  margin-left: 0;
-  height: 500px;
-  background-color: #fff;
+  height: 400px;
+  background-color: #8e7f76;
   border-radius: 10px;
+  margin-top: 25px;
 }
 .menu-user {
   padding-top: 20px;
+  color: #fff7ee;
+  font-size: 20px;
+  font-weight: 600;
+}
+.side-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-list {
+  margin: 5px 0px;
+  padding: 14px 10px;
+  display: block;
+  height: 50px;
+  font-size: 18px;
+  color: #7a6b62;
+  font-weight: 540;
+  background-color: #fff7ee;
+  border : 2px solid #7a6b62;
+}
+.menu-list:hover {
+  text-decoration: none;
+  color: #990033;
+  border-left: 8px solid #990033;
 }
 
 // 文字

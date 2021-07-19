@@ -13,21 +13,21 @@ Rails.application.routes.draw do
   # user側のルート設定
   scope module: 'users' do
     resources :users, only: [:show, :edit, :update] do
-      # 退会機能のルート
       get 'confirm' => 'users#confirm', as: :confirm
       patch 'out' => 'users#out', as: :out
     end
-    # ペットのルート
+    
     resources :pets, only: [:show, :create, :edit, :update, :destroy]
-    # 日記のルート
+    
     resources :diaries do
       resources :comments, only: [:create, :destroy]
       resource :favorites, only: [:create, :destroy]
     end
+    
     resources :tags do
       get 'diaries', to: 'diaries#search'
     end
-    # Ｑ＆Ａのルート
+    
     resources :questions do
       resources :answers, only: [:index, :create, :update, :destroy]
     end

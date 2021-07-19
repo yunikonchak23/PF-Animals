@@ -4,7 +4,7 @@
       <%= render 'users/diaries/menu' %>
     </div>
 
-    <div class="col-7 mt-4">
+    <div class="offset-1 col-6 mt-4">
       <h2 style="text-align:center;"><%= @diary.diary_title %>について編集</h2>
       <%= form_with model: @diary, local:true do |f| %>
         <div class="mt-3">

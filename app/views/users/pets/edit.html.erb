@@ -5,7 +5,7 @@
       <%= render 'users/diaries/menu' %>
     </div>
 
-    <div class="col-7 mt-4">
+    <div class="offset-1 col-6 mt-4">
       <h3 style="text-align:center;"><%= @pet.pet_name %>についての編集</h3>
       <%= form_with model: @pet, url: pet_path, local: true do |f| %>
         <%= render 'users/pets/pet_form', f: f %>

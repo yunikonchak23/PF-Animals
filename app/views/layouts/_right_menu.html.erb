@@ -13,15 +13,8 @@
       </div>
 
       <div class="tag-menu mt-5">
-        <h3 class="col-12" style="text-align:center;">タグリスト</h3>
-        <% @tag_list.each do |tag| %>
-          <div class="tag-list">
-            <%= link_to tag_diaries_path(tag_id: tag.id),class:"text-link" do %>
-              <%= tag.tag_name %>
-              <%= "(#{tag.diaries.count})" %>
-            <% end %>
-          </div>
-        <% end %>
+        <h3 class="col-12" style="text-align:center;">人気のタグ</h3>
+        
       </div>
     </div>
   </div>

@@ -6,11 +6,12 @@
     </div>
 
     <div class="offset-1 col-6 mt-4">
-      <h3 style="text-align:center;"><%= @pet.pet_name %>についての編集</h3>
+      <h3 class="mb-4" style="text-align:center;"><%= @pet.pet_name %>についての編集</h3>
       <%= form_with model: @pet, url: pet_path, local: true do |f| %>
         <%= render 'users/pets/pet_form', f: f %>
-        <div>
+        <div class="col-9 text-right">
           <%= f.submit '更新', class:"btn btn-outline-secondary" %>
+          <%= link_to "削除", pets_path, method: :delete, class:"btn btn-outline-secondary", data: { confirm: "#{@pet.pet_name}を削除して大丈夫ですか？", "turbolinks" => false } %>
         </div>
       <% end %>
     </div>

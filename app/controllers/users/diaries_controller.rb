@@ -14,7 +14,8 @@ class Users::DiariesController < ApplicationController
     @comment = Comment.new
     @diary_tags = @diary.tags
     @diaries = Diary.all.order(" created_at DESC ")
-    @tag_list = Tag.all
+
+    # @tag_ranks = TagMiddle.find( TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 
   def new

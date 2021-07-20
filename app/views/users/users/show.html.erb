@@ -11,6 +11,7 @@
         <i class="fas fa-feather"></i>
       </h2>
         <%= render 'users/pets/pet_table' %>
+        <div class="kaminari"><%= paginate @pets %></div>
     </div>
 
     <div class="col-3 mt-4">

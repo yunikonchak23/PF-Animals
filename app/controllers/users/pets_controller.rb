@@ -3,8 +3,8 @@ class Users::PetsController < ApplicationController
 
   def index
     @user = current_user
-    @pets = @user.pets
-    @diaries = Diary.all.order(" created_at DESC ")
+    @pets = @user.pets.page(params[:page]).reverse_order
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
 
@@ -20,7 +20,7 @@ class Users::PetsController < ApplicationController
   def edit
     @pet = Pet.find(params[:id])
     @user = current_user
-    @diaries = Diary.all.order(" created_at DESC ")
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
 

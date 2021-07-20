@@ -205,3 +205,10 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%Y年%m月%d日(%a)"
     pm: 午後
+  views:
+    pagination:
+      first: <i class="fas fa-angle-double-left"></i> 最初へ
+      last: 最後へ <i class="fas fa-angle-double-right"></i>
+      previous: <i class="fas fa-angle-left"></i> 前へ
+      next: 次へ <i class="fas fa-angle-right"></i>
+      truncate: "..."

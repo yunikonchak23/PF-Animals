@@ -12,6 +12,7 @@
           <i class="fas fa-feather"></i>
         </h2>
         <%= render 'users/pets/pet_table' %>
+        <div class="kaminari"><%= paginate @pets %></div>
       </div>
       <div class="mt-5">
         <h2 style="text-align:center;">ペットを登録</h2>

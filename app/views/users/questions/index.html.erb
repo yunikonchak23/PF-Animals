@@ -6,8 +6,9 @@
 
     <div class="offset-1 col-6 mt-4">
       <div>
-        <h2 style="text-align:center;">Ｑ＆Ａ</h2>
+        <h1 style="text-align:center;">Ｑ＆Ａ</h1>
         <%= render 'users/questions/question_table' %>
+        <div class="kaminari"><%= paginate @questions %></div>
       </div>
     </div>
 

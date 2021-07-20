@@ -1,30 +1,30 @@
 class Users::QuestionsController < ApplicationController
   before_action :authenticate_user!,except: [:index]
   def index
-    @questions = Question.all
+    @questions = Question.page(params[:page]).reverse_order
     @user = current_user
-    @diaries = Diary.all.order(" created_at DESC ")
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
 
   def show
     @question = Question.find(params[:id])
     @user = current_user
-    @diaries = Diary.all.order(" created_at DESC ")
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
 
   def new
     @question = Question.new
     @user = current_user
-    @diaries = Diary.all.order(" created_at DESC ")
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
 
   def edit
     @question = Question.find(params[:id])
     @user = current_user
-    @diaries = Diary.all.order(" created_at DESC ")
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
 

@@ -29,6 +29,7 @@
   min-height: 100vh;
   background-color: #8e7f76;
   font-family: "えるまー";
+  font-size: 16px;
 }
 
  // ヘッダー
@@ -37,14 +38,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color : #fff;
-  font-size: 30px;
-
  }
- .logo:hover {
-  text-decoration: none;
- }
-
  //　ハンバーガーボタン
 .hamburger {
   display : block;
@@ -157,6 +151,11 @@
 }
 
 // ログイン後　ヘッダー
+.logo-login {
+  display: flex;
+  margin-left: 7%;
+  margin-right: 0;
+}
 .nav-box2 {
   width: 100%;
 }
@@ -249,6 +248,14 @@ main {
 .new-diary {
   margin: 1% auto;
 }
+.new-diary-img {
+  transition: 0.3s;
+}
+.new-diary-img:hover {
+  border-radius: 50px;
+  box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-4px);
+}
 .tag-menu {
   display: flex;
   flex-wrap: wrap;
@@ -273,4 +280,19 @@ main {
 // テキストの改行
 .text-body {
   white-space: pre-wrap;
+}
+
+// kaminariレイアウト
+.kaminari {
+  margin: auto;
+}
+/* 表示しているページ番号のデザイン */
+.pagination>.active>a {
+  color: #fff;     /*背景の色を変える*/
+}
+
+.btn {
+  width: 90px;
+  height: 30px;
+  font-size: 15px;
 }

@@ -3,14 +3,14 @@ class Users::UsersController < ApplicationController
   before_action :ensure_correct_user, only: [:edit, :update, :out]
   def show
     @user = User.find(params[:id])
-    @pets = @user.pets
-    @diaries = Diary.all.order(" created_at DESC ")
+    @pets = @user.pets.page(params[:page]).reverse_order
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
 
   def edit
     @user = User.find(params[:id])
-    @diaries = Diary.all.order(" created_at DESC ")
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
 

@@ -6,9 +6,10 @@
     </div>
 
     <div class="offset-1 col-6 mt-4">
-      <h2 style="text-align:center;">日記一覧</h2>
+      <h1 style="text-align:center;">日記一覧</h1>
       <div class="diary-table">
         <%= render 'users/diaries/diary_table' %>
+        <div class="kaminari"><%= paginate @diaries %></div>
       </div>
     </div>
 

@@ -2,7 +2,8 @@ class Users::DiariesController < ApplicationController
   before_action :authenticate_user!,except: [:index]
 
   def index
-    @diaries = Diary.all.order(" created_at DESC ")
+    @diaries = Diary.page(params[:page]).reverse_order
+    @diary_new = Diary.all.order(" created_at DESC ")
     @user = current_user
     @pets = @user.pets
     @tag_list = Tag.all
@@ -13,7 +14,7 @@ class Users::DiariesController < ApplicationController
     @user = current_user
     @comment = Comment.new
     @diary_tags = @diary.tags
-    @diaries = Diary.all.order(" created_at DESC ")
+    @diary_new = Diary.all.order(" created_at DESC ")
 
     # @tag_ranks = TagMiddle.find( TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
@@ -21,7 +22,7 @@ class Users::DiariesController < ApplicationController
   def new
     @diary = Diary.new
     @user = current_user
-    @diaries = Diary.all.order(" created_at DESC ")
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
 
@@ -40,7 +41,7 @@ class Users::DiariesController < ApplicationController
   def edit
     @diary = Diary.find(params[:id])
     @user = current_user
-    @diaries = Diary.all.order(" created_at DESC ")
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
 

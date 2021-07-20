@@ -1,12 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <%= form_with(model:[@diary, Comment.new], local: true) do |f| %>
+      <%= form_with(model: [@diary, Comment.new], remote: true) do |f| %>
         <div class="my-3">
           <label>コメント</label><br>
-          <%= f.text_area :comment, size: "30x4", class:"col-12", placeholder: "コメントをする" %>
+          <%= f.text_area :comment, size: "30x4", class:"col-12 text_area", placeholder: "コメントをする" %>
         </div>
-        <div class="col-12 mt-4 text-right">
+        <div class="co-12 mt-4 text-right">
           <%= f.submit '送信', class:"btn btn-outline-secondary" %>
         </div>
       <% end %>

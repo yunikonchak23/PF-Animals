@@ -1,21 +1,23 @@
-<div class="container">
-  <div class="row">
-    <div class="col-12">
-      <p class="mb-4">コメント件数：<%= @diary.comments.count %></p>
-      <% @diary.comments.each do |comment| %>
-        <div class="mt-3 comment-box">
-          <%= attachment_image_tag comment.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
-          <%= comment.user.name%>
-          <div class="ml-1 time"><%= comment.created_at.strftime('%Y/%m/%d') %></div>
-          <div class="ml-1"><%= comment.comment %></div>
-          <div class="text-right">
-            <% if comment.user == current_user %>
-              <%= link_to "削除", diary_comment_path(comment.diary,comment), method: :delete, class:"btn btn-outline-secondary",
-              data: { confirm: "#{comment.comment}を削除して大丈夫ですか？", "turbolinks" => false } %>
-            <% end %>
+<div id="comment_table">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p class="mb-4">コメント件数：<%= @diary.comments.count %></p>
+        <% @diary.comments.each do |comment| %>
+          <div class="mt-3 comment-box">
+            <%= attachment_image_tag comment.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
+            <%= comment.user.name%>
+            <div class="ml-1 time"><%= comment.created_at.strftime('%Y/%m/%d') %></div>
+            <div class="ml-1"><%= comment.comment %></div>
+            <div class="text-right">
+              <% if comment.user == current_user %>
+                <%= link_to "削除", diary_comment_path(comment.diary,comment), remote: true, method: :delete, class:"btn btn-outline-secondary",
+                data: { confirm: "#{comment.comment}を削除して大丈夫ですか？", "turbolinks" => false } %>
+              <% end %>
+            </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>

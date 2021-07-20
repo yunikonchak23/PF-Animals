@@ -1,8 +1,7 @@
 class Users::PetsController < ApplicationController
   before_action :authenticate_user!
 
-  def show
-    @pet = current_user.pets.build
+  def index
     @user = current_user
     @pets = @user.pets
     @diaries = Diary.all.order(" created_at DESC ")
@@ -20,6 +19,7 @@ class Users::PetsController < ApplicationController
 
   def edit
     @pet = Pet.find(params[:id])
+    @user = current_user
     @diaries = Diary.all.order(" created_at DESC ")
     @tag_list = Tag.all
   end
@@ -27,7 +27,7 @@ class Users::PetsController < ApplicationController
   def update
     @pet = Pet.find(params[:id])
     if @pet.update(pet_params)
-      redirect_to pet_path
+      redirect_to pets_path
     else
       render :edit
     end

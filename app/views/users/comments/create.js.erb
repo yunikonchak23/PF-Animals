@@ -1,0 +1,2 @@
+$(".text_area").val("")
+$("#comment_table").html("<%= escape_javascript(render partial: 'users/comments/comment_table', locals: {diary: @diary, comment: @comment}) %>");

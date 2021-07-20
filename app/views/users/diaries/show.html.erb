@@ -9,7 +9,7 @@
     <div class="offset-1 col-6 mt-4">
       <!--日記投稿者-->
       <div class="ml-3">
-        <%= link_to user_path(@diary.pet.user) do %>
+        <%= link_to user_path(@diary.pet.user), class:"text-link" do %>
           <%= attachment_image_tag @diary.pet.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
           <%= @diary.pet.user.name %>
         <% end %>
@@ -40,7 +40,7 @@
         <div class="ml-3">
           <label class="mt-4 mb-0">タグ</label><br>
           <% @diary.tags.each do |tag| %>
-            <%= link_to tag_diaries_path(tag_id: tag.id) do %>
+            <%= link_to tag_diaries_path(tag_id: tag.id), class:"text-link" do %>
               <%= tag.tag_name %>
               <%= "(#{tag.diaries.count})" %>
             <% end %>

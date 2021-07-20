@@ -1,7 +1,7 @@
 <div class="container">
   <div class="row">
-    <div class="offset-1 col-9">
-      <div class="diary-table">
+    <div class="offset-1 col-11">
+      <div class="diary-table new-diary-list">
         <h3 class="col-12" style="text-align:center;">新着日記</h3>
         <% @diaries.first(9).each do |diary| %>
           <div class="new-diary">
@@ -12,12 +12,14 @@
         <% end %>
       </div>
 
-      <div class="tag-list mt-5">
+      <div class="tag-menu mt-5">
         <h3 class="col-12" style="text-align:center;">タグリスト</h3>
         <% @tag_list.each do |tag| %>
-          <div>
-            <%= link_to tag.tag_name, tag_diaries_path(tag_id: tag.id) %>
-            <%= "(#{tag.diaries.count})" %>
+          <div class="tag-list">
+            <%= link_to tag_diaries_path(tag_id: tag.id),class:"text-link" do %>
+              <%= tag.tag_name %>
+              <%= "(#{tag.diaries.count})" %>
+            <% end %>
           </div>
         <% end %>
       </div>

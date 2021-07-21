@@ -60,8 +60,8 @@ class Users::DiariesController < ApplicationController
 
   def search
     @tag_list = Tag.all
-    @tag = Tag.find(params[:tag_id])
-    @diaries = @tag.diaries.all
+    @tag = Tag.find(params[:tag_id]) #参照したタグを取得
+    @diaries = @tag.diaries.all      #参照したタグに紐付けられた投稿を全て表示
   end
 
   def destroy

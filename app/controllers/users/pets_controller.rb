@@ -36,7 +36,13 @@ class Users::PetsController < ApplicationController
       render :edit
     end
   end
-
+  
+  def search
+    @pets = Pet.search(params[:search])
+    @user = current_user
+    @diary_new = Diary.all.order(" created_at DESC ")
+  end
+  
   def destroy
     @pet = Pet.find(params[:id])
     @pet.destroy

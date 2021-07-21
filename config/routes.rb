@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'search/search'
   root to: 'homes#top'
   get '/home/about' => 'homes#about'
+  get '/search' => 'search#search'
 
   # deviceのルート
   devise_for :users, only: [:sessions, :registrations], :controllers => {

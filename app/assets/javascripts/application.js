@@ -22,6 +22,8 @@
 //= require turbolinks
 //= require_tree .
 /*global $*/
+
+// ハンバーガーメニュー
 $(function() {
     $('.hamburger').click(function() {
         $(this).toggleClass('active');
@@ -32,4 +34,9 @@ $(function() {
             $('.nav-box1').removeClass('active');
         }
     });
+});
+
+// フラッシュメッセージ
+$(function(){
+  $('.alert-info').fadeOut(4000);  //４秒かけて消えていく
 });

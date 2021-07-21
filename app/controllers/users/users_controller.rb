@@ -16,8 +16,10 @@ class Users::UsersController < ApplicationController
 
   def update
     @user = User.find(params[:id])
+    @user = current_user
+    @diary_new = Diary.all.order(" created_at DESC ")
     if @user.update(user_params)
-      redirect_to user_path
+      redirect_to user_path, notice: "会員情報の更新に成功しました。"
     else
       render :edit
     end
@@ -30,6 +32,7 @@ class Users::UsersController < ApplicationController
     @user = User.find(current_user.id)
     @user.update(is_deleted: true)
     reset_session
+    flash[:notice] = "退会処理を実行いたしました"
     redirect_to root_path
   end
 

@@ -14,7 +14,7 @@ class Diary < ApplicationRecord
   def favorited_by?(user)
     favorites.where(user_id: user.id).exists?
   end
-  
+
   # tag機能
   def save_tag(sent_tags)
     #createで保存したdiaryに紐付いているタグを「タグの名前を配列として」全て取得。
@@ -23,7 +23,7 @@ class Diary < ApplicationRecord
     old_tags = current_tags - sent_tags
     #送信されてきたタグから、現在存在するタグを除いたタグをnew_tagsとする。
     new_tags = sent_tags - current_tags
-    
+
     #古いタグの削除
     old_tags.each do |old|
       self.tags.delete Tag.find_by(tag_name: old)

@@ -10,6 +10,8 @@ class Users::PetsController < ApplicationController
 
   def create
     @pet = current_user.pets.build(pet_params)
+    @user = current_user
+    @diary_new = Diary.all.order(" created_at DESC ")
     if @pet.save
       redirect_back(fallback_location: root_path)
     else
@@ -26,6 +28,8 @@ class Users::PetsController < ApplicationController
 
   def update
     @pet = Pet.find(params[:id])
+    @user = current_user
+    @diary_new = Diary.all.order(" created_at DESC ")
     if @pet.update(pet_params)
       redirect_to pets_path
     else

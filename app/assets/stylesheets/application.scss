@@ -296,3 +296,13 @@ main {
   height: 30px;
   font-size: 15px;
 }
+
+.alert {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  color:#262626;
+  background:#FFEBE8;
+  border: 2px solid #990000;
+  padding: 12px; font-weight: 850;
+}

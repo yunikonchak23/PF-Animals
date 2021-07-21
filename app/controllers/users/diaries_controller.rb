@@ -29,6 +29,8 @@ class Users::DiariesController < ApplicationController
   def create
     @pet = Pet.find(params[:diary][:pet_id])
     @diary = @pet.diaries.build(diary_params)
+    @user = current_user
+    @diary_new = Diary.all.order(" created_at DESC ")
     tag_list = params[:diary][:tag_name].split(nil)
     if @diary.save
       @diary.save_tag(tag_list)
@@ -47,6 +49,8 @@ class Users::DiariesController < ApplicationController
 
   def update
     @diary = Diary.find(params[:id])
+    @user = current_user
+    @diary_new = Diary.all.order(" created_at DESC ")
     if @diary.update(diary_params)
       redirect_to diary_path
     else

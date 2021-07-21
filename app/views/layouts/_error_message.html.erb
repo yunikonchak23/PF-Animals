@@ -1,0 +1,15 @@
+<% if model.errors.any? %>
+  <div class="alert mt-4 offset-2 col-8">
+    <h4 class="col-12">
+      <%= model.errors.count %> 件修正して下さい
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </h4>
+    <ul class="mb-0" style="list-style: none;">
+      <% model.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

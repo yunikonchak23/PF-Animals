@@ -30,6 +30,8 @@ class Users::QuestionsController < ApplicationController
 
   def create
     @question = current_user.questions.build(question_params)
+    @user = current_user
+    @diary_new = Diary.all.order(" created_at DESC ")
     if @question.save
       redirect_to questions_path
     else
@@ -39,6 +41,8 @@ class Users::QuestionsController < ApplicationController
 
   def update
     @question = Question.find(params[:id])
+    @user = current_user
+    @diary_new = Diary.all.order(" created_at DESC ")
     if @question.update(question_params)
       redirect_to question_path
     else

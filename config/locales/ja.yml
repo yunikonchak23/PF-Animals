@@ -7,6 +7,38 @@ ja:
         restrict_dependent_destroy:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
+    # varidationの日本語化
+    models:
+      diary: <日記>
+    attributes:
+      diary:
+        diary_title: 【タイトル】
+        diary_body: 【内容】
+
+    models:
+      user: <会員>
+    attributes:
+      user:
+        name: 【ニックネーム】
+        email: 【メールアドレス】
+        password: 【パスワード】
+        encrypted_password: 【パスワード】
+        introduction: 【自己紹介】
+        
+    models:
+      question: <会員>
+    attributes:
+      question:
+        question_title: 【タイトル】
+        question_body: 【質問内容】
+        
+    models:
+      pet: <ペット>
+    attributes:
+      pet:
+        pet_name: 【ペットのお名前】
+        type_name: 【ペットの】
+
   date:
     abbr_day_names:
     - 日
@@ -205,6 +237,8 @@ ja:
       long: "%Y/%m/%d %H:%M"
       short: "%Y年%m月%d日(%a)"
     pm: 午後
+
+  # kaminariの日本語化
   views:
     pagination:
       first: <i class="fas fa-angle-double-left"></i> 最初へ

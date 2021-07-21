@@ -291,12 +291,14 @@ main {
   color: #fff;     /*背景の色を変える*/
 }
 
+// ボタン
 .btn {
   width: 90px;
   height: 30px;
   font-size: 15px;
 }
 
+// エラーメッセージ
 .alert {
   display: flex;
   flex-wrap: wrap;
@@ -305,4 +307,12 @@ main {
   background:#FFEBE8;
   border: 2px solid #990000;
   padding: 12px; font-weight: 850;
+}
+
+// フラッシュメッセージ
+.alert-info {
+  margin-top: 10px;
+  margin-left: 25%;
+  width: 50%;
+  border-radius: 10px;
 }

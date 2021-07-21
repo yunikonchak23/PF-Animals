@@ -13,7 +13,7 @@ class Users::PetsController < ApplicationController
     @user = current_user
     @diary_new = Diary.all.order(" created_at DESC ")
     if @pet.save
-      redirect_back(fallback_location: root_path)
+      redirect_back(fallback_location: root_path), notice: "ペットの登録が完了しました"
     else
       render :new
     end
@@ -31,7 +31,7 @@ class Users::PetsController < ApplicationController
     @user = current_user
     @diary_new = Diary.all.order(" created_at DESC ")
     if @pet.update(pet_params)
-      redirect_to pets_path
+      redirect_to pets_path, notice: "ペットの編集が完了しました"
     else
       render :edit
     end

@@ -14,7 +14,15 @@
 
       <div class="tag-menu mt-5">
         <h2 class="col-12" style="text-align:center;">人気のタグ</h2>
-
+        <% @tag_ranks.each.with_index(1) do |tag,i| %>
+          <div class="tag-list">
+            <%= link_to tag_diaries_path(tag_id: tag.id),class:"text-link" do %>
+              第<%= i %>位
+              <%= tag.tag_name %>
+              <%= "(#{tag.diaries.count})" %>
+            <% end %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

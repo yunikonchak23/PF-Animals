@@ -6,7 +6,7 @@ class Users::DiariesController < ApplicationController
     @diary_new = Diary.all.order(" created_at DESC ")
     @user = current_user
     @pets = @user.pets
-    @tag_list = Tag.all
+    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 
   def show
@@ -15,15 +15,14 @@ class Users::DiariesController < ApplicationController
     @comment = Comment.new
     @diary_tags = @diary.tags
     @diary_new = Diary.all.order(" created_at DESC ")
-
-    # @tag_ranks = TagMiddle.find( TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 
   def new
     @diary = Diary.new
     @user = current_user
     @diary_new = Diary.all.order(" created_at DESC ")
-    @tag_list = Tag.all
+    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 
   def create
@@ -31,6 +30,7 @@ class Users::DiariesController < ApplicationController
     @diary = @pet.diaries.build(diary_params)
     @user = current_user
     @diary_new = Diary.all.order(" created_at DESC ")
+    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
     tag_list = params[:diary][:tag_name].split(nil)
     if @diary.save
       @diary.save_tag(tag_list)
@@ -44,13 +44,14 @@ class Users::DiariesController < ApplicationController
     @diary = Diary.find(params[:id])
     @user = current_user
     @diary_new = Diary.all.order(" created_at DESC ")
-    @tag_list = Tag.all
+    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 
   def update
     @diary = Diary.find(params[:id])
     @user = current_user
     @diary_new = Diary.all.order(" created_at DESC ")
+    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
     if @diary.update(diary_params)
       redirect_to diary_path, notice: "日記の編集が完了しました"
     else
@@ -59,9 +60,9 @@ class Users::DiariesController < ApplicationController
   end
 
   def search
-    @tag_list = Tag.all
-    @tag = Tag.find(params[:tag_id])
-    @diaries = @tag.diaries.all
+    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @tag = Tag.find(params[:tag_id]) #参照したタグを取得
+    @diaries = @tag.diaries.all      #参照したタグに紐付けられた投稿を全て表示
   end
 
   def destroy

@@ -1,0 +1,65 @@
+<div class="container container-size">
+  <div class="row">
+    <div class="col-2">
+      <%= render 'users/diaries/menu' %>
+    </div>
+
+    <div class="offset-1 col-6 user-box">
+      <% if @model == "user" %>
+        <% @records.each do |user| %>
+        <div class="search-user">
+          <div style="text-align:center;">
+            <%= link_to user_path(user) do %>
+              <%= attachment_image_tag user, :image, :fill, 500, 500, fallback: "no_image_square.jpg", size: "100x100", class:"icon" %>
+            <% end %>
+          </div>
+          <div style="text-align:center;">
+            <%= user.name %>
+          </div>
+        </div>
+        <% end %>
+      <% elsif @model == 'pet' %>
+        <% @records.each do |pet| %>
+          <div class="search-pet">
+            <div>
+              <%= attachment_image_tag pet.user, :image, :fill, 500, 500, fallback: "no_image_square.jpg", size: "40x40", class:"icon" %>
+              <%= pet.user.name %>
+            </div>
+            <div style="text-align:center;">
+              <%= link_to user_path(pet.user) do %>
+                <%= attachment_image_tag pet, :image, :fill, 500, 500, fallback: "no_image_square.jpg", size: "100x100", class:"icon" %>
+              <% end %>
+            </div>
+            <div style="text-align:center;">
+              <%= pet.pet_name %>
+            </div>
+            <div style="text-align:center;">
+              種類:<%= pet.type_name %>
+            </div>
+          </div>
+        <% end %>
+      <% else @model == 'question' %>
+        <% @records.each do |question| %>
+          <div class="search-pet">
+            <div>
+              <%= attachment_image_tag question.user, :image, :fill, 500, 500, fallback: "no_image_square.jpg", size: "40x40", class:"icon" %>
+              <%= question.user.name %>
+            </div>
+            <div>
+              <i class="far fa-comments mr-1"></i>
+              <%= question.question_title %>
+            </div>
+            <div>
+              <%= question.question_body.truncate(42) %>
+            </div>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+
+
+    <div class="col-3 mt-4">
+      <%= render 'layouts/right_menu' %>
+    </div>
+  </div>
+</div>

@@ -151,10 +151,18 @@
 }
 
 // ログイン後　ヘッダー
-.logo-login {
+.nav-box {
   display: flex;
-  margin-left: 7%;
+}
+.logo-login {
+  margin-top: 10px;
+  margin-left: 15%;
   margin-right: 0;
+}
+.search-form {
+  margin-left: auto;
+  margin-top: 2%;
+  margin-right: 15%;
 }
 .nav-box2 {
   width: 100%;
@@ -165,6 +173,8 @@
   width: 20%;
   float: left;
   text-align: center;
+  border : 2px solid #7a6b62;
+  border-left : 1px solid #7a6b62;
   // カーソルを離した際のアニメーションの速度
   transition:.2s all;
 }

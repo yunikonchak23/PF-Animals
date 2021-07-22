@@ -1,9 +1,11 @@
 <nav class="navbar-2">
-  <%= link_to root_path, class:"logo-login mt-3", data: {"turbolinks" => false} do %>
-    <img src="/assets/PF_logo.ing" width="250" height="63">
-  <% end %>
-  <div class="search-form">
-    <%= render 'layouts/search' %>
+  <div class="nav-box">
+    <%= link_to root_path, class:"logo-login", data: {"turbolinks" => false} do %>
+      <img src="/assets/PF_logo.ing" width="250" height="63">
+    <% end %>
+    <div class="search-form">
+      <%= render 'layouts/search' %>
+    </div>
   </div>
   <div>
     <ul class="nav-box2 mb-2">

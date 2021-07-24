@@ -24,6 +24,8 @@ Rails.application.routes.draw do
     resources :diaries do
       resources :comments, only: [:create, :destroy]
       resource :favorites, only: [:create, :destroy]
+      get :bookmarks, on: :collection
+      resource :bookmarks, only: [:create, :destroy]
     end
 
     resources :tags do

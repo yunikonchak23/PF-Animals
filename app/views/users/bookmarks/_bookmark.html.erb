@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <% if diary.bookmarked_by?(current_user) %>
+      <p class="mt-2">
+        <%= link_to diary_bookmarks_path(diary), method: :delete,  class:"star-link", remote: true do %>
+          <img src="/assets/star-in.jpg" width="20" height="20">
+          <p class="ml-1 star-size"><%= diary.bookmarks.count %></p>
+        <% end %>
+      </p>
+      <% else %>
+      <p class="mt-2">
+        <%= link_to diary_bookmarks_path(diary), method: :post, class:"star-out-link", remote: true do %>
+          <img src="/assets/star-out.jpg" width="20" height="20">
+          <p class="ml-1 star-size"><%= diary.bookmarks.count %></p>
+        <% end %>
+      </p>
+    <% end %>
+  </div>
+</div>

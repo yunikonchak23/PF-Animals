@@ -1,0 +1,21 @@
+// Place all the styles related to the Bookmarks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.star-size {
+  margin-top: 7px;
+}
+
+.star-link {
+  color: #D09F00;
+}
+.star-link:hover {
+  color: #D09F00;
+  text-decoration: none;
+}
+.star-out-link {
+  color: black;
+}
+.star-out-link:hover {
+  color: black;
+  text-decoration: none;
+}

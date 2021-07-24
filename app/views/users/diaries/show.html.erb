@@ -1,7 +1,7 @@
 <div class="container container-size">
   <div class="row">
     <!--左メニュー-->
-    <div class="col-2">
+    <div class="col-2 mt-4">
       <%= render 'users/diaries/menu' %>
     </div>
 
@@ -46,17 +46,23 @@
             <% end %>
           <% end %>
         </div>
-        <div class="col-12 mt-4 text-right">
+        <div class="favo-bookmark-box">
+          <!--いいね-->
+        　<div id="favorite<%= @diary.id %>">
+            <%= render "users/favorites/favorite", diary: @diary %>
+        　</div>
+        　<!--お気に入り-->
+        　<div id="bookmark<%= @diary.id %>">
+            <%= render "users/bookmarks/bookmark", diary: @diary %>
+        　</div>
+        </div>
+        <div class="col-12 text-right">
           <% if @diary.pet.user == current_user %>
             <%= link_to "編集する", edit_diary_path(@diary), class:"btn btn-outline-secondary pet-edit-btn", data: {"turbolinks" => false} %>
             <%= link_to "削除", @diary, method: :delete, class:"btn btn-outline-secondary",
             data: { confirm: "#{@diary.diary_title}を削除して大丈夫ですか？", "turbolinks" => false } %>
           <% end %>
         </div>
-        <!--いいね-->
-      　<div id="favorite<%= @diary.id %>">
-          <%= render "users/favorites/favorite", diary: @diary %>
-      　</div>
       </div>
 
       <!--コメント-->

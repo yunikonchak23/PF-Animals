@@ -2,6 +2,8 @@ class Diary < ApplicationRecord
   belongs_to :pet
   has_many :comments, dependent: :destroy
   has_many :favorites, dependent: :destroy
+  has_many :bookmarks, dependent: :destroy
+  has_many :bookmark_diaries, through: :bookmarks, source: :diary
   has_many :tag_middles, dependent: :destroy
   has_many :tags, through: :tag_middles
 
@@ -13,6 +15,10 @@ class Diary < ApplicationRecord
   # 引数で渡されたユーザidがFavoritesテーブル内に存在するかどうか。
   def favorited_by?(user)
     favorites.where(user_id: user.id).exists?
+  end
+  # 引数で渡されたユーザidがBookmarksテーブル内に存在するかどうか。
+  def bookmarked_by?(user)
+    bookmarks.where(user_id: user.id).exists?
   end
 
   # tag機能

@@ -9,6 +9,8 @@ class User < ApplicationRecord
   has_many :answers,   dependent: :destroy
   has_many :comments,  dependent: :destroy
   has_many :favorites, dependent: :destroy
+  has_many :bookmarks, dependent: :destroy
+  has_many :bookmark_diaries, through: :bookmarks, source: :diary
 
   attachment :image
 

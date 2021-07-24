@@ -12,6 +12,7 @@
 .diary-box {
   margin: 18px auto;
   padding: 25px;
+  padding-bottom: 10px;
   position: relative;
   box-shadow: inset 0 0 20px rgba(172,157,148,0.3);
   background-color: #F5F3F4;
@@ -67,4 +68,18 @@
   transform: rotate(90deg);
   background: #e3e3e3;
   border-color: #fff #fff #cabbb2 #cabbb2;
+}
+
+// いいね・お気に入り・コメント配置
+.favo-bookmark {
+  display: flex;
+  height: 35px;
+  margin-left: 45%;
+}
+.comment {
+  margin-left: 45%;
+}
+.favo-bookmark-box{
+  display: flex;
+  margin-left: 80%;
 }

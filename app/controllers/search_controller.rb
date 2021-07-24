@@ -2,6 +2,7 @@ class SearchController < ApplicationController
   def search
     @user = current_user
     @diary_new = Diary.all.order(" created_at DESC ")
+    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
     @model = params[:model]
 		@content = params[:content]
 		if @model == 'user'

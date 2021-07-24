@@ -59,7 +59,16 @@ class Users::DiariesController < ApplicationController
     end
   end
 
+  def bookmarks
+    @diary = current_user.bookmark_diaries.page(params[:page]).reverse_order
+    @user = current_user
+    @diary_new = Diary.all.order(" created_at DESC ")
+    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+  end
+
   def search
+    @user = current_user
+    @diary_new = Diary.all.order(" created_at DESC ")
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
     @tag = Tag.find(params[:tag_id]) #参照したタグを取得
     @diaries = @tag.diaries.all      #参照したタグに紐付けられた投稿を全て表示

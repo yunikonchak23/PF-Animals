@@ -13,13 +13,17 @@
             <label>タイトル</label>:
             <strong><%= diary.diary_title %></strong>
           </div>
-          <!--いいね-->
           <% if user_signed_in? %>
-          　<div id="favorite<%= diary.id %>" class="favorite-size">
-              <%= render "users/favorites/favorite", diary: diary %>
-          　</div>
+          　<div class="favo-bookmark">
+            　<div id="favorite<%= diary.id %>">
+                <%= render "users/favorites/favorite", diary: diary %>
+            　</div>
+            　<div id="bookmark<%= diary.id %>">
+                <%= render "users/bookmarks/bookmark", diary: diary %>
+            　</div>
+            </div>
           <% end %>
-          <div>
+          <div class="comment">
             コメント数 <%= diary.comments.count %>
           </div>
         <% end %>

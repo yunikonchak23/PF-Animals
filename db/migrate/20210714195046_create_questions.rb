@@ -4,7 +4,7 @@ class CreateQuestions < ActiveRecord::Migration[5.2]
       t.integer :user_id
       t.string :question_title
       t.text :question_body
-      t.boolean :is_active,null: false, default: false
+      t.boolean :is_active, null: false, default: false
 
       t.timestamps
     end

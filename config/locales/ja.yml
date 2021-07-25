@@ -246,3 +246,10 @@ ja:
       previous: <i class="fas fa-angle-left"></i> 前へ
       next: 次へ <i class="fas fa-angle-right"></i>
       truncate: "..."
+      
+  # calenderの日本語化
+  de:
+  simple_calendar:
+    previous: "<<前"
+    next: "次>>"
+    week: Woche

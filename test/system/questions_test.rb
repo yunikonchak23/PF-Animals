@@ -1,49 +1,49 @@
-require "application_system_test_case"
+require 'application_system_test_case'
 
 class QuestionsTest < ApplicationSystemTestCase
   setup do
     @question = questions(:one)
   end
 
-  test "visiting the index" do
+  test 'visiting the index' do
     visit questions_url
-    assert_selector "h1", text: "Questions"
+    assert_selector 'h1', text: 'Questions'
   end
 
-  test "creating a Question" do
+  test 'creating a Question' do
     visit questions_url
-    click_on "New Question"
+    click_on 'New Question'
 
-    check "Is activ" if @question.is_activ
-    fill_in "Question body", with: @question.question_body
-    fill_in "Question title", with: @question.question_title
-    fill_in "User", with: @question.user_id
-    click_on "Create Question"
+    check 'Is activ' if @question.is_activ
+    fill_in 'Question body', with: @question.question_body
+    fill_in 'Question title', with: @question.question_title
+    fill_in 'User', with: @question.user_id
+    click_on 'Create Question'
 
-    assert_text "Question was successfully created"
-    click_on "Back"
+    assert_text 'Question was successfully created'
+    click_on 'Back'
   end
 
-  test "updating a Question" do
+  test 'updating a Question' do
     visit questions_url
-    click_on "Edit", match: :first
+    click_on 'Edit', match: :first
 
-    check "Is activ" if @question.is_activ
-    fill_in "Question body", with: @question.question_body
-    fill_in "Question title", with: @question.question_title
-    fill_in "User", with: @question.user_id
-    click_on "Update Question"
+    check 'Is activ' if @question.is_activ
+    fill_in 'Question body', with: @question.question_body
+    fill_in 'Question title', with: @question.question_title
+    fill_in 'User', with: @question.user_id
+    click_on 'Update Question'
 
-    assert_text "Question was successfully updated"
-    click_on "Back"
+    assert_text 'Question was successfully updated'
+    click_on 'Back'
   end
 
-  test "destroying a Question" do
+  test 'destroying a Question' do
     visit questions_url
     page.accept_confirm do
-      click_on "Destroy", match: :first
+      click_on 'Destroy', match: :first
     end
 
-    assert_text "Question was successfully destroyed"
+    assert_text 'Question was successfully destroyed'
   end
 end

@@ -1,5 +1,4 @@
 class Users::BookmarksController < ApplicationController
-
   def create
     @diary = Diary.find(params[:diary_id])
     bookmark = Bookmark.new(diary_id: @diary.id, user_id: current_user.id)

@@ -5,6 +5,7 @@ class CreateDiaries < ActiveRecord::Migration[5.2]
       t.string :diary_image_id
       t.string :diary_title
       t.text :diary_body
+      t.datetime :start_time
 
       t.timestamps
     end

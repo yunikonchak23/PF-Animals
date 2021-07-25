@@ -16,6 +16,7 @@
  @import "bootstrap";
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
+ @import "simple_calendar";
 
  * {
   margin : 0;
@@ -240,6 +241,7 @@ main {
   font-weight: 540;
   background-color: #fff7ee;
   border : 2px solid #7a6b62;
+  transition: 0.2s;
 }
 .menu-list:hover {
   text-decoration: none;

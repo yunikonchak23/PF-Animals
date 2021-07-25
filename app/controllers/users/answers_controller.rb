@@ -12,13 +12,12 @@ class Users::AnswersController < ApplicationController
     redirect_to question_path(@question)
   end
 
-  def update
-  end
+  def update; end
 
-  def destroy
-  end
+  def destroy; end
 
   private
+
   def answer_params
     params[:answer][:user_id] = current_user.id
     params.require(:answer).permit(:answer_body, :user_id)

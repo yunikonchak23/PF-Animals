@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   has_many :pets,      dependent: :destroy
-  has_many :diaries,   dependent: :destroy
+  has_many :diaries,   dependent: :destroy, through: :pets
   has_many :questions, dependent: :destroy
   has_many :answers,   dependent: :destroy
   has_many :comments,  dependent: :destroy
@@ -14,13 +14,13 @@ class User < ApplicationRecord
 
   attachment :image
 
-  #バリデーション
-  validates :name, presence: true, length: { minimum: 2, maximum: 20}
-  validates :email, presence: true, uniqueness:true
+  # バリデーション
+  validates :name, presence: true, length: { minimum: 2, maximum: 20 }
+  validates :email, presence: true, uniqueness: true
 
   # 退会処理　is_deletedがfalseならtrueを返すようにしている
   def active_for_authentication?
-    super && (self.is_deleted == false)
+    super && (is_deleted == false)
   end
 
   def update_without_current_password(params, *options)

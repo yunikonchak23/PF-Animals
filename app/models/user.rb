@@ -23,7 +23,7 @@ class User < ApplicationRecord
   # 与フォロー関係を通じて参照→follower_idをフォローしている人
   has_many :followings, through: :relationships, source: :followed
 
-　# 画像保存
+  # 画像保存
   attachment :image
 
   # バリデーション

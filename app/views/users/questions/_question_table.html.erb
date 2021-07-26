@@ -9,11 +9,20 @@
           </div>
           <div>
             <div>
-              <%= attachment_image_tag question.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
+              <%= attachment_image_tag question.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "40x40", class:"icon" %>
               <%= question.user.name %>
             </div>
             <div class="time">
               <%= question.created_at.strftime('%Y/%m/%d %H:%M:%S') %>
+            </div>
+            <div class="my-1 answer-count">
+              回答<%= question.answers.count %>件
+            </div>
+            <div>
+              <% if question.is_active == false %>
+              <% elsif question.is_active == true %>
+              <div class="status"></div>
+              <% end %>
             </div>
             <div class="my-1">
               <%= question.question_body.truncate(42) %>

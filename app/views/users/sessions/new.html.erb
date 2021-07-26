@@ -3,12 +3,12 @@
   <%= render 'layouts/error_message', model: @user %>
   <div class="field">
     <label>メールアドレス</label><br>
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"text" %>
   </div>
 
   <div class="field">
     <label>パスワード</label><br>
-    <%= f.password_field :password, autocomplete: "current-password" %>
+    <%= f.password_field :password, autocomplete: "current-password", class:"text" %>
   </div>
 
   <% if devise_mapping.rememberable? %>

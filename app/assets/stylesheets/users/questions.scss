@@ -4,17 +4,14 @@
 .question-box {
   margin: 2% 0;
   padding: 10px;
-  box-shadow: 0 0 8px gray;
-  border-radius: 20px;
+  box-shadow: 0 0 4px #8e7f76;
   background-color: #F5F3F4;
+  position: relative;
+  transition: 0.3s;
 }
-
-.text-link {
-  color: black;
-}
-.text-link:hover {
-  color: #7a6b62;
-  text-decoration: none;
+.question-box:hover {
+  box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-4px);
 }
 .question-title {
   font-size: 25px;
@@ -26,11 +23,64 @@
 }
 
 .show-question-title {
-  border-top: dashed 2px gray ;
-  border-bottom: dashed 2px gray ;
+  font-size: 20px;
+  border-top: dashed 2px #cabbb2;
+  border-bottom: dashed 2px #cabbb2;
   padding: 5px 0;
 }
 
 .favorite-size {
   height: 30px;
+}
+
+// 解決済みのレイアウト
+.status::before{
+  content: "";
+  top: 0;
+  right: 0;
+  border-bottom: 6em solid transparent;
+  border-right: 6em solid #A52A2A;
+  position: absolute;
+  z-index: 100;
+}
+.status::after {
+  content: "解決済！";
+  font-family: 'RocknRoll One', sans-serif;
+  font-size: 20px;
+  display: block;
+  top: 20px;
+  bottom: 113px;
+  transform: rotate(45deg);
+  color: #fff;
+  right: 0;
+  position: absolute;
+  z-index: 101;
+}
+
+// 質問詳細の画面
+.question-box1 {
+  width: 97%;
+  margin: 2em 0;
+  position: relative;
+  padding: 0.25em 1em;
+  border: solid 2px #F5DEB3;
+  border-radius: 3px 0 3px 0;
+  background-color: #fffffa;
+}
+.question-box1:before,
+.question-box1:after {
+  content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: solid 2px #F5DEB3;
+    border-radius: 50%;
+}
+.question-box1:before {
+  bottom:  -12px;
+    right: -12px;
+}
+.question-box1:after {
+  top: -12px;
+    left: -12px;
 }

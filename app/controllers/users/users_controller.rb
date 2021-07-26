@@ -1,6 +1,5 @@
 class Users::UsersController < ApplicationController
   before_action :authenticate_user!
-  before_action :ensure_correct_user, only: %i[edit update out]
   def show
     @user = User.find(params[:id])
     @pets = @user.pets.page(params[:page]).reverse_order
@@ -26,7 +25,8 @@ class Users::UsersController < ApplicationController
     end
   end
 
-  def confirm; end
+  def confirm
+  end
 
   def out
     @user = User.find(current_user.id)
@@ -42,8 +42,4 @@ class Users::UsersController < ApplicationController
     params.require(:user).permit(:name, :image, :introduction)
   end
 
-  def ensure_correct_user
-    @user = User.find(params[:id])
-    redirect_to user_path(current_user) unless @user == current_user
-  end
 end

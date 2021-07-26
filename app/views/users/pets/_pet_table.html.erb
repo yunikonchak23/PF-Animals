@@ -1,6 +1,6 @@
 <% @pets.each do |pet| %>
   <div class="container mt-4 mb-3">
-    <div class="row offset-1 col-10 pet-box">
+    <div class="row offset-1 col-10 pet-box my-2">
         <div class="ml-3">
           <%= attachment_image_tag pet, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "130x130", class:"icon-1" %>
         </div>

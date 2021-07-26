@@ -2,7 +2,7 @@ class Users::DiariesController < ApplicationController
   before_action :authenticate_user!, except: [:index]
 
   def index
-    @diaries = Diary.joins("INNER JOIN pets ON diaries.pet_id = pets.id INNER JOIN users ON pets.user_id = users.id").where(users: {is_deleted: false}).page(params[:page]).reverse_order;
+    @diaries = Diary.joins(pet: :user).where(users: {is_deleted: false}).page(params[:page]).reverse_order;
     @diary_new = Diary.all.order(' created_at DESC ')
     @user = current_user
     @pets = @user.pets

@@ -61,7 +61,7 @@ class Users::DiariesController < ApplicationController
 
   def calenders
     @user = User.find(current_user.id)
-    @diaries = @user.diaries
+    @diaries = @user.diaries.page(params[:page]).reverse_order
     @diary_new = Diary.all.order(' created_at DESC ')
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end

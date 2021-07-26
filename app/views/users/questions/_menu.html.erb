@@ -22,13 +22,8 @@
           <% end %>
         </li>
         <li>
-          <%= link_to user_path(@user), class:"menu-list",data: {"turbolinks" => false} do %>
+          <%= link_to history_questions_path, class:"menu-list",data: {"turbolinks" => false} do %>
             <i class="fas fa-question mr-1"></i>過去に質問した一覧
-          <% end %>
-        </li>
-        <li>
-          <%= link_to user_path(@user), class:"menu-list",data: {"turbolinks" => false} do %>
-            <i class="far fa-lightbulb mr-1"></i>過去に回答した一覧
           <% end %>
         </li>
       </ul>

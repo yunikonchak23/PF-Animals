@@ -52,6 +52,13 @@ class Users::QuestionsController < ApplicationController
     end
   end
 
+  def history
+    @user = current_user
+    @questions = @user.questions.page(params[:page]).reverse_order
+    @diary_new = Diary.all.order(' created_at DESC ')
+    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+  end
+
   def destroy
     @question = Question.find(params[:id])
     @question.destroy
@@ -61,6 +68,6 @@ class Users::QuestionsController < ApplicationController
   private
 
   def question_params
-    params.require(:question).permit(:question_title, :question_body)
+    params.require(:question).permit(:question_title, :question_body, :is_active)
   end
 end

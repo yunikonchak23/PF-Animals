@@ -35,6 +35,7 @@ Rails.application.routes.draw do
 
     resources :questions do
       resources :answers, only: %i[index create update destroy]
+      get :history, on: :collection
     end
   end
 end

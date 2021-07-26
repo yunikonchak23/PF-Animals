@@ -26,7 +26,8 @@ class Users::UsersController < ApplicationController
     end
   end
 
-  def confirm; end
+  def confirm
+  end
 
   def out
     @user = User.find(current_user.id)

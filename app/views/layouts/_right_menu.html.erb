@@ -1,23 +1,26 @@
 <div class="container">
   <div class="row">
-    <div class="offset-1 col-9">
-      <div class="diary-table">
-        <h3 class="col-12" style="text-align:center;">新着日記</h3>
-        <% @diaries.first(9).each do |diary| %>
+    <div class="offset-1 col-11 mt-5">
+      <div class="diary-table new-diary-list">
+        <h2 class="col-12" style="text-align:center;">新着日記</h2>
+        <% @diary_new.first(9).each do |diary| %>
           <div class="new-diary">
             <%= link_to diary_path(diary.id) do %>
-              <%= attachment_image_tag diary, :diary_image, :fill, 1000, 1000, fallback: "no_image_square.jpg", size: "80x80" %>
+              <%= attachment_image_tag diary, :diary_image, :fill, 1000, 1000, fallback: "no_image_square.jpg", size: "80x80", class:"new-diary-img" %>
             <% end %>
           </div>
         <% end %>
       </div>
 
-      <div class="tag-list mt-5">
-        <h3 class="col-12" style="text-align:center;">タグリスト</h3>
-        <% @tag_list.each do |tag| %>
-          <div>
-            <%= link_to tag.tag_name, tag_diaries_path(tag_id: tag.id) %>
-            <%= "(#{tag.diaries.count})" %>
+      <div class="tag-menu mt-5">
+        <h2 class="col-12" style="text-align:center;">人気のタグ</h2>
+        <% @tag_ranks.each.with_index(1) do |tag,i| %>
+          <div class="tag-list">
+            <%= link_to tag_diaries_path(tag_id: tag.id),class:"text-link" do %>
+              第<%= i %>位
+              <%= tag.tag_name %>
+              <%= "(#{tag.diaries.count})" %>
+            <% end %>
           </div>
         <% end %>
       </div>

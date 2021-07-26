@@ -7,19 +7,29 @@
       </div>
       <ul class="mt-4">
         <li>
-          <%= link_to "マイページ",user_path(@user), class:"far fa-user menu-list",data: {"turbolinks" => false} %>
+          <%= link_to user_path(@user), class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-user mr-1"></i>マイページ
+          <% end %>
         </li>
         <li>
-          <%= link_to "Ｑ＆Ａ一覧",questions_path, class:"far fa-comments menu-list",data: {"turbolinks" => false} %>
+          <%= link_to questions_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-comments mr-1"></i>Ｑ＆Ａ一覧
+          <% end %>
         </li>
         <li>
-          <%= link_to "質問をする",new_question_path, class:"fas fa-question menu-list",data: {"turbolinks" => false} %>
+          <%= link_to new_question_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="fas fa-question mr-1"></i>質問をする
+          <% end %>
         </li>
         <li>
-          <%= link_to "過去に質問した一覧",user_path(@user), class:"far fa-clone menu-list",data: {"turbolinks" => false} %>
+          <%= link_to user_path(@user), class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="fas fa-question mr-1"></i>過去に質問した一覧
+          <% end %>
         </li>
         <li>
-          <%= link_to "過去に回答した一覧",user_path(@user), class:"far fa-lightbulb menu-list",data: {"turbolinks" => false} %>
+          <%= link_to user_path(@user), class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-lightbulb mr-1"></i>過去に回答した一覧
+          <% end %>
         </li>
       </ul>
     </div>

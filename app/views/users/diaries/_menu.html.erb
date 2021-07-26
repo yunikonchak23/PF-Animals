@@ -1,25 +1,35 @@
 <div class="container">
   <div class="row">
-    <div class="side-menu col-12">
+    <div class="side-menu col-12 mt-5">
       <div class="mt-2 menu-user">
         <%= attachment_image_tag @user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
         <%= @user.name %>
       </div>
       <ul class="mt-4">
         <li>
-          <%= link_to "マイページ",user_path(@user), class:"far fa-user menu-list",data: {"turbolinks" => false} %>
+          <%= link_to user_path(@user), class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-user mr-1"></i>マイページ
+          <% end %>
         </li>
         <li>
-          <%= link_to "カレンダー",diaries_path, class:"far fa-calendar-alt menu-list",data: {"turbolinks" => false} %>
+          <%= link_to calenders_diaries_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-calendar-alt mr-1"></i>カレンダー
+          <% end %>
         </li>
         <li>
-          <%= link_to "日記を書く",new_diary_path, class:"far fa-edit menu-list",data: {"turbolinks" => false} %>
+          <%= link_to new_diary_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-edit mr-1"></i>日記を書く
+          <% end %>
         </li>
         <li>
-          <%= link_to "ペット登録",pet_path(@user.pets), class:"fas fa-feather menu-list",data: {"turbolinks" => false} %>
+          <%= link_to pets_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="fas fa-feather mr-1"></i>ペット登録
+          <% end %>
         </li>
         <li>
-          <%= link_to "お気に入り",user_path(@user), class:"far fa-star menu-list",data: {"turbolinks" => false} %>
+          <%= link_to bookmarks_diaries_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-star mr-1"></i>お気に入り
+          <% end %>
         </li>
       </ul>
     </div>

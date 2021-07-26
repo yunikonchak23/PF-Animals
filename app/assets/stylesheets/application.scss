@@ -16,6 +16,7 @@
  @import "bootstrap";
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
+ @import "simple_calendar";
 
  * {
   margin : 0;
@@ -29,6 +30,7 @@
   min-height: 100vh;
   background-color: #8e7f76;
   font-family: "えるまー";
+  font-size: 16px;
 }
 
  // ヘッダー
@@ -37,14 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color : #fff;
-  font-size: 30px;
-
  }
- .logo:hover {
-  text-decoration: none;
- }
-
  //　ハンバーガーボタン
 .hamburger {
   display : block;
@@ -157,6 +152,18 @@
 }
 
 // ログイン後　ヘッダー
+.nav-box {
+  display: flex;
+}
+.logo-login {
+  margin-left: 7%;
+  margin-right: 0;
+}
+.search-form {
+  margin-left: auto;
+  margin-top: 2%;
+  margin-right: 7%;
+}
 .nav-box2 {
   width: 100%;
 }
@@ -166,6 +173,8 @@
   width: 20%;
   float: left;
   text-align: center;
+  border : 2px solid #7a6b62;
+  border-left : 1px solid #7a6b62;
   // カーソルを離した際のアニメーションの速度
   transition:.2s all;
 }
@@ -204,7 +213,7 @@ main {
   max-width: 1775px;
 }
 
-// サイドメニュー
+// 左のサイドメニュー
 .side-menu {
   height: 400px;
   background-color: #8e7f76;
@@ -224,7 +233,7 @@ main {
 }
 .menu-list {
   margin: 5px 0px;
-  padding: 14px 10px;
+  padding: 12px 10px;
   display: block;
   height: 50px;
   font-size: 18px;
@@ -232,11 +241,39 @@ main {
   font-weight: 540;
   background-color: #fff7ee;
   border : 2px solid #7a6b62;
+  transition: 0.2s;
 }
 .menu-list:hover {
   text-decoration: none;
   color: #990033;
   border-left: 8px solid #990033;
+}
+
+// 右のサイドメニュー
+.new-diary-list {
+  padding: 20px;
+  border : 2px solid #7a6b62;
+  border-radius: 10px;
+  background-color: #fff7ee;
+}
+.new-diary {
+  margin: 1% auto;
+}
+.new-diary-img {
+  transition: 0.3s;
+}
+.new-diary-img:hover {
+  border-radius: 50px;
+  box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-4px);
+}
+.tag-menu {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  border : 2px solid #7a6b62;
+  border-radius: 10px;
+  background-color: #fff7ee;
 }
 
 // 文字
@@ -256,6 +293,37 @@ main {
   white-space: pre-wrap;
 }
 
-.new-diary {
-  margin: 1% auto;
+// kaminariレイアウト
+.kaminari {
+  margin: auto;
+}
+/* 表示しているページ番号のデザイン */
+.pagination>.active>a {
+  color: #fff;     /*背景の色を変える*/
+}
+
+// ボタン
+.btn {
+  width: 90px;
+  height: 30px;
+  font-size: 15px;
+}
+
+// エラーメッセージ
+.alert {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  color:#262626;
+  background:#FFEBE8;
+  border: 2px solid #990000;
+  padding: 12px; font-weight: 850;
+}
+
+// フラッシュメッセージ
+.alert-info {
+  margin-top: 10px;
+  margin-left: 25%;
+  width: 50%;
+  border-radius: 10px;
 }

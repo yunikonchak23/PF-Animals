@@ -10,10 +10,20 @@
             <%= l(diary.created_at, format: :short) %>
           </div>
           <div class="mt-3">
-            <label>タイトル</label>:
+            <i class="fas fa-book-open"></i>
             <strong><%= diary.diary_title %></strong>
           </div>
-          <div>
+          <% if user_signed_in? %>
+          　<div class="favo-bookmark">
+            　<div id="favorite<%= diary.id %>">
+                <%= render "users/favorites/favorite", diary: diary %>
+            　</div>
+            　<div id="bookmark<%= diary.id %>">
+                <%= render "users/bookmarks/bookmark", diary: diary %>
+            　</div>
+            </div>
+          <% end %>
+          <div class="comment">
             コメント数 <%= diary.comments.count %>
           </div>
         <% end %>

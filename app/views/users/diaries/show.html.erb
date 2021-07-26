@@ -1,7 +1,7 @@
 <div class="container container-size">
   <div class="row">
     <!--左メニュー-->
-    <div class="col-2">
+    <div class="col-2 mt-4">
       <%= render 'users/diaries/menu' %>
     </div>
 
@@ -9,7 +9,7 @@
     <div class="offset-1 col-6 mt-4">
       <!--日記投稿者-->
       <div class="ml-3">
-        <%= link_to user_path(@diary.pet.user) do %>
+        <%= link_to user_path(@diary.pet.user), class:"text-link" do %>
           <%= attachment_image_tag @diary.pet.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
           <%= @diary.pet.user.name %>
         <% end %>
@@ -39,22 +39,30 @@
         </div>
         <div class="ml-3">
           <label class="mt-4 mb-0">タグ</label><br>
-          <% @diary_tags.each do |tag| %>
-            <%= link_to tag.tag_name, tag_diaries_path(tag_id: tag.id) %>
-            <%= "(#{tag.diaries.count})" %>
+          <% @diary.tags.each do |tag| %>
+            <%= link_to tag_diaries_path(tag_id: tag.id), class:"text-link" do %>
+              <%= tag.tag_name %>
+              <%= "(#{tag.diaries.count})" %>
+            <% end %>
           <% end %>
         </div>
-        <div class="col-12 mt-4 text-right">
+        <div class="favo-bookmark-box">
+          <!--いいね-->
+        　<div id="favorite<%= @diary.id %>">
+            <%= render "users/favorites/favorite", diary: @diary %>
+        　</div>
+        　<!--お気に入り-->
+        　<div id="bookmark<%= @diary.id %>">
+            <%= render "users/bookmarks/bookmark", diary: @diary %>
+        　</div>
+        </div>
+        <div class="col-12 text-right">
           <% if @diary.pet.user == current_user %>
             <%= link_to "編集する", edit_diary_path(@diary), class:"btn btn-outline-secondary pet-edit-btn", data: {"turbolinks" => false} %>
             <%= link_to "削除", @diary, method: :delete, class:"btn btn-outline-secondary",
             data: { confirm: "#{@diary.diary_title}を削除して大丈夫ですか？", "turbolinks" => false } %>
           <% end %>
         </div>
-        <!--いいね-->
-      　<div class="favo">
-          <%= render 'users/favorites/favorite' %>
-      　</div>
       </div>
 
       <!--コメント-->

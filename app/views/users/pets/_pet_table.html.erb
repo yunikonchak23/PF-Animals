@@ -16,8 +16,7 @@
             <%= pet.gender %>
             <div class="text-right">
               <% if user_signed_in? && current_user.id == pet.user_id %>
-                <%= link_to "編集", edit_pet_path, class:"btn btn-outline-secondary pet-edit-btn", data: {"turbolinks" => false} %>
-                <%= link_to "削除", pet, method: :delete, class:"btn btn-outline-secondary", data: { confirm: "#{pet}を削除して大丈夫ですか？", "turbolinks" => false } %>
+                <%= link_to "編集", edit_pet_path(pet), class:"btn btn-outline-secondary pet-edit-btn", data: {"turbolinks" => false} %>
               <% end %>
             </div>
           </div>

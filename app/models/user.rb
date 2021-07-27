@@ -7,6 +7,7 @@ class User < ApplicationRecord
   # アソシエーション
   has_many :pets,      dependent: :destroy
   has_many :diaries,   dependent: :destroy, through: :pets
+  has_many :tags,      dependent: :destroy
   has_many :questions, dependent: :destroy
   has_many :answers,   dependent: :destroy
   has_many :comments,  dependent: :destroy

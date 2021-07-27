@@ -34,9 +34,11 @@ class User < ApplicationRecord
   def follow(user_id)
     relationships.create(followed_id: user_id)
   end
+
   def unfollow(user_id)
     relationships.find_by(followed_id: user_id).destroy
   end
+
   def following?(user)
     followings.include?(user)
   end
@@ -57,5 +59,13 @@ class User < ApplicationRecord
     result = update_attributes(params, *options)
     clean_up_passwords
     result
+  end
+
+  # ゲストログイン用のメソッド
+  def self.guest
+    find_or_create_by!(email: 'guest@example.com') do |user|
+      user.password = SecureRandom.urlsafe_base64
+      user.name = "ゲスト"
+    end
   end
 end

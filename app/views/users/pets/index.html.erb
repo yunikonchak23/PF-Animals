@@ -16,6 +16,7 @@
       </div>
       <div class="mt-5">
         <h2 style="text-align:center;">ペットを登録</h2>
+        <%= render 'layouts/error_message', model: @pet %>
         <div>
           <%= form_with model: Pet.new, local:true do |f| %>
             <%= render 'users/pets/pet_form', f: f %>

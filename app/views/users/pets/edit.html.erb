@@ -11,7 +11,7 @@
         <%= render 'users/pets/pet_form', f: f %>
         <div class="col-9 text-right">
           <%= f.submit '更新', class:"btn btn-outline-secondary" %>
-          <%= link_to "削除", pets_path, method: :delete, class:"btn btn-outline-secondary", data: { confirm: "#{@pet.pet_name}を削除して大丈夫ですか？", "turbolinks" => false } %>
+          <%= link_to "削除", pet_path(@pet.id), method: :delete, class:"btn btn-outline-secondary", data: { confirm: "#{@pet.pet_name}を削除して大丈夫ですか？", "turbolinks" => false } %>
         </div>
       <% end %>
     </div>

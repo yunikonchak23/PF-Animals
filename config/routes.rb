@@ -15,6 +15,11 @@ Rails.application.routes.draw do
   # user側のルート設定
   scope module: 'users' do
     resources :users, only: %i[show edit update] do
+      # フォロー・フォロワー
+      resource :relationships, only: [:create, :destroy]
+      get 'followings' => 'relationships#followings', as: :followings
+      get 'followers' => 'relationships#followers', as: :followers
+      # 退会
       get 'confirm' => 'users#confirm', as: :confirm
       patch 'out' => 'users#out', as: :out
     end

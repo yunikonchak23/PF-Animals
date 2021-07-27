@@ -3,7 +3,7 @@ class Users::DiariesController < ApplicationController
 
   def index
     @diaries = Diary.joins(pet: :user).where(users: {is_deleted: false}).page(params[:page]).reverse_order;
-    @diary_new = Diary.all.order(' created_at DESC ')
+    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
     @user = current_user
     @pets = @user.pets
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
@@ -14,14 +14,14 @@ class Users::DiariesController < ApplicationController
     @user = current_user
     @comment = Comment.new
     @diary_tags = @diary.tags
-    @diary_new = Diary.all.order(' created_at DESC ')
+    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 
   def new
     @diary = Diary.new
     @user = current_user
-    @diary_new = Diary.all.order(' created_at DESC ')
+    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 
@@ -29,7 +29,7 @@ class Users::DiariesController < ApplicationController
     @pet = Pet.find(params[:diary][:pet_id])
     @diary = @pet.diaries.build(diary_params)
     @user = current_user
-    @diary_new = Diary.all.order(' created_at DESC ')
+    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
     tag_list = params[:diary][:tag_name].split(nil)
     if @diary.save
@@ -43,14 +43,14 @@ class Users::DiariesController < ApplicationController
   def edit
     @diary = Diary.find(params[:id])
     @user = current_user
-    @diary_new = Diary.all.order(' created_at DESC ')
+    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 
   def update
     @diary = Diary.find(params[:id])
     @user = current_user
-    @diary_new = Diary.all.order(' created_at DESC ')
+    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
     if @diary.update(diary_params)
       redirect_to diary_path, notice: '日記の編集が完了しました'
@@ -62,20 +62,20 @@ class Users::DiariesController < ApplicationController
   def calenders
     @user = User.find(current_user.id)
     @diaries = @user.diaries.page(params[:page]).reverse_order
-    @diary_new = Diary.all.order(' created_at DESC ')
+    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 
   def bookmarks
     @diary = current_user.bookmark_diaries.page(params[:page]).reverse_order
     @user = current_user
-    @diary_new = Diary.all.order(' created_at DESC ')
+    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 
   def search
     @user = current_user
-    @diary_new = Diary.all.order(' created_at DESC ')
+    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
     @tag = Tag.find(params[:tag_id]) # 参照したタグを取得
     @diaries = @tag.diaries.all      # 参照したタグに紐付けられた投稿を全て表示

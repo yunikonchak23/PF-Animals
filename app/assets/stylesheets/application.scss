@@ -350,3 +350,22 @@ main {
   width: 50%;
   border-radius: 10px;
 }
+
+// ページトップ
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+}
+#page-top img {
+  width: 100px;
+}
+#page-top span {
+  padding: 0 17px;
+  text-align: center;
+  color: #333;
+}
+.top-link:hover {
+  text-decoration: none;
+}

@@ -7,6 +7,7 @@ class Diary < ApplicationRecord
   has_many :tag_middles, dependent: :destroy
   has_many :tags, through: :tag_middles
 
+
   validates :diary_title, presence: true, length: { minimum: 2 }
   validates :diary_body, presence: true
 
@@ -27,7 +28,7 @@ class Diary < ApplicationRecord
   end
 
   # tag機能
-  def save_tag(sent_tags)
+  def save_tag(sent_tags, user)
     # createで保存したdiaryに紐付いているタグを「タグの名前を配列として」全て取得。
     current_tags = tags.pluck(:tag_name) unless tags.nil?
     # 取得したdiaryに存在するタグから、送信されてきたタグを除いたタグをold_tagsとする。
@@ -41,7 +42,7 @@ class Diary < ApplicationRecord
     end
     # 新しいタグをデータベースに保存
     new_tags.each do |new|
-      new_tag = Tag.find_or_create_by(tag_name: new)
+      new_tag = Tag.find_or_create_by(tag_name: new, user_id: user.id)
       tags << new_tag
     end
   end

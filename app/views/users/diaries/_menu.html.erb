@@ -2,12 +2,12 @@
   <div class="row">
     <div class="side-menu col-12 mt-5">
       <div class="mt-2 menu-user">
-        <%= attachment_image_tag @user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
-        <%= @user.name %>
+        <%= attachment_image_tag current_user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
+        <%= current_user.name %>
       </div>
       <ul class="mt-4">
         <li>
-          <%= link_to user_path(@user), class:"menu-list",data: {"turbolinks" => false} do %>
+          <%= link_to user_path(current_user), class:"menu-list",data: {"turbolinks" => false} do %>
             <i class="far fa-user mr-1"></i>マイページ
           <% end %>
         </li>

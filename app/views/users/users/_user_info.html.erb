@@ -11,9 +11,28 @@
       <div class="info-box mt-1">
         <p class="text-body"><%= @user.introduction %></p>
       </div>
-      <div class="text-right">
-        <%= link_to '編集する', edit_user_path, class:"btn btn-outline-secondary", data: {"turbolinks" => false} %>
+      <% if @user.id == current_user.id %>
+        <div class="text-right">
+          <%= link_to '編集する', edit_user_path, class:"btn btn-outline-secondary", data: {"turbolinks" => false} %>
+        </div>
+      <% end %>
+      <div class="row mb-4">
+        <div class="col-4">
+          フォロー数:
+          <%= link_to @user.followings.count, user_followings_path(user_id: @user.id), class:"text-link" %>
+        </div>
+        <div class="col-4">
+          フォロワー数:
+          <%= link_to @user.followers.count, user_followers_path(user_id: @user.id), class:"text-link" %>
+        </div>
       </div>
+      <% if @user != current_user %>
+        <% if current_user.following?(@user) %>
+          <div><%= link_to "フォロー解除", user_relationships_path(user_id: @user.id), method: :delete, class:"text-link" %></div>
+        <% else %>
+          <div><%= link_to "フォローする", user_relationships_path(user_id: @user.id), method: :post, class:"text-link" %></div>
+        <% end %>
+      <% end %>
     </div>
   </div>
 </div>

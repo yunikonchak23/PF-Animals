@@ -1,38 +1,43 @@
 class Users::QuestionsController < ApplicationController
   before_action :authenticate_user!, except: [:index]
   def index
-    @questions = Question.joins(:user).where(users: {is_deleted: false}).page(params[:page]).reverse_order
+    @questions = Question.joins(:user).where(users: { is_deleted: false }).page(params[:page]).reverse_order
     @user = current_user
-    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
-    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
+    tag_ids = TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id) - Tag.joins(:user).where(users: { is_deleted: true }).pluck(:id)
+    @tag_ranks = Tag.find(tag_ids)
   end
 
   def show
     @question = Question.find(params[:id])
     @user = current_user
-    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
-    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
+    tag_ids = TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id) - Tag.joins(:user).where(users: { is_deleted: true }).pluck(:id)
+    @tag_ranks = Tag.find(tag_ids)
   end
 
   def new
     @question = Question.new
     @user = current_user
-    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
-    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
+    tag_ids = TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id) - Tag.joins(:user).where(users: { is_deleted: true }).pluck(:id)
+    @tag_ranks = Tag.find(tag_ids)
   end
 
   def edit
     @question = Question.find(params[:id])
     @user = current_user
-    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
-    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
+    tag_ids = TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id) - Tag.joins(:user).where(users: { is_deleted: true }).pluck(:id)
+    @tag_ranks = Tag.find(tag_ids)
   end
 
   def create
     @question = current_user.questions.build(question_params)
     @user = current_user
-    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
-    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
+    tag_ids = TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id) - Tag.joins(:user).where(users: { is_deleted: true }).pluck(:id)
+    @tag_ranks = Tag.find(tag_ids)
     if @question.save
       redirect_to questions_path, notice: '質問の投稿が完了しました'
     else
@@ -43,8 +48,9 @@ class Users::QuestionsController < ApplicationController
   def update
     @question = Question.find(params[:id])
     @user = current_user
-    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
-    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
+    tag_ids = TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id) - Tag.joins(:user).where(users: { is_deleted: true }).pluck(:id)
+    @tag_ranks = Tag.find(tag_ids)
     if @question.update(question_params)
       redirect_to question_path, notice: '質問の編集が完了しました'
     else
@@ -55,8 +61,9 @@ class Users::QuestionsController < ApplicationController
   def history
     @user = current_user
     @questions = @user.questions.page(params[:page]).reverse_order
-    @diary_new = Diary.joins(pet: :user).where(users: {is_deleted: false}).order(' created_at DESC ')
-    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
+    tag_ids = TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id) - Tag.joins(:user).where(users: { is_deleted: true }).pluck(:id)
+    @tag_ranks = Tag.find(tag_ids)
   end
 
   def destroy

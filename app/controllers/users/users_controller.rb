@@ -3,21 +3,24 @@ class Users::UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @pets = @user.pets.page(params[:page]).reverse_order
-    @diary_new = Diary.all.order(' created_at DESC ')
-    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
+    tag_ids = TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id) - Tag.joins(:user).where(users: { is_deleted: true }).pluck(:id)
+    @tag_ranks = Tag.find(tag_ids)
   end
 
   def edit
     @user = User.find(params[:id])
-    @diary_new = Diary.all.order(' created_at DESC ')
-    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
+    tag_ids = TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id) - Tag.joins(:user).where(users: { is_deleted: true }).pluck(:id)
+    @tag_ranks = Tag.find(tag_ids)
   end
 
   def update
     @user = User.find(params[:id])
     @user = current_user
-    @diary_new = Diary.all.order(' created_at DESC ')
-    @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
+    tag_ids = TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id) - Tag.joins(:user).where(users: { is_deleted: true }).pluck(:id)
+    @tag_ranks = Tag.find(tag_ids)
     if @user.update(user_params)
       redirect_to user_path, notice: '会員情報の更新に成功しました。'
     else
@@ -41,5 +44,4 @@ class Users::UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:name, :image, :introduction)
   end
-
 end

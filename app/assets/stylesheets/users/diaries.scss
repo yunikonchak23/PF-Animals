@@ -55,6 +55,7 @@
   position: relative;
   box-shadow: inset 0 0 20px rgba(172,157,148,0.3);
   background-color: #F5F3F4;
+  word-wrap: break-word;
 }
 .diary-show:before {
   content: " ";

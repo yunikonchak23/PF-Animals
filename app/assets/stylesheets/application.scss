@@ -315,6 +315,7 @@ main {
 // テキストの改行
 .text-body {
   white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 // kaminariレイアウト

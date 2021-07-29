@@ -16,7 +16,6 @@
 //= require bootstrap-sprockets
 
 //= require jquery
-//= require jquery_ujs
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
@@ -58,7 +57,7 @@ $(function () {
       //ターゲットの位置を取得
       const targetElement = $(this).offset().top;
       //スクロール量を取得
-      const scroll = $(window).scrollTop()
+      const scroll = $(window).scrollTop();
       //ウィンドウの高さを取得
       const windowHeight = $(window).height();
       //ターゲットまでスクロールするとフェードインする

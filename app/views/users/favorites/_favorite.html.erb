@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <% if diary.favorited_by?(current_user) %>
+      <p class="mt-2">
+        <%= link_to diary_favorites_path(diary), method: :delete,  class:"favo-link", remote: true do %>
+          <img src="/assets/favo-in.jpg" width="20" height="20">
+          <p class="ml-1 favo-size"><%= diary.favorites.count %></p>
+        <% end %>
+      </p>
+      <% else %>
+      <p class="mt-2">
+        <%= link_to diary_favorites_path(diary), method: :post, class:"favo-out-link", remote: true do %>
+          <img src="/assets/favo-out.jpg" width="20" height="20">
+          <p class="ml-1 favo-size"><%= diary.favorites.count %></p>
+        <% end %>
+      </p>
+    <% end %>
+  </div>
+</div>

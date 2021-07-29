@@ -1,0 +1,87 @@
+// Place all the styles related to the users/Diaries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// 日記一覧
+.diary-table {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+// 日記一覧：紙の形
+.diary-box {
+  margin: 18px auto;
+  width: 250px;
+  padding: 25px;
+  padding-bottom: 10px;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(172,157,148,0.3);
+  background-color: #F5F3F4;
+  transition: 0.3s;
+}
+.diary-box:hover {
+  box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-4px);
+}
+// 右下折り曲げ
+.diary-box::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-width: 0 30px 30px 0;
+  border-style: solid;
+  width: 0;
+  transition: 0.3s;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: #e3e3e3;
+  border-color: #fff #fff #cabbb2 #cabbb2;
+}
+.diary-box:hover::before {
+  border-color: #F5F3F4;
+}
+
+// 日記詳細ページでのペットの並び方
+.diary-pet {
+  display: flex;
+}
+
+// 日記詳細の紙レイアウト
+.diary-show {
+  margin: 18px auto;
+  padding: 25px;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(172,157,148,0.3);
+  background-color: #F5F3F4;
+  word-wrap: break-word;
+}
+.diary-show:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-width: 0 30px 30px 0;
+  border-style: solid;
+  width: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background: #e3e3e3;
+  border-color: #fff #fff #cabbb2 #cabbb2;
+}
+
+// いいね・お気に入り・コメント配置
+.favo-bookmark {
+  display: flex;
+  height: 35px;
+  margin-left: 45%;
+}
+.comment {
+  margin-left: 45%;
+}
+.favo-bookmark-box{
+  display: flex;
+  margin-left: 80%;
+}

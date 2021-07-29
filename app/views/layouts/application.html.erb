@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Animal</title>
+    <title>どうぶつの村</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <!-- Bootstrap CSS読み込みコード-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Bootstrap JavaScript読み込みコード-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
 
   <body>
-    <% if user_signed_in? %>
-      <li>
-        <%= link_to "マイページ", users_path %>
-      </li>
-      <li>
-        <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-      </li>
-    <% else %>
-      <li>
-        <%= link_to "新規登録", new_user_registration_path %>
-      </li>
-      <li>
-        <%= link_to "ログイン", new_user_session_path %>
-      </li>
-    <% end %>
+    <header>
+      <% if user_signed_in? %>
+        <%= render 'layouts/header_user' %>
+      <% elsif admin_signed_in? %>
+        <%= render 'layouts/header_admin' %>
+      <% else %>
+        <%= render 'layouts/header_logout' %>
+      <% end %>
+    </header>
 
-    <%= yield %>
+    <main>
+      <div class="body-bg">
+        <% if notice != nil %>
+          <h2 class="alert-info" role="alert" style="text-align:center;"><%= notice %></h2>
+        <% end %>
+        <%= yield %>
+      </div>
+    </main>
+
+    <footer class="p-3">
+        <div class='row'>
+          <div class='mx-auto'>
+            <p id="page-top">
+              <%= link_to "#", class:"top-link" do %>
+                <img src="/assets/home/top_link.jpg" alt=""><br>
+                <span>Page Top</span>
+              <% end %>
+            </p>
+            <small class="mt-3">COPYRIGHT© 2021 どうぶつの村 ALL RIGHTS RESERVED.</small>
+          </div>
+        </div>
+    </footer>
   </body>
 </html>

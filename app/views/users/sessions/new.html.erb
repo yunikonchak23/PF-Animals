@@ -1,30 +1,33 @@
-<h2>ログイン</h2>
+<div class="form-box" style="text-align:center;">
+  <h1 class="mb-5">ログイン</h1>
 
-<%= form_with model: @user, url: user_session_path, local: true do |f| %>
-  <div class="field">
-    <label>メールアドレス</label><br>
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+  <%= form_with model: @user, url: user_session_path, local: true do |f| %>
+    <%= render 'layouts/error_message', model: @user %>
 
-  <div class="field">
-    <label>パスワード</label><br>
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+    <div class="form-item mt-5">
+      <p class="formLabel">メールアドレス</p>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"text col-4" %>
+    </div>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <label>次回から自動的にログイン</label>
+    <div class="form-item mt-5">
+      <p class="formLabel">パスワード</p>
+      <%= f.password_field :password, autocomplete: "current-password", class:"text col-4" %>
+    </div>
+
+    <% if devise_mapping.rememberable? %>
+      <div class="form-item my-5">
+        <%= f.check_box :remember_me %>
+        <label>次回から自動的にログイン</label>
+      </div>
+    <% end %>
+
+    <div class="btn-top mt-4 mb-5">
+      <%= f.submit "ログイン", class:"log-in-text" %>
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit "ログイン" %>
+  <h4>登録がお済みでない方</h4>
+  <div>
+    <%= link_to "こちら", new_registration_path(resource_name), class:"device-text" %>
+    から新規登録を行って下さい。
   </div>
-<% end %>
-
-<h4>登録がお済みでない方</h4>
-<div>
-  <%= link_to "こちら", new_registration_path(resource_name), class:"ml-5" %>
-  から新規登録を行って下さい。
-</div>

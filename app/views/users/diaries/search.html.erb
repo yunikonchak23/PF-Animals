@@ -1,0 +1,22 @@
+<div class="container container-size">
+  <div class="row">
+    <!--左メニュー-->
+    <div class="col-2 mt-4">
+      <%= render 'users/diaries/menu' %>
+    </div>
+
+    <div class="offset-1 col-6 mt-4">
+      <div>
+        タグが <span>"<%= @tag.tag_name %>"</span> の投稿一覧
+      </div>
+      <div class="diary-table">
+        <%= render 'users/diaries/diary_table' %>
+      </div>
+    </div>
+
+    <!--右メニュー-->
+    <div class="col-3 mt-4">
+      <%= render 'layouts/right_menu' %>
+    </div>
+  </div>
+</div>

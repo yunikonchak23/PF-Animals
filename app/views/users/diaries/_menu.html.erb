@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="side-menu col-12 mt-5">
+      <div class="mt-2 menu-user">
+        <%= attachment_image_tag current_user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
+        <%= current_user.name %>
+      </div>
+      <ul class="mt-4">
+        <li>
+          <%= link_to user_path(current_user), class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-user mr-1"></i>マイページ
+          <% end %>
+        </li>
+        <li>
+          <%= link_to calenders_diaries_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-calendar-alt mr-1"></i>カレンダー
+          <% end %>
+        </li>
+        <li>
+          <%= link_to new_diary_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-edit mr-1"></i>日記を書く
+          <% end %>
+        </li>
+        <li>
+          <%= link_to pets_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="fas fa-feather mr-1"></i>ペット登録
+          <% end %>
+        </li>
+        <li>
+          <%= link_to bookmarks_diaries_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-star mr-1"></i>お気に入り
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

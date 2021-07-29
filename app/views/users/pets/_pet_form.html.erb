@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="offset-3 col-8 mt-4">
+      <div>
+        <label>ペットのプロフィール画像</label><br>
+        <%= f.attachment_field :image %>
+      </div>
+      <div class="my-3">
+        <label>ペットのお名前</label><br>
+        <%= f.text_field :pet_name, class:"col-8" %>
+      </div>
+      <div class="my-3">
+        <label>ペットの性別</label><br>
+        <%= f.select :gender, [["未選択", "未選択"], ["男の子","男の子"],["女の子","女の子"],["性別不明","性別不明"]], class:"col-8" %>
+      </div>
+      <div class="my-3">
+        <label>ペットの種類</label><br>
+        <%= f.text_field :type_name, class:"col-8" %>
+      </div>
+    </div>
+  </div>
+</div>

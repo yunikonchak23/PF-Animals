@@ -1,0 +1,36 @@
+<div class="container container-size">
+  <div class="row">
+
+    <div class="col-2 mt-4">
+      <%= render 'users/diaries/menu' %>
+    </div>
+
+    <div class="offset-1 col-6 mt-4">
+      <h2 style="text-align:center;">プロフィール編集</h2>
+      <%= render 'layouts/error_message', model: @user %>
+        <div class="offset-2 mt-5">
+          <%= form_with model: @user, url: user_path, local:true do |f| %>
+            <div class="my-3">
+              <label>プロフィール画像</label><br>
+              <%= f.attachment_field :image %>
+            </div>
+            <div class="my-3">
+              <label>ニックネーム</label><br>
+              <%= f.text_field :name, autofocus: true, class:"col-6" %>
+            </div>
+            <div class="my-3">
+              <label>自己紹介</label><br>
+              <%= f.text_area :introduction, size: "60x10", class:"col-9" %>
+            </div>
+            <div class="col-10 text-right">
+             <%= f.submit '編集', class:"btn btn-outline-secondary", data: {"turbolinks" => false} %>
+             <%= link_to '退会', user_confirm_path(@user), class:"btn btn-outline-secondary", data: {"turbolinks" => false} %>
+            </div>
+          <% end %>
+        </div>
+    </div>
+    <div class="col-3 mt-4">
+      <%= render 'layouts/right_menu' %>
+    </div>
+  </div>
+</div>

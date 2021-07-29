@@ -16,3 +16,358 @@
  @import "bootstrap";
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
+ @import "simple_calendar";
+ @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+ * {
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+// 全体
+ body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  background-color: #8e7f76;
+  font-family: "えるまー";
+  font-size: 16px;
+  color: #565656;
+}
+
+ // ヘッダー
+ // ログイン前
+ .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ //　ハンバーガーボタン
+.hamburger {
+  display : block;
+  position: fixed;
+  z-index : 3;
+  left  : 30px;
+  top   : 9px;
+  width : 60px;
+  height: 60px;
+  cursor: pointer;
+  text-align: center;
+  background: #706158;
+  border-radius: 5px;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 40px;
+  height  : 2px ;
+  left    : 10px;
+  background : #fff;
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 13px;
+}
+.hamburger span:nth-child(2) {
+  top: 23px;
+}
+.hamburger span:nth-child(3) {
+  top: 33px;
+}
+.hamburger span:nth-child(3)::after {
+ content : "Menu";
+ font-family: 'Patrick Hand', cursive;
+ position: absolute;
+ top  : 2px;
+ left : 1px;
+ color: #fff;
+ font-size: 17px;
+ text-transform: uppercase;
+}
+// ナビ開いてる時のボタン
+.hamburger.active span:nth-child(1),
+.hamburger.active span:nth-child(3) {
+  width : 15px;
+  -webkit-transform: translate(17px,5px) rotate(45deg);
+  -moz-transform   : translate(17px,5px) rotate(45deg);
+  transform        : translate(17px,5px) rotate(45deg);
+}
+.hamburger.active span:nth-child(1) {
+  -webkit-transform: translate(27px,5px) rotate(45deg);
+  -moz-transform   : translate(27px,5px) rotate(45deg);
+  transform        : translate(27px,5px) rotate(45deg);
+}
+.hamburger.active span:nth-child(3) {
+  -webkit-transform: translate(27px,-5px) rotate(-45deg);
+  -moz-transform   : translate(27px,-5px) rotate(-45deg);
+  transform        : translate(27px,-5px) rotate(-45deg);
+}
+.hamburger.active span:nth-child(3)::after {
+ content : "Crose";
+ transform: translateY(0) rotate(45deg);
+ top  : -6px;
+ left : -39px;
+}
+
+// ナビを開いてる時のメニュー
+.nav-box1 {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  background: #706158;
+  text-align: center;
+  transform: translateX(-100%);
+  transition: all 0.6s;
+  argin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+.nav-box1 li {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  border-bottom: 1px solid #D3D3D3;
+}
+.nav-box1 li:last-child {
+  padding-bottom: 0;
+  border-bottom : none;
+}
+.nav-box1 li:hover {
+  background: #F5F3F4;
+}
+
+.link1 {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  padding: 1em 0;
+  text-decoration: none;
+}
+.link1:hover {
+  color: #706158;
+  text-decoration: none;
+}
+
+// このクラスを、jQueryで付与・削除する
+.nav-box1.active {
+  transform: translateX(0%);
+}
+
+// ログイン後　ヘッダー
+.nav-box {
+  display: flex;
+}
+.logo-login {
+  margin-left: 7%;
+  margin-right: 0;
+}
+.search-form {
+  margin-left: auto;
+  margin-top: 2%;
+  margin-right: 7%;
+}
+.nav-box2 {
+  width: 100%;
+}
+.nav-menu {
+  display: block;
+  padding: 10px;
+  width: 20%;
+  float: left;
+  text-align: center;
+  border : 2px solid #7a6b62;
+  border-left : 1px solid #7a6b62;
+  // カーソルを離した際のアニメーションの速度
+  transition:.2s all;
+}
+.nav-menu p {
+  height: 10px;
+  font-weight: 300;
+}
+.nav-menu .link2 {
+  display: block;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-2:hover .nav-menu {
+  // 1つのボタンにカーソルがある時、他残りのメニューが薄くなる
+  opacity  :.3;
+}
+.navbar-2:hover .nav-menu:hover {
+  // メニューボタンのホバーアクション
+  transition: .4s;
+  transform : scale(.9);
+  background-color: #7a6b62;
+  opacity   : 1;
+  box-shadow: 2px 2px 3px 3px rgba(0,0,0,0.3) inset;
+}
+
+// 背景
+main {
+  flex: 1;
+  margin: 0 1%;
+  background-color: #fff;
+}
+// メインの大きさ
+.container-size {
+  padding-bottom: 30px;
+  max-width: 1775px;
+}
+
+// 左のサイドメニュー
+.side-menu {
+  height: 400px;
+  background-color: #8e7f76;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.menu-user {
+  padding-top: 20px;
+  color: #fff7ee;
+  font-size: 20px;
+  font-weight: 600;
+}
+.side-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-list {
+  margin: 5px 0px;
+  padding: 12px 10px;
+  display: block;
+  height: 50px;
+  font-size: 18px;
+  color: #7a6b62;
+  font-weight: 540;
+  background-color: #fff7ee;
+  border : 2px solid #7a6b62;
+  transition: 0.2s;
+}
+.menu-list:hover {
+  text-decoration: none;
+  color: #A52A2A;
+  border-left: 8px solid #A52A2A;
+}
+
+// 右のサイドメニュー
+.new-diary-list {
+  padding: 20px;
+  border : 2px solid #7a6b62;
+  border-radius: 10px;
+  background-color: #fff7ee;
+}
+.new-diary {
+  margin: 1% auto;
+}
+.new-diary-img {
+  transition: 0.3s;
+}
+.new-diary-img:hover {
+  border-radius: 50px;
+  box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-4px);
+}
+.tag-menu {
+  padding: 20px;
+  border : 2px solid #7a6b62;
+  border-radius: 10px;
+  background-color: #fff7ee;
+}
+.tag-list {
+  padding-left: 5%;
+}
+.text-link-red {
+  color: black;
+}
+.text-link-red:hover {
+  color: #A52A2A;
+  text-decoration: none;
+}
+
+// 文字
+.text {
+  font-family: 'Kosugi Maru', sans-serif;
+}
+.time {
+  color: gray;
+  font-size: 14px;
+}
+.icon {
+  border-radius: 50px;
+}
+.icon-1 {
+  border-radius: 90px;
+}
+.text-link {
+  color: black;
+}
+.text-link:hover {
+  color: #7a6b62;
+  text-decoration: none;
+}
+
+// テキストの改行
+.text-body {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+// kaminariレイアウト
+.kaminari {
+  margin: auto;
+}
+/* 表示しているページ番号のデザイン */
+.pagination>.active>a {
+  color: #fff;     /*背景の色を変える*/
+}
+
+// ボタン
+.btn {
+  width: 90px;
+  height: 30px;
+  font-size: 15px;
+}
+
+// エラーメッセージ
+.alert {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  color:#262626;
+  background:#FFEBE8;
+  border: 2px solid #990000;
+  padding: 12px; font-weight: 850;
+}
+
+// フラッシュメッセージ
+.alert-info {
+  margin-top: 10px;
+  margin-left: 25%;
+  width: 50%;
+  border-radius: 10px;
+}
+
+// ページトップ
+/*リンクを右下に固定*/
+#page-top {
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+}
+#page-top img {
+  width: 100px;
+}
+#page-top span {
+  padding: 0 17px;
+  text-align: center;
+  color: #333;
+}
+.top-link:hover {
+  text-decoration: none;
+}

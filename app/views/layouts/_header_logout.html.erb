@@ -1,0 +1,18 @@
+<nav class="navbar-1 p-3">
+  <%= link_to root_path, class:"logo", data: {"turbolinks" => false} do %>
+    <img src="/assets/logo.jpg" width="350" height="67">
+  <% end %>
+  <div>
+    <ul class="nav-box1">
+      <li><%= link_to "HOME", root_path, class:"link1", data: {"turbolinks" => false} %></li>
+      <li><%= link_to "どうぶつの村について", home_about_path, class:"link1", data: {"turbolinks" => false} %></li>
+      <li><%= link_to "新規登録", new_user_registration_path, class:"link1",data: {"turbolinks" => false} %></li>
+      <li><%= link_to "ログイン", new_user_session_path, class:"link1",data: {"turbolinks" => false} %></li>
+    </ul>
+  </div>
+</nav>
+<div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>

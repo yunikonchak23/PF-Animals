@@ -1,0 +1,29 @@
+<nav class="navbar-2">
+  <div class="nav-box">
+    <%= link_to root_path, class:"logo-login", data: {"turbolinks" => false} do %>
+      <img src="/assets/logo.jpg" width="350" height="67">
+    <% end %>
+    <div class="search-form">
+      <%= render 'layouts/search' %>
+    </div>
+  </div>
+  <div>
+    <ul class="nav-box2 mb-2">
+      <li class="nav-menu">
+        <p><%= link_to "ＨＯＭＥ", home_about_path, class:"link2", data: {"turbolinks" => false} %></p>
+      </li>
+      <li class="nav-menu">
+        <p><%= link_to "マイページ", user_path(current_user), class:"link2", data: {"turbolinks" => false} %></p>
+      </li>
+      <li class="nav-menu">
+        <p><%= link_to "日記一覧", diaries_path, class:"link2", data: {"turbolinks" => false} %></p>
+      </li>
+      <li class="nav-menu">
+        <p><%= link_to "Ｑ＆Ａ", questions_path,  class:"link2", data: {"turbolinks" => false} %></p>
+      </li>
+      <li class="nav-menu">
+        <p><%= link_to "ログアウト", destroy_user_session_path, method: :delete,  class:"link2", data: {"turbolinks" => false}%></p>
+      </li>
+    </ul>
+  </div>
+</nav>

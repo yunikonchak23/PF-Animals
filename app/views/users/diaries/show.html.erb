@@ -1,0 +1,82 @@
+<div class="container container-size">
+  <div class="row">
+    <!--左メニュー-->
+    <div class="col-2 mt-4">
+      <%= render 'users/diaries/menu' %>
+    </div>
+
+    <!--日記詳細-->
+    <div class="offset-1 col-6 mt-4">
+      <!--日記投稿者-->
+      <div class="ml-3">
+        <%= link_to user_path(@diary.pet.user), class:"text-link" do %>
+          <%= attachment_image_tag @diary.pet.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
+          <%= @diary.pet.user.name %>
+        <% end %>
+      </div>
+      <!--日記の中身-->
+      <div class="diary-show">
+        <div class="mt-2" style="text-align:center;">
+          <%= attachment_image_tag @diary, :diary_image, :fill, 1000, 1000, fallback: "no_image_square.jpg", size: "650x450"%>
+        </div>
+        <div class="mr-5 time" style="text-align:right;">
+          <%= l(@diary.created_at, format: :short) %>
+        </div>
+        <div class="ml-3 diary-pet">
+            <%= attachment_image_tag @diary.pet, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "60x60", class:"icon" %>
+          <div class="mt-2 ml-2">
+            <%= @diary.pet.pet_name %><br>
+            <%= @diary.pet.type_name %>
+          </div>
+        </div>
+        <div class="ml-3">
+          <label class="mt-3 mb-0">タイトル</label><br>
+          <%= @diary.diary_title %>
+        </div>
+        <div class="ml-3">
+          <label class="mt-4 mb-0">内容</label><br>
+          <p class="text-body"><%= @diary.diary_body %></p>
+        </div>
+        <div class="ml-3">
+          <label class="mt-4 mb-0">タグ</label><br>
+          <% @diary.tags.each do |tag| %>
+            <%= link_to tag_diaries_path(tag_id: tag.id), class:"text-link" do %>
+              <%= tag.tag_name %>
+              <%= "(#{tag.diaries.count})" %>
+            <% end %>
+          <% end %>
+        </div>
+        <div class="favo-bookmark-box">
+          <!--いいね-->
+        　<div id="favorite<%= @diary.id %>">
+            <%= render "users/favorites/favorite", diary: @diary %>
+        　</div>
+        　<!--お気に入り-->
+        　<div id="bookmark<%= @diary.id %>">
+            <%= render "users/bookmarks/bookmark", diary: @diary %>
+        　</div>
+        </div>
+        <div class="col-12 text-right">
+          <% if @diary.pet.user == current_user %>
+            <%= link_to "編集する", edit_diary_path(@diary), class:"btn btn-outline-secondary pet-edit-btn", data: {"turbolinks" => false} %>
+            <%= link_to "削除", @diary, method: :delete, class:"btn btn-outline-secondary",
+            data: { confirm: "#{@diary.diary_title}を削除して大丈夫ですか？", "turbolinks" => false } %>
+          <% end %>
+        </div>
+      </div>
+
+      <!--コメント-->
+      <div class="mt-5">
+        <!--コメント一覧-->
+        <%= render 'users/comments/comment_table' %>
+        <!--コメントフォーム-->
+        <%= render 'users/comments/comment_form' %>
+      </div>
+    </div>
+
+    <!--右メニュー-->
+    <div class="col-3 mt-4">
+      <%= render 'layouts/right_menu' %>
+    </div>
+  </div>
+</div>

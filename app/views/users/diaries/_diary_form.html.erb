@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    <%= render 'layouts/error_message', model: @diary %>
+    <div class="offset-3 mt-4">
+      <div class="my-3">
+        <label>日記の画像</label><br>
+        <%= f.attachment_field :diary_image %>
+      </div>
+      <div class="my-3">
+        <label>ペットを選択</label><br>
+        <%= f.collection_select :pet_id, @user.pets, :id, :pet_name, include_blank: "選択して下さい" %>
+      </div>
+      <div class="my-3">
+        <label>タイトル</label><br>
+        <%= f.text_field :diary_title, class:'col-8' %>
+      </div>
+      <div class="my-3">
+        <label>内容</label><br>
+        <%= f.text_area :diary_body, size: "60x10", class:'col-9' %>
+      </div>
+      <div class="my-3">
+        <label>タグ</label><br>
+        <%= f.text_field :tag_name, class:'col-8' %>
+      </div>
+    </div>
+  </div>
+</div>

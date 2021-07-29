@@ -1,0 +1,38 @@
+// Place all the styles related to the Search controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.search-text {
+  height: 20px;
+}
+.user-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-user {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #F5F3F4;
+  border-radius: 20px;
+  width: 160px;
+  height: 140px;
+  box-shadow: 0 0 8px #cabbb2;
+  transition: 0.3s;
+}
+.search-user:hover {
+  box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-4px);
+}
+.search-pet {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #F5F3F4;
+  border-radius: 20px;
+  width: 220px;
+  height: 220px;
+  box-shadow: 0 0 8px #cabbb2;
+  transition: 0.3s;
+}
+.search-pet:hover {
+  box-shadow: 0 15px 30px -5px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
+  transform: translateY(-4px);
+}

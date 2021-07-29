@@ -1,0 +1,35 @@
+<% @questions.each do |question| %>
+  <div class ="container">
+    <div class="row">
+      <div class="col-12 question-box">
+        <%= link_to question_path(question.id), class:"text-link" do %>
+          <div class="my-1 question-title">
+              <i class="far fa-comments mr-1"></i>
+              <%= question.question_title %>
+          </div>
+          <div>
+            <div>
+              <%= attachment_image_tag question.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "40x40", class:"icon" %>
+              <%= question.user.name %>
+            </div>
+            <div class="time">
+              <%= question.created_at.strftime('%Y/%m/%d %H:%M:%S') %>
+            </div>
+            <div class="my-1 answer-count">
+              回答<%= question.answers.count %>件
+            </div>
+            <div>
+              <% if question.is_active == false %>
+              <% elsif question.is_active == true %>
+              <div class="status"></div>
+              <% end %>
+            </div>
+            <div class="my-1">
+              <%= question.question_body.truncate(42) %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+    <div class="side-menu col-12">
+      <div class="mt-2 menu-user">
+        <%= attachment_image_tag current_user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon" %>
+        <%= current_user.name %>
+      </div>
+      <ul class="mt-4">
+        <li>
+          <%= link_to user_path(current_user), class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-user mr-1"></i>マイページ
+          <% end %>
+        </li>
+        <li>
+          <%= link_to questions_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="far fa-comments mr-1"></i>Ｑ＆Ａ一覧
+          <% end %>
+        </li>
+        <li>
+          <%= link_to new_question_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="fas fa-question mr-1"></i>質問をする
+          <% end %>
+        </li>
+        <li>
+          <%= link_to history_questions_path, class:"menu-list",data: {"turbolinks" => false} do %>
+            <i class="fas fa-question mr-1"></i>過去に質問した一覧
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

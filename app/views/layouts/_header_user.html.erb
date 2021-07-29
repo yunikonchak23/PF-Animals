@@ -1,7 +1,7 @@
 <nav class="navbar-2">
   <div class="nav-box">
     <%= link_to root_path, class:"logo-login", data: {"turbolinks" => false} do %>
-      <img src="/assets/logo.jpg" width="350" height="67">
+      <img src="<%= asset_path('logo.jpg') %>" width="350" height="67">
     <% end %>
     <div class="search-form">
       <%= render 'layouts/search' %>

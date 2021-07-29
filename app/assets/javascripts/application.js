@@ -50,3 +50,22 @@ $(function() {
     event.preventDefault();
   });
 });
+
+// aboutページ
+$(function () {
+  $(window).scroll(function () {
+    $('.animationTarget').each(function () {
+      //ターゲットの位置を取得
+      const targetElement = $(this).offset().top;
+      //スクロール量を取得
+      const scroll = $(window).scrollTop()
+      //ウィンドウの高さを取得
+      const windowHeight = $(window).height();
+      //ターゲットまでスクロールするとフェードインする
+      if (scroll - 250 > targetElement - windowHeight) {
+        //クラスを付与
+        $(this).addClass('view');
+      }
+    });
+  });
+});

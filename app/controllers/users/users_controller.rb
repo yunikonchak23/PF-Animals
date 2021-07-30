@@ -3,7 +3,7 @@ class Users::UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @pets = @user.pets.page(params[:page]).reverse_order
-    @diary_new = Diary.order(' created_at DESC ')
+    @diary_new = Diary.joins(pet: :user).where(users: { is_deleted: false }).order(' created_at DESC ')
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
   end
 

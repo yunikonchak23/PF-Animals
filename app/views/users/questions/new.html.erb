@@ -4,8 +4,8 @@
       <%= render 'users/questions/menu' %>
     </div>
 
-    <div class="offset-1 col-6 mt-4">
-      <h2 style="text-align:center;">質問投稿フォーム</h2>
+    <div class="offset-1 col-6 mt-5">
+      <h2 style="text-align:center;" class="title-text">質問投稿フォーム</h2>
       <%= render 'layouts/error_message', model: @question %>
       <%= form_with model: Question.new, local:true do |f| %>
         <div class="offset-2 mt-5">

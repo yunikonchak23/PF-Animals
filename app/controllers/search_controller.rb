@@ -10,10 +10,7 @@ class SearchController < ApplicationController
     elsif @model == 'pet'
       @records = Pet.where(['pet_name LIKE ? OR type_name LIKE ?', '%' + @content + '%', '%' + @content + '%'])
     elsif @model == 'question'
-      @records = Question.where([
-        'question_title LIKE ? OR question_body LIKE ?', '%' + @content + '%',
-        '%' + @content + '%',
-      ])
+      @records = Question.where(['question_title LIKE ? OR question_body LIKE ?', '%' + @content + '%', '%' + @content + '%'])
     else
       render
     end

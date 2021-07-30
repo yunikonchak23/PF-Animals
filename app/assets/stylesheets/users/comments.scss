@@ -2,9 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .comment-box {
-  margin: 18px auto;
-  padding: 10px 15px;
-  box-shadow: 0 0 8px gray;
-  border-radius: 20px;
+  position: relative;
+}
+.comment-text {
+  width: 80%;
+  padding: 20px;
+  border-radius: 10px;
   background-color: #F5F3F4;
+  margin-left: 84px;
+  box-shadow: 6px 6px 0px 0px #cabbb2;
+}
+.comment-icon {
+  position: absolute;
+  top: 0;
+}
+.radius-border {
+  border: 2px solid #7a6b62;
+}
+.comment-text::before {
+  content: '';
+  position: absolute;
+  z-index: 4;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 70px;
+  top: 20px;
+  border-right: 15px solid #F5F3F4;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.comment-text::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: 72px;
+  top: 27px;
+  border-right: 13px solid #cabbb2;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
 }

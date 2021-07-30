@@ -4,9 +4,9 @@
       <%= render 'users/questions/menu' %>
     </div>
 
-    <div class="offset-1 col-6 mt-4">
+    <div class="offset-1 col-6 mt-5">
       <div>
-        <h1 style="text-align:center;">Ｑ＆Ａ</h1>
+        <h1 style="text-align:center;" class="title-text">Ｑ＆Ａ</h1>
         <%= render 'users/questions/question_table' %>
         <div class="kaminari"><%= paginate @questions %></div>
       </div>

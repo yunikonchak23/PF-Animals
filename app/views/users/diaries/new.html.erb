@@ -5,8 +5,8 @@
       <%= render 'users/diaries/menu' %>
     </div>
 
-    <div class="offset-1 col-6 mt-4">
-      <h2 style="text-align:center;">日記を書く</h2>
+    <div class="offset-1 col-6 mt-5">
+      <h2 style="text-align:center;" class="mb-5 title-text">日記を書く</h2>
       <div>
         <%= form_with model: Diary.new, local:true do |f| %>
           <%= render 'users/diaries/diary_form', f: f %>

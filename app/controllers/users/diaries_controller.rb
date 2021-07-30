@@ -32,7 +32,7 @@ class Users::DiariesController < ApplicationController
     @tag_ranks = Tag.find(TagMiddle.group(:tag_id).order('count(tag_id) desc').limit(10).pluck(:tag_id))
     tag_list = params[:diary][:tag_name].split(nil)
     if @diary.save
-      @diary.save_tag(tag_list, current_user)
+      @diary.save_tag(tag_list)
       redirect_to diaries_path, notice: '日記の投稿が完了しました'
     else
       render :new
@@ -83,12 +83,12 @@ class Users::DiariesController < ApplicationController
   def destroy
     @diary = Diary.find(params[:id])
     @diary.destroy
-    redirect_to diary_path, notice: '投稿を削除しました'
+    redirect_to diaries_path, notice: '投稿を削除しました'
   end
 
   private
 
   def diary_params
-    params.require(:diary).permit(:diary_image, :diary_title, :diary_body, :start_time, :pet_id, :user_id)
+    params.require(:diary).permit(:diary_image, :diary_title, :diary_body, :start_time, :pet_id)
   end
 end

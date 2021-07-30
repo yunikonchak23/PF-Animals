@@ -23,10 +23,9 @@
 /*global $*/
 
 // ハンバーガーメニュー
-$(function() {
+$(document).on('turbolinks:load', function() {
     $('.hamburger').click(function() {
         $(this).toggleClass('active');
-
         if ($(this).hasClass('active')) {
             $('.nav-box1').addClass('active');
         } else {
@@ -41,7 +40,7 @@ $(function(){
 });
 
 // トップに戻るリンク
-$(function() {
+$(document).on('turbolinks:load', function() {
   $('#page-top a').on('click',function(event){
     $('body, html').animate({
       scrollTop:0

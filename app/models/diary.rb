@@ -28,22 +28,22 @@ class Diary < ApplicationRecord
   end
 
   # tag機能
-  def save_tag(sent_tags, user)
-    # createで保存したdiaryに紐付いているタグを「タグの名前を配列として」全て取得。
-    current_tags = tags.pluck(:tag_name) unless tags.nil?
-    # 取得したdiaryに存在するタグから、送信されてきたタグを除いたタグをold_tagsとする。
+  def save_tag(sent_tags)
+    #createで保存したdiaryに紐付いているタグを「タグの名前を配列として」全て取得。
+    current_tags = self.tags.pluck(:tag_name) unless self.tags.nil?
+    #取得したdiaryに存在するタグから、送信されてきたタグを除いたタグをold_tagsとする。
     old_tags = current_tags - sent_tags
-    # 送信されてきたタグから、現在存在するタグを除いたタグをnew_tagsとする。
+    #送信されてきたタグから、現在存在するタグを除いたタグをnew_tagsとする。
     new_tags = sent_tags - current_tags
-
-    # 古いタグの削除
+    
+    #古いタグの削除
     old_tags.each do |old|
-      tags.delete Tag.find_by(tag_name: old)
+      self.tags.delete Tag.find_by(tag_name: old)
     end
-    # 新しいタグをデータベースに保存
+    #新しいタグをデータベースに保存
     new_tags.each do |new|
-      new_tag = Tag.find_or_create_by(tag_name: new, user_id: user.id)
-      tags << new_tag
+      new_tag = Tag.find_or_create_by(tag_name: new)
+      self.tags << new_tag
     end
   end
 end

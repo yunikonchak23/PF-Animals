@@ -38,7 +38,7 @@
             </div>
           </div>
         <% end %>
-      <% else @model == 'question' %>
+      <% elsif @model == 'question' %>
         <% @records.each do |question| %>
           <div class="col-12 question-box mt-5" style="height: 180px;">
             <%= link_to question_path(question.id), class:"text-link" do %>

@@ -311,6 +311,24 @@ main {
   color: #7a6b62;
   text-decoration: none;
 }
+.title-text {
+  font-size: 30px;
+  position: relative;
+  margin-bottom: 60px;
+}
+.title-text::before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #F4A460;
+  border-radius: 3px;
+}
 
 // テキストの改行
 .text-body {

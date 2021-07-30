@@ -1,7 +1,7 @@
 <div>
   <%= form_with url: search_path, method: :get, local: true do |f| %>
     <%= f.text_field :content, class:"rounded" %>
-    <%= f.select :model, options_for_select({"会員" => "user" , "ペット" => "pet" , "質問" => "question"}), class: 'rounded font-italic' %>
+    <%= f.select :model, options_for_select({"会員" => "user" , "ペット" => "pet" , "質問" => "question" , "タグ" => "tag"}), class: 'rounded font-italic' %>
     <%= button_tag sanitize('<i class="fa fa-search"></i>'), :type => "submit", :class =>"btn btn-light btn-sm" %>
   <% end %>
 </div>

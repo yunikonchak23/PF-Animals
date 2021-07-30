@@ -5,12 +5,12 @@
       <%= render 'users/diaries/menu' %>
     </div>
 
-    <div class="offset-1 col-6 mt-4">
+    <div class="offset-1 col-6 mt-5">
       <div>
-        <h2 style="text-align:center;">
+        <h1 style="text-align:center;" class="title-text">
           <%= @user.name %>さんのペット
           <i class="fas fa-feather"></i>
-        </h2>
+        </h1>
         <%= render 'users/pets/pet_table' %>
         <div class="kaminari"><%= paginate @pets %></div>
       </div>

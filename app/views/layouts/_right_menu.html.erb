@@ -2,7 +2,9 @@
   <div class="row">
     <div class="offset-1 col-11 mt-5">
       <div class="diary-table new-diary-list">
-        <h2 class="col-12" style="text-align:center;">新着日記</h2>
+        <h2 class="col-12 diary-color" style="text-align:center;">
+          新着日記 <i class="fas fa-book"></i>
+        </h2>
         <% @diary_new.first(9).each do |diary| %>
           <div class="new-diary">
             <%= link_to diary_path(diary.id) do %>
@@ -13,7 +15,9 @@
       </div>
 
       <div class="tag-menu mt-5">
-        <h2 class="col-12" style="text-align:center;">人気のタグ</h2>
+        <h2 class="col-12 tag-color" style="text-align:center;">
+          人気のタグ <i class="fas fa-chess-queen"></i>
+        </h2>
         <% @tag_ranks.each.with_index(1) do |tag,i| %>
           <div class="tag-list">
             <%= link_to tag_diaries_path(tag_id: tag.id),class:"text-link-red" do %>

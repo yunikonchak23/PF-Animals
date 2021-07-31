@@ -30,7 +30,7 @@
             <strong><%= @question.question_title %></strong>
           </div>
           <div class="ml-1 mt-4">
-            <%= @question.question_body %>
+            <p class="text-body"><%= @question.question_body %></p>
           </div>
           <div class="col-12 mt-4 text-right">
             <% if user_signed_in? && current_user.id == @question.user_id %>

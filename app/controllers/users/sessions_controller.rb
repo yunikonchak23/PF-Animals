@@ -12,11 +12,10 @@ class Users::SessionsController < Devise::SessionsController
   protected
 
   def reject_user
-    @user = User.find_by(name: params[:user][:name])
+    @user = User.find_by(name: params[:user][:email].downcase)
     redirect_to new_user_session_path if @user && (@user.valid_password?(params[:user][:password]) && !@user.is_valid)
   end
   # before_action :configure_sign_in_params, only: [:create]
-
   # GET /resource/sign_in
   # def new
   #   super

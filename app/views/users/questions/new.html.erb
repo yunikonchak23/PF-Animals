@@ -1,9 +1,11 @@
 <div class="container container-size">
   <div class="row">
+    <!--左メニュー-->
     <div class="col-2 mt-4">
       <%= render 'users/questions/menu' %>
     </div>
 
+    <!--質問投稿-->
     <div class="offset-1 col-6 mt-5">
       <h2 style="text-align:center;" class="title-text">質問投稿フォーム</h2>
       <%= render 'layouts/error_message', model: @question %>
@@ -17,6 +19,7 @@
       <% end %>
     </div>
 
+    <!--右メニュー-->
     <div class="col-3 mt-4">
       <%= render 'layouts/right_menu' %>
     </div>

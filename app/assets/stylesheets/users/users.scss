@@ -19,6 +19,7 @@
   display: inline-block;
   padding: 0 55px;
 }
+// タイトルの横の線
 .form-box h1:before, .form-box h1:after {
   content: '';
   position: absolute;
@@ -29,7 +30,6 @@
   border-top: solid 1px black;
   border-bottom: solid 1px black;
 }
-
 .form-box h1:before {
   left: 0;
 }

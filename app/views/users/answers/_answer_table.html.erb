@@ -3,12 +3,15 @@
     <div class="col-12">
       <p class="mb-4">回答件数：<%= @question.answers.count %></p>
       <% @question.answers.each do |answer| %>
+        <!--回答者のプロフィール画像と名前-->
         <div class="mt-5">
           <%= link_to user_path(answer.user), class:"text-link" do %>
             <%= attachment_image_tag answer.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "40x40", class:"icon" %>
             <%= answer.user.name%>
           <% end %>
+          <!--回答した日付-->
           <div class="ml-1 time"><%= answer.created_at.strftime('%Y/%m/%d') %></div>
+          <!--回答内容-->
           <div class="ml-1 text-body answer-body"><%= answer.answer_body %></div>
         </div>
       <% end %>

@@ -1,11 +1,12 @@
 <div class="container container-size">
   <div class="row">
-
+    <!--左メニュー-->
     <div class="col-2 mt-4">
       <%= render 'users/questions/menu' %>
     </div>
 
     <div class="offset-1 col-6 mt-4">
+      <!--ルート-->
       <div>
         <%= link_to "ＨＯＭＥ", root_path, class:"text-dark", data: {"turbolinks" => false} %>
         >
@@ -14,24 +15,30 @@
         <%= @question.question_title %>
       </div>
 
+      <!--質問の詳細-->
       <div class="offset-1 mt-5">
         <div class="question-box1">
+          <!--質問投稿者について-->
           <div class="ml-1">
             <%= link_to user_path(@question.user), class:"text-link" do %>
               <%= attachment_image_tag @question.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "40x40", class:"icon" %>
               <%= @question.user.name %>
             <% end %>
           </div>
+          <!--質問作成日時-->
           <div class="ml-1 time">
             <%= @question.created_at.strftime('%Y/%m/%d %H:%M:%S') %>
           </div>
+          <!--質問タイトル-->
           <div class="ml-1 my-3 show-question-title">
             <i class="far fa-comments mr-1"></i>
             <strong><%= @question.question_title %></strong>
           </div>
+          <!--質問内容-->
           <div class="ml-1 mt-4">
             <p class="text-body"><%= @question.question_body %></p>
           </div>
+          <!--質問投稿者のみ編集・削除-->
           <div class="col-12 mt-4 text-right">
             <% if user_signed_in? && current_user.id == @question.user_id %>
               <%= link_to "編集する", edit_question_path(@question), class:"btn btn-outline-secondary pet-edit-btn", data: {"turbolinks" => false} %>
@@ -40,6 +47,7 @@
             <% end %>
           </div>
         </div>
+        <!--回答一覧と回答フォーム-->
         <div class="mt-5">
           <%= render 'users/answers/answer_table' %>
           <%= render 'users/answers/answer_form' %>
@@ -47,6 +55,7 @@
       </div>
     </div>
 
+    <!--右メニュー-->
     <div class="col-3 mt-4">
       <%= render 'layouts/right_menu' %>
     </div>

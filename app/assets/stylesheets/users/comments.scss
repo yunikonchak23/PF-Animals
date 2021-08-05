@@ -1,6 +1,8 @@
 // Place all the styles related to the Comments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// コメントのレイアウト
 .comment-box {
   position: relative;
 }
@@ -19,6 +21,8 @@
 .radius-border {
   border: 2px solid #7a6b62;
 }
+
+// コメントの吹き出し 三角部分
 .comment-text::before {
   content: '';
   position: absolute;
@@ -32,6 +36,7 @@
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
 }
+// コメント吹き出し 三角部分の影
 .comment-text::after {
   content: '';
   position: absolute;

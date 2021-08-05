@@ -23,6 +23,7 @@ class Diary < ApplicationRecord
     bookmarks.where(user_id: user.id).exists?
   end
 
+  # カレンダーを記録する際の日付・時間を作成時に変更
   def start_time
     created_at
   end
@@ -35,7 +36,7 @@ class Diary < ApplicationRecord
     old_tags = current_tags - sent_tags
     #送信されてきたタグから、現在存在するタグを除いたタグをnew_tagsとする。
     new_tags = sent_tags - current_tags
-    
+
     #古いタグの削除
     old_tags.each do |old|
       self.tags.delete Tag.find_by(tag_name: old)

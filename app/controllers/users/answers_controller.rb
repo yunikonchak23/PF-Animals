@@ -5,10 +5,6 @@ class Users::AnswersController < ApplicationController
     redirect_to question_path(@question)
   end
 
-  def update; end
-
-  def destroy; end
-
   private
 
   def answer_params

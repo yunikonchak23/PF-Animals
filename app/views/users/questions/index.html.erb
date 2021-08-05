@@ -1,17 +1,21 @@
 <div class="container container-size">
   <div class="row">
+    <!--左メニュー-->
     <div class="col-2 mt-4">
       <%= render 'users/questions/menu' %>
     </div>
 
+    <!--質問一覧-->
     <div class="offset-1 col-6 mt-5">
       <div>
         <h1 style="text-align:center;" class="title-text">Ｑ＆Ａ</h1>
         <%= render 'users/questions/question_table' %>
+        <!--ページネーション-->
         <div class="kaminari"><%= paginate @questions %></div>
       </div>
     </div>
 
+    <!--右メニュー-->
     <div class="col-3 mt-4">
       <%= render 'layouts/right_menu' %>
     </div>

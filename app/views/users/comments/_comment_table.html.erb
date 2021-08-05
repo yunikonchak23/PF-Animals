@@ -5,13 +5,17 @@
         <p class="mb-4">コメント件数：<%= @diary.comments.count %></p>
         <% @diary.comments.each do |comment| %>
           <div class="comment-box mt-5">
+            <!--コメントした会員のプロフィール画像と名前-->
             <div class="comment-icon">
               <%= attachment_image_tag comment.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "50x50", class:"icon radius-border" %><br>
               <%= comment.user.name%>
             </div>
             <div class="mt-3 comment-text">
+              <!--コメント作成時の日時-->
               <div class="ml-1 time"><%= comment.created_at.strftime('%Y/%m/%d') %></div>
+              <!--コメント内容-->
               <div class="ml-1 text-body"><%= comment.comment %></div>
+              <!--コメント作成者のみ削除出来る-->
               <div class="text-right">
                 <% if comment.user == current_user %>
                   <%= link_to "削除", diary_comment_path(comment.diary,comment), remote: true, method: :delete, class:"btn btn-outline-secondary",

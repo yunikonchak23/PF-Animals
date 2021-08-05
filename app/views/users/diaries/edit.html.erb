@@ -1,9 +1,11 @@
 <div class="container container-size">
   <div class="row">
+    <!--左メニュー-->
     <div class="col-2 mt-4">
       <%= render 'users/diaries/menu' %>
     </div>
 
+    <!--日記の編集-->
     <div class="offset-1 col-6 mt-4">
       <h2 style="text-align:center;"><%= @diary.diary_title %>について編集</h2>
       <%= form_with model: @diary, local:true do |f| %>
@@ -20,6 +22,7 @@
       <% end %>
     </div>
 
+    <!--右メニュー-->
     <div class="col-3 mt-4">
       <%= render 'layouts/right_menu' %>
     </div>

@@ -1,68 +1,87 @@
 <div class="container container-size">
   <div class="row">
+    <!--左メニュー-->
     <div class="col-2 mt-4">
       <%= render 'users/diaries/menu' %>
     </div>
 
+    <!--検索結果-->
     <div class="offset-1 col-6 user-box">
+      <!--会員検索結果-->
       <% if @model == "user" %>
         <% @records.each do |user| %>
         <div class="search-user mt-5">
+          <!--会員プロフィール画像-->
           <div style="text-align:center;">
             <%= link_to user_path(user) do %>
               <%= attachment_image_tag user, :image, :fill, 500, 500, fallback: "no_image_square.jpg", size: "100x100", class:"icon" %>
             <% end %>
           </div>
+          <!--会員の名前-->
           <div style="text-align:center;">
             <%= user.name %>
           </div>
         </div>
         <% end %>
+
+      <!--ペット検索結果-->
       <% elsif @model == 'pet' %>
         <% @records.each do |pet| %>
           <div class="search-pet mt-5">
+            <!--会員のプロフィール画像-->
             <div>
               <%= attachment_image_tag pet.user, :image, :fill, 500, 500, fallback: "no_image_square.jpg", size: "40x40", class:"icon" %>
               <%= pet.user.name %>
             </div>
+            <!--ペットのプロフィール画像-->
             <div style="text-align:center;">
               <%= link_to user_path(pet.user) do %>
                 <%= attachment_image_tag pet, :image, :fill, 500, 500, fallback: "no_image_square.jpg", size: "100x100", class:"icon" %>
               <% end %>
             </div>
+            <!--ペットの名前-->
             <div style="text-align:center;">
               <%= pet.pet_name %>
             </div>
+            <!--ペットの種類-->
             <div style="text-align:center;">
               種類:<%= pet.type_name %>
             </div>
           </div>
         <% end %>
+
+      <!--質問検索結果-->
       <% elsif @model == 'question' %>
         <% @records.each do |question| %>
           <div class="col-12 question-box mt-5" style="height: 180px;">
             <%= link_to question_path(question.id), class:"text-link" do %>
+            <!--質問のタイトル-->
             <div class="my-1 question-title">
                 <i class="far fa-comments mr-1"></i>
                 <%= question.question_title %>
             </div>
             <div>
+              <!--会員のプロフィール画像-->
               <div>
                 <%= attachment_image_tag question.user, :image, :fill, 300, 300, fallback: "no_image_square.jpg", size: "40x40", class:"icon" %>
                 <%= question.user.name %>
               </div>
+              <!--質問作成時の日付-->
               <div class="time">
                 <%= question.created_at.strftime('%Y/%m/%d %H:%M:%S') %>
               </div>
+              <!--回答件数-->
               <div class="my-1 answer-count">
                 回答<%= question.answers.count %>件
               </div>
+              <!--解決済みか、未解決か-->
               <div>
                 <% if question.is_active == false %>
                 <% elsif question.is_active == true %>
                 <div class="status"></div>
                 <% end %>
               </div>
+              <!--質問内容-->
               <div class="my-1">
                 <%= question.question_body.truncate(42) %>
               </div>
@@ -73,7 +92,7 @@
       <% end %>
     </div>
 
-
+    <!--右メニュー-->
     <div class="col-3 mt-4">
       <%= render 'layouts/right_menu' %>
     </div>

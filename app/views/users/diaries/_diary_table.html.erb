@@ -3,26 +3,32 @@
     <% @diaries.each do |diary| %>
       <div class="diary-box">
         <%= link_to diary_path(diary.id), class:"text-link" do %>
+          <!--日記投稿者のプロフィール画像-->
           <div>
             <%= attachment_image_tag diary, :diary_image, :fill, 1000, 1000, fallback: "no_image_square.jpg", size: "200x150" %>
           </div>
+          <!--日記作成時の日時-->
           <div class="mt-1 time text-right">
             <%= l(diary.created_at, format: :short) %>
           </div>
+          <!--日記のタイトル-->
           <div class="mt-3">
             <i class="fas fa-book-open"></i>
             <strong><%= diary.diary_title %></strong>
           </div>
           <% if user_signed_in? %>
           　<div class="favo-bookmark">
+          　  <!--いいね-->
             　<div id="favorite<%= diary.id %>">
                 <%= render "users/favorites/favorite", diary: diary %>
             　</div>
+            　<!--お気に入り-->
             　<div id="bookmark<%= diary.id %>">
                 <%= render "users/bookmarks/bookmark", diary: diary %>
             　</div>
             </div>
           <% end %>
+          <!--コメント件数-->
           <div class="comment">
             コメント数 <%= diary.comments.count %>
           </div>

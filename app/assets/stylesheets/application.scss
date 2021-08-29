@@ -20,6 +20,7 @@
  @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap');
 
  * {
   margin : 0;
@@ -33,7 +34,7 @@
   flex-flow: column;
   min-height: 100vh;
   background-color: #8e7f76;
-  font-family: "えるまー";
+  font-family: "えるまー", 'Kiwi Maru', serif;
   font-size: 16px;
   color: #565656;
 }

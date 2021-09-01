@@ -19,18 +19,18 @@
       <div class="row mb-4">
         <div class="col-4">
           フォロー数:
-          <%= link_to @user.followings.count, user_followings_path(user_id: @user.id), class:"text-link" %>
+          <%= link_to @user.followings.count, user_followings_path(user_id: @user.id) %>
         </div>
         <div class="col-4">
           フォロワー数:
-          <%= link_to @user.followers.count, user_followers_path(user_id: @user.id), class:"text-link" %>
+          <%= link_to @user.followers.count, user_followers_path(user_id: @user.id) %>
         </div>
       </div>
       <% if @user != current_user %>
         <% if current_user.following?(@user) %>
-          <div><%= link_to "フォロー解除", user_relationships_path(user_id: @user.id), method: :delete, class:"text-link" %></div>
+          <div><%= link_to "フォロー解除", user_relationships_path(user_id: @user.id), method: :delete %></div>
         <% else %>
-          <div><%= link_to "フォローする", user_relationships_path(user_id: @user.id), method: :post, class:"text-link" %></div>
+          <div><%= link_to "フォローする", user_relationships_path(user_id: @user.id), method: :post %></div>
         <% end %>
       <% end %>
     </div>
